@@ -1,0 +1,5 @@
+moment,step,t_s,n_neurons_fired,n_spikes,network_rate_hz,mn9_hz
+perch,-9,,11920,23026,6.6434,0.0
+cruise,47,1.2,12709,25199,7.2704,0.0
+touchdown,120,3.025,13817,28155,8.1233,15.7388
+feeding,125,3.15,13331,27307,7.8786,52.8096

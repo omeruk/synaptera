@@ -14,7 +14,7 @@
 #   - brain_model/ (Shiu et al. copy and FlyWire data; scripts/fetch_data.py downloads it);
 #   - all FlyWire / Codex raw and derived data files, i.e. everything in data/ except data/README.md
 #     (scripts/fetch_data.py rebuilds them), incl. data/orn_spontaneous_783.csv;
-#   - HDF5 run files, videos, archive/, docs/NEUROFLY_FLIGHT_YENI_PROJE_MASTER_DONUSUM_REHBERI.md,
+#   - HDF5 run files, videos (the README GIF previews and stills in media/ are kept), archive/, docs/NEUROFLY_FLIGHT_YENI_PROJE_MASTER_DONUSUM_REHBERI.md,
 #     docs/neurofly_upstream/;
 #   - plots/ (figures rendered from the run files and Codex-derived neuron positions; licence conditional
 #     on the FlyWire/Codex terms, THIRD_PARTY.md §2);
@@ -48,6 +48,7 @@ EXTRA=(
     LICENSE
     requirements-flight.txt
     docs/FILE_PROVENANCE.md
+    media/README.md
     docs/ADAPTED_CODE.md
     docs/PREREGISTRATION_LOG.md
     scripts/fetch_data.py
@@ -74,7 +75,7 @@ section_b = prov[prov.index("## B. Files added in this work"):]
 listed = re.findall(r"^\| `([^`]+)` \| [0-9a-f]{7}", section_b, re.M)
 up = set(git("ls-tree", "-r", "--name-only", upstream).split("\n")) - {""}
 head = set(git("ls-tree", "-r", "--name-only", "HEAD").split("\n")) - {""}
-EXCLUDE = ["brain_model/*", "data/*", "simulations/*", "*.h5", "*.mp4", "*.gif", "archive/*", "plots/*",
+EXCLUDE = ["brain_model/*", "data/*", "simulations/*", "*.h5", "*.mp4", "simulations/*.gif", "archive/*", "plots/*",
            "docs/NEUROFLY_FLIGHT_YENI_PROJE_MASTER_DONUSUM_REHBERI.md", "docs/neurofly_upstream/*",
            "CLAUDE.md", "docs/UCUS_PROMPTU.md", "docs/NEUROFLY_MASTER_DOKUMANTASYON_VE_SISTEM_PROMPTU.md",
            "logs/*", "simulation.pid"]
@@ -235,6 +236,7 @@ logs/
 *.h5
 *.mp4
 *.gif
+!media/*.gif
 # Python
 __pycache__/
 *.py[cod]
@@ -254,8 +256,9 @@ print(f"{len(rows) + 1} files written")
 EOF
 
 # final checks on the snapshot
+# media/preview_*.gif (cut from the videos; the videos themselves stay out) and media/stills/stills.csv are allowed.
 # figures/data/*.csv are the aggregated plotted data of the figures (derived results, CC BY-NC 4.0; docs: THIRD_PARTY.md §2.4), allowed
-bad=$(cd "$DEST" && find . -path ./figures/data -prune -o -type f \( -name '*.h5' -o -name '*.mp4' -o -name '*.gif' -o -name '*.parquet' \
+bad=$(cd "$DEST" && find . -path ./figures/data -prune -o -path './media/preview_*.gif' -prune -o -path ./media/stills/stills.csv -prune -o -type f \( -name '*.h5' -o -name '*.mp4' -o -name '*.gif' -o -name '*.parquet' \
       -o -name '*.npz' -o -name '*.csv' -o -name '*.csv.gz' -o -name '*.tsv' \) -print | sort)
 if [ -n "$bad" ]; then echo "error: unexpected files in the snapshot:"; echo "$bad"; exit 1; fi
 for d in brain_model archive plots simulations docs/neurofly_upstream; do

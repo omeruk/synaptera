@@ -1,19 +1,19 @@
 # Snapshot manifest
 
-Public snapshot built by `scripts/make_public_snapshot.sh` from development-repository commit `1eadc99` (private; available on request). 194 files (this manifest not counted).
+Public snapshot built by `scripts/make_public_snapshot.sh` from development-repository commit `ac4250a` (private; available on request). 213 files (this manifest not counted).
 
 | file | bytes | SHA-256 |
 |---|---|---|
-| `.gitignore` | 219 | `493d15bd03d18483bf514e7628aae68fcd02fb1a79a288010c755cf62f413abd` |
+| `.gitignore` | 232 | `1cccaf4d9ac17e941281d429d1334899edb96046ce7d70cd4582fbb4ad099e96` |
 | `CITATION.cff` | 2,220 | `5c3d35d518d37fabf2b4fc1008f5d05b2b95d8cfc7157f6f4e502e8dfdeb9ca2` |
 | `LICENSE` | 1,063 | `ac8fe3a84cffda88ff15d264bfb233e89a0ec60817eaad5637eee05ef0cce78f` |
-| `NOTICE.md` | 10,229 | `1141a99d195de2ed028594ac798e99b094b4cf755268578e9aa88a16fe9c287d` |
-| `README.md` | 38,691 | `80f27944e61b33482341eb4c4369ad669e96c8b5aae1e7cd64a40043a8e26c3f` |
-| `REPORT.md` | 133,012 | `981a9f98341ed74b7275ab7a94500fa4870760a8d106b01105d018f9a157a4ae` |
+| `NOTICE.md` | 10,458 | `1cf373ec863c59d313ca9261a5c47762be556f4e927c72b3a53388aeaed74b7d` |
+| `README.md` | 41,630 | `dc68bbd589b2c5ae305e716a75832427a6bd2bac6c9dd1973cec70d398d19bc6` |
+| `REPORT.md` | 133,948 | `c09e2498def83bfbd6ff5bafda0af3664f718523c0a58d65fd2c6f3842d9caf5` |
 | `THIRD_PARTY.md` | 30,340 | `02a931f0ba9f190cb0237a0f23516f575d6849fb1e08f98de1b2610749252b71` |
 | `data/README.md` | 13,059 | `ce65ea667e2c98b7c17317aaa973b1339bc1f3b0a1bf0bd2a43e474e6d714c1d` |
 | `docs/ADAPTED_CODE.md` | 19,622 | `24a3a72acca9b8e047fb81e34999ba6c63542f8e7530051891446ae2f764d4fd` |
-| `docs/FILE_PROVENANCE.md` | 66,967 | `9b587099a1ccae820e3fd3dfa6324d4cfa388682e805e92835c962ba64a9c2f2` |
+| `docs/FILE_PROVENANCE.md` | 68,483 | `3cdcfbffb865345ea3594fdd0e630b201e827ae5824b16be451948a8287658de` |
 | `docs/ORIGINALITY_CHECK.md` | 16,610 | `5bbbaee5f16525ab1bd985dc6fb3f869e47d7d4a4e8c0f15541f9382bdd5b9cc` |
 | `docs/PREREGISTRATION_LOG.md` | 15,451 | `4478d4c5981779e05359576c8861848efc38d28b2391713ab2b2ac42e43b393a` |
 | `docs/REPO_CLEANUP_REPORT.md` | 4,915 | `3d2a0ad409212ba4225bcfd73b15fcbfe64431094396bbfa07ceef5ae44c8071` |
@@ -47,6 +47,9 @@ Public snapshot built by `scripts/make_public_snapshot.sh` from development-repo
 | `figures/data/fig6_trained_readout_summary.csv` | 576 | `9d51cde91d35e22293d582d4d64e6a3d9bed1a29c078ec1aba89fc3e6b2d74d8` |
 | `figures/data/fig7_what_the_brain_controls.csv` | 1,627 | `048ab5f5175f65c2494ab515585f05b33187a5a60798bbaf9636f9a4d300995a` |
 | `figures/data/fig7_what_the_brain_controls_summary.csv` | 1,099 | `2191bbe0ba06ddf81c9217be44d3faf9a0f4288880ee10dd0176c7f414f7e1a6` |
+| `figures/data/fig8_brain_snapshots.csv` | 230 | `e1b9fc0d9321a37b232c1da21552c1bea1bc7cda5867d1bdd6b2cbfd1c61c342` |
+| `figures/data/fig8_brain_snapshots_by_class.csv` | 473 | `957f17a323195d6228955873f6a12c90ebb5e6639b4b95464fb472928bd8b90d` |
+| `figures/data/fig8_brain_snapshots_summary.csv` | 379 | `e38336b237a7dc7889f1722699dd2eee5c79526cf1926ea4ce338da37433ce2a` |
 | `figures/fig1_system_labels.pdf` | 32,783 | `70e0e5a859a4cba4e7ec129ada73cc3b53c7f1afe664551fefe7d7027f0188f2` |
 | `figures/fig1_system_labels.png` | 449,305 | `7a915d5600dec71091bcbd2876c75dfcd300085a411c21ab3c359d9827d631de` |
 | `figures/fig2_flight_paths.pdf` | 34,264 | `7f3a0dcad13c3a5670d1d05030df83f1f02263480c28d70dde6f46357d2adc66` |
@@ -61,6 +64,8 @@ Public snapshot built by `scripts/make_public_snapshot.sh` from development-repo
 | `figures/fig6_trained_readout.png` | 338,467 | `2c2e401bdbd87bb5e4201ba50ba588aaf5cdc23bf86f399d1efc7a806775e6eb` |
 | `figures/fig7_what_the_brain_controls.pdf` | 32,347 | `3784a6ca8891ac12e9ab424115c22bf852feca8948e94723720729843a78e3ea` |
 | `figures/fig7_what_the_brain_controls.png` | 477,807 | `c259751a404ee6638f05e6819172efce1921d26fb8065fd8fc7f41917e02eeed` |
+| `figures/fig8_brain_snapshots.pdf` | 118,059 | `5c4e87d6a5c989e4ef010f2f2ac574f0c7f635b9266f74813f1a8c5a8cd431bb` |
+| `figures/fig8_brain_snapshots.png` | 1,562,544 | `6b8972234b09bbcdfa678a2c3e98b4fe42f375dbf7fd0d7378d817fa98668261` |
 | `flight/__init__.py` | 80 | `a891ea2fbbb34fc14b4e5b9748eb1d3a5b0dbdd84c0fe9371eda92688e83f9b0` |
 | `flight/body.py` | 23,626 | `d8b0ce5d9c92765d2bd83488b8c78ef5af105a962eaf9a98e59bd16dc200f4c6` |
 | `flight/brain.py` | 29,340 | `8ab3ac0ad4c7424553b8b7a849bf6ae83b9beafb7011d5f1762d0b1d98578a51` |
@@ -82,6 +87,19 @@ Public snapshot built by `scripts/make_public_snapshot.sh` from development-repo
 | `flight/vnc_bridge.py` | 7,215 | `910620d81a27d4def1641d2fc85f1f5660382ba29f28e1070a8ae2af28f58204` |
 | `fly_flight_brain_body_simulation.py` | 51,573 | `e8be037cff0885f499483ebffe3409c42c43bae3ca49b17b93f9e49b519d2434` |
 | `generate_flight_plots.py` | 29,782 | `a574d504e51b4b3a472a387aee8b39983108dda2ad28c21694dc1ac7886bee75` |
+| `media/README.md` | 4,851 | `bbab72efa864b698038007b81cb32607fb263f5747a42d59c8490debc774b24e` |
+| `media/preview_compare.gif` | 6,875,275 | `03bfe754a91781518621a1dea2c5f256bf551d3c23c84ca1a5e6ae26df230600` |
+| `media/preview_n1.gif` | 8,192,641 | `2447f27093f69c76ce42da76fb0a71e73a35a5562d7ef96579b7ad949b9dbb86` |
+| `media/preview_n2.gif` | 5,329,426 | `285f24682d5e375365bef9233ffbc28a13177a87f30886113f0136cffc95c675` |
+| `media/stills/approach.png` | 725,003 | `d5c5afac8b9d29ea88732786cd716d905f089b6c45fec13b7507644038c39fef` |
+| `media/stills/brain_panel_feeding.png` | 461,335 | `c83b26327a7f499a6780437ff51debd7776bf407475d34375ca292d3771fa4bf` |
+| `media/stills/compare_view.png` | 448,585 | `ff438108050b8384bc807715e7a6854bd681f2059a6eca8ef3a51325378a564e` |
+| `media/stills/cruise_between_towers.png` | 725,245 | `a5f7743d29004ffcb7c8f9f30442f28b82a45ba9d52aefaace92ca86f9a83ff5` |
+| `media/stills/feeding_mn9_circuit.png` | 687,622 | `c73add2a969e684e7abc0e244e410c6e3c14c781b6ae11eaa898d51226272e0e` |
+| `media/stills/n2_first_tower_contact.png` | 686,877 | `1a1a3e90a524134c0eb8f44960c20832f634cad7d8b1b36925004fdd8ee5353e` |
+| `media/stills/stills.csv` | 1,329 | `83bef28b5a1a7583e49b3f7a171c7a1d18cd88a7ccbb24889a1ead0f81ef76db` |
+| `media/stills/takeoff.png` | 714,448 | `5b4d1005cdb07c69bc998242cd1f1b393c1c83a4ff9e68c9733713f45c42ce4a` |
+| `media/stills/touchdown.png` | 678,271 | `14d58d79001e42c2faf44367bda38dbfd783226e33710af4c738bdbd7a5bcc87` |
 | `render_flight_compare.py` | 5,592 | `29591ef183a91686448e3dc9f20ae4bff08d64d68f7c19ca12862fc59d5ae5d9` |
 | `render_flight_video.py` | 11,997 | `00ec0b5af3735418f1182990ab31852d6c8446d3858ac44c8b38ed6a2a2d0ff4` |
 | `render_flight_video_v2.py` | 101,578 | `9757adb2f850aa5f97731875bb0722dd79a163ddcfb50d93d0e90426297cfbc2` |
@@ -157,7 +175,7 @@ Public snapshot built by `scripts/make_public_snapshot.sh` from development-repo
 | `scripts/diag/vl_report.py` | 12,508 | `126c26617b0a955382d00eb450fc2de0797ba30f1b181218e42732ef87a3f287` |
 | `scripts/diag/vl_run.py` | 3,684 | `2f8fc926a7153470c15cae2eabdda2526b97b146c1101c48ee3c6e5e227cce7a` |
 | `scripts/fetch_data.py` | 15,832 | `7be3aaba503f44134ea85b9c04a75d196ea0ef86c997363e72e31de5f331f7e6` |
-| `scripts/figures/make_figures.py` | 49,216 | `cac70303f4350918c405342e2f8bb301dfe108fa9d2ce635ae572479470ce9aa` |
+| `scripts/figures/make_figures.py` | 58,634 | `97091eeb2a4e48eb2ed35189a34a0af26f9621c8bc80c6de3e0182a20788c6d0` |
 | `scripts/ladder_fit.py` | 4,025 | `36e2a401403debd6f62e5c100b72c77b99b94ed119fb0ea28ec3bc36f9912109` |
 | `scripts/ladder_replay.py` | 4,849 | `55264f35ffab7621521841344fe879db7e6c7153189d3b7ac53a1c1829ec82fe` |
 | `scripts/make_data_bundle.py` | 15,392 | `4780d84b3fe56f7adac2a1e5761143d17b0fca6ddc2be77634b93d721868fc4a` |
@@ -165,17 +183,18 @@ Public snapshot built by `scripts/make_public_snapshot.sh` from development-repo
 | `scripts/make_descending_neurons.py` | 1,665 | `8ab1f2dd5240af9692a1d77bf4d8ed8b1c0109bd69e01a13294714e00f322ed6` |
 | `scripts/make_dn_reference.py` | 4,969 | `711cd01e13f086655ca77323bd00dde980abbaa0477e1841e1ce504ab61a7c3a` |
 | `scripts/make_leg_sugar_grn.py` | 796 | `81243b892a1ce31590f004d677a783f51f030db360384703b3fd978c7f622c17` |
+| `scripts/make_media.py` | 9,230 | `4a09b475dd5c9af62c243469ab16e12c96d8708c849bdc20d43f3354d9311dac` |
 | `scripts/make_nt_impute.py` | 5,409 | `3e01d03c295d2f07e3cc6bb1c4bf6437c652da91eccfd28e167f7441e513f4bf` |
 | `scripts/make_nt_literature.py` | 4,858 | `ceabea735cc80aada032817cbd627c48591198b7da7613337ac9118456047acf` |
 | `scripts/make_nt_silent.py` | 1,644 | `a6cdd62e3870f6513e97ad649f94fcc051f3ea8ceb76638745d9c7a1c04c53ee` |
 | `scripts/make_orn_spontaneous.py` | 5,271 | `a36306c2ba960a45f9dcec84e6a3042de79a57fcc3e55ac97a2ed9c6b326143d` |
-| `scripts/make_public_snapshot.sh` | 16,369 | `2c8895962fabc3d359fc8782e17eccd63d406f824887433d9f752be7dd327554` |
+| `scripts/make_public_snapshot.sh` | 16,669 | `e06c22aeaf809b3f90756ec7d10cc094048f978ffcacc57bf6a38b5f1f3fe0ed` |
 | `scripts/make_sugar_grn.py` | 551 | `8c16cb504c77ef404850b4c5738efcfb55e069e1c6273df3ac0f47ef75efd5f0` |
 | `scripts/make_t45_transduction.py` | 666 | `8766927fc5bd219164d4705da8b7d2f5a5f7a6948a70f81c59a176f6df15bfbd` |
 | `scripts/make_vision_boundary.py` | 3,434 | `7111f8488b0ef430020dfdba80b70f44bfa0bc49024442ad8f383643b4cb0fa1` |
 | `scripts/make_visual_transduction.py` | 603 | `e5ed229fcafb781a29d1e3415e8ed91ae1103a9fbb9ad9453bea1904ed506baf` |
 | `scripts/prepare_neuron_geometry.py` | 9,951 | `e3439dbadd0acfa830e8b874837860ae4c92f57937fdd2b395a2c983acdd5bd8` |
-| `scripts/verify_report_final.py` | 70,687 | `e75e7bf6983a35e7438f8b3084083f553da7cd9d69a711afa9cf08701591f4d2` |
+| `scripts/verify_report_final.py` | 72,579 | `f62bcafeb47ee9893147049891f1ac48c191cd680c7a282fb81b825ad7457ed6` |
 | `simulation_data/odor_field_3d.py` | 9,951 | `5fbfb25e148c259ad9928353ce5ce106290e1c9b23521dc1e91c48ff43e7b8e7` |
 | `tests/conftest.py` | 4,300 | `6aebbbdae83e730b13235fe9d90541e1b62103fbef215c9ecb166f9d4347c7fc` |
 | `tests/flight/test_adapted_spec.py` | 5,202 | `83621778b6d32fcfaccc9abcfe048cbdcdf12d6ff3e857c26a36dd67b6759749` |

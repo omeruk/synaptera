@@ -12,6 +12,7 @@ Synaptera builds on third-party data, models and software. This file lists their
 
 ## Data
 ### FlyWire connectome (v783)
+- **Pictures: CC BY-NC 4.0.** The images under `media/` and `figures/` contain results derived from FlyWire and renderings of the FlyGym / NeuroMechFly body model (Apache-2.0); attributions in [media/README.md](media/README.md).
 - **Licence: CC BY-NC 4.0 for the FlyWire public release.** The FlyWire citing-guidelines page states that the public release data (version 783, October 2023, including all data available in Codex for snapshot 783) is made available under CC BY-NC 4.0 ([flywire.ai/guidelines](https://flywire.ai/guidelines), opened 2026-10-07). The Zenodo connectivity record (doi:10.5281/zenodo.10676866) is CC BY 4.0; the stricter FlyWire licence is applied here. The `flywire_annotations` repository has no licence file. Details: [THIRD_PARTY.md](THIRD_PARTY.md) §2.1.
 - **All FlyWire-derived files (derived data files, run records) are used and shared under CC BY-NC 4.0: no commercial use, attribution required.** Terms of use: [flywire.ai/tos](https://flywire.ai/tos), [codex.flywire.ai](https://codex.flywire.ai).
 - Used by the code (**none of them is included in this copy**; `scripts/fetch_data.py` downloads and rebuilds them): `Completeness_783.csv`, `Connectivity_783.parquet`, `flywire_annotations.tsv`, Codex downloads (`classification`, `consolidated_cell_types`, `neurons`, `neuropil_synapse_table`, `synapse_coordinates`, `coordinates`, `column_assignment`) and the `data/*` files derived from them.

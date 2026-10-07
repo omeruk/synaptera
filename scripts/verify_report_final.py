@@ -1046,7 +1046,7 @@ def check_figures(show=print):
     import vl_report as VL                            # noqa: E402
     D = ROOT / "figures" / "data"
     stems = ["fig1_system_labels", "fig2_flight_paths", "fig3_feeding_decision", "fig4_olfactory_lockup", "fig5_vision_dn_screen",
-             "fig6_trained_readout", "fig7_what_the_brain_controls"]
+             "fig6_trained_readout", "fig7_what_the_brain_controls", "fig8_brain_snapshots"]
     bad = 0
 
     def ok(cond, what):
@@ -1110,6 +1110,28 @@ def check_figures(show=print):
     ok(int(f7["n_rows"]) == len(R) and all(f7[f"row{i + 1}"].startswith(f"{r_[0]}|{r_[1]}|") for i, r_ in enumerate(R)), "fig7: rows and source labels equal summary_report")
     t7 = list(csv.DictReader(open(D / f"{stems[6]}.csv")))
     ok(len(t7) == len(R) and all(a["status"] == r_[3] and a["function"] == r_[0] for a, r_ in zip(t7, R)), "fig7: status of every row equals summary_report")
+    # fig 8: the four moments and their counts, recomputed from the n1 seed 3 run record
+    import h5py                                         # noqa: E402
+    sys.path.insert(0, str(ROOT / "scripts" / "figures"))
+    import make_figures as MF                           # noqa: E402
+    f8 = summ[stems[7]]
+    mom, n_neu = MF.fig8_data()
+    t8 = list(csv.DictReader(open(D / f"{stems[7]}.csv")))
+    ok(len(mom) == 4 and [m["moment"] for m in mom] == ["perch", "cruise", "touchdown", "feeding"] and
+       all(int(f8[f"{m['moment']}_step"]) == m["step"] and int(f8[f"{m['moment']}_n_fired"]) == m["n_fire"] and
+           abs(float(f8[f"{m['moment']}_rate_hz"]) - m["rate_hz"]) < 1e-3 and abs(float(f8[f"{m['moment']}_mn9_hz"]) - m["mn9_hz"]) < 1e-3 for m in mom),
+       "fig8: steps, firing-neuron counts, network mean rates and MN9 equal the recount from the n1 seed 3 record")
+    ok(all(int(r["n_neurons_fired"]) == m["n_fire"] and int(r["step"]) == m["step"] for r, m in zip(t8, mom)) and
+       sum(int(r["n_neurons_fired"]) for r in csv.DictReader(open(D / f"{stems[7]}_by_class.csv"))) == sum(m["n_fire"] for m in mom),
+       "fig8: plotted data csv equals the recount; per-class counts add up")
+    with h5py.File(MF.h5_run("n1", 3), "r") as f_:
+        b_ = f_["behavior"]
+        net = b_["net_rate"][:]
+        cd = json.loads(b_["phase"].attrs["codes"])
+        ph_ = b_["phase"][:]
+    ok(all(abs(net[m["step"]] - m["rate_hz"]) < 1e-9 for m in mom if m["step"] >= 0) and mom[2]["step"] == int(np.flatnonzero(ph_ == cd["touchdown"])[0])
+       and mom[0]["mn9_hz"] == 0.0 and mom[1]["mn9_hz"] == 0.0 and mom[2]["mn9_hz"] > 10 and mom[3]["mn9_hz"] > 50 and n_neu == 138639,
+       f"fig8: recorded net_rate equals the spike recount; touchdown = first touchdown step; MN9 {mom[2]['mn9_hz']:.1f} Hz at touchdown, {mom[3]['mn9_hz']:.1f} Hz at feeding")
     return bad
 
 

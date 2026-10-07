@@ -806,3 +806,21 @@ Written in this work unless noted. Parts of the flight code are adapted from the
 | `scripts/make_data_bundle.py` | bb52a21 | builds the data bundle from a strace of verify (sanitised copies, manifest) |
 | `scripts/make_data_bundle.sh` | bb52a21 | wrapper of make_data_bundle.py |
 | `scripts/diag/nt_report.py` | 795bf01 | NT audit and O1 under the sign variants (report script; read by verify) |
+| `scripts/make_media.py` | 5b56795 | cuts the README GIF previews and stills from the existing videos (cut times from the run records) |
+| `media/preview_n1.gif` | 5b56795 | README preview, n1 (GIF cut from a video) |
+| `media/preview_n2.gif` | 5b56795 | README preview, n2 (GIF cut from a video) |
+| `media/preview_compare.gif` | 5b56795 | README preview, n1 vs n2 (GIF cut from a video) |
+| `media/stills/takeoff.png` | 5b56795 | still cut from a video |
+| `media/stills/cruise_between_towers.png` | 5b56795 | still cut from a video |
+| `media/stills/approach.png` | 5b56795 | still cut from a video |
+| `media/stills/touchdown.png` | 5b56795 | still cut from a video |
+| `media/stills/feeding_mn9_circuit.png` | 5b56795 | still cut from a video |
+| `media/stills/brain_panel_feeding.png` | 5b56795 | still cut from a video |
+| `media/stills/n2_first_tower_contact.png` | 5b56795 | still cut from a video |
+| `media/stills/compare_view.png` | 5b56795 | still cut from a video |
+| `media/stills/stills.csv` | 5b56795 | video, frame and run time of each still |
+| `figures/fig8_brain_snapshots.pdf` | e4a574f | figure, vector |
+| `figures/fig8_brain_snapshots.png` | e4a574f | figure, 300 dpi |
+| `figures/data/fig8_brain_snapshots.csv` | e4a574f | plotted data / summary numbers of the figure |
+| `figures/data/fig8_brain_snapshots_by_class.csv` | e4a574f | plotted data / summary numbers of the figure |
+| `figures/data/fig8_brain_snapshots_summary.csv` | e4a574f | plotted data / summary numbers of the figure |

@@ -1,0 +1,9 @@
+still,video,video_frame,sim_time_s,video_time_s,moment
+takeoff,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,200,0.1667,6.667,"n1 take-off (phase 'takeoff', step 6)"
+cruise_between_towers,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,323,1.1917,10.767,"n1 cruise, first step with x >= 240 mm (towers at x 160-200 and 280-320 mm)"
+approach,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,383,1.6917,12.767,"n1 approach (phase 'approach', 6 steps after its start)"
+touchdown,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,542,3.0167,18.067,"n1 touchdown step (phase 'touchdown', first feeding step)"
+feeding_mn9_circuit,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,557,3.1417,18.567,"n1 feeding, first step with MN9 > 50 Hz (x0.25 part)"
+brain_panel_feeding,flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_v2_change_en_vis.mp4,557,3.1417,18.567,frontal and dorsal brain panels cropped from the same frame
+n2_first_tower_contact,flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_v2_change_en_vis.mp4,290,0.9167,9.667,n2 first step with tower contact (step 36)
+compare_view,flight_n1_vs_n2_v2_compare_en_vis.mp4,566,3.2167,18.867,"compare video, 8 steps after n1 touchdown (n2 stays at the tower)"

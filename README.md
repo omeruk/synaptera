@@ -1,13 +1,17 @@
 # Synaptera
 From synapse to wing: a pre-registered test of what a whole-brain connectome model controls in closed-loop Drosophila flight
 
-![Figure 1: system and source labels](figures/fig1_system_labels.png)
+![Preview: n1 flight from take-off to feeding](media/preview_n1.gif)
 
-**Figure 1.** System and source labels (BRAIN, HAND-MADE, REFLEX, FLYVIS, TRAINED); dashed = not completed. Figures 2–6 and their captions: [REPORT.md, Figures](REPORT.md#figures).
+*The hand-made route takes the fly to the food; the brain model decides to feed. Playback speed ×0.375 (video ×0.25, shown 1.5× faster). Run n1, seed 3; the visual input is the FlyVis network. Details and the other previews: [Gallery](#gallery).*
 
 ![Figure 7: what the brain controls](figures/fig7_what_the_brain_controls.png)
 
 **Figure 7.** What the brain controls in this model (table of [REPORT.md §1.1](REPORT.md)): only the feeding decision is a brain readout that was shown, and it depends on a hand-made trigger.
+
+![Figure 1: system and source labels](figures/fig1_system_labels.png)
+
+**Figure 1.** System and source labels (BRAIN, HAND-MADE, REFLEX, FLYVIS, TRAINED); dashed = not completed. Figures 2–6, 8 and their captions: [REPORT.md, Figures](REPORT.md#figures).
 
 
 Synaptera couples a whole-brain leaky integrate-and-fire (LIF) model built from the FlyWire v783 *Drosophila* connectome (Brian2; 138,639 neurons, 15,091,983 connections (pre–post neuron pairs; weight = synapse count), 54,492,922 synapses in total) to the NeuroMechFly/FlyGym MuJoCo body in closed loop. Using pre-registered criteria and ablations, it tests **which components of flight behaviour come from the connectome model and which come from hand-made control**. Task: take-off from a pedestal, passing two towers, landing on a food platform and feeding.
@@ -30,12 +34,13 @@ The work builds on the [NeuroFly](https://github.com/seven-monarchs/NeuroFly) wa
 7. [Running](#running)
 8. [Data](#data)
 9. [Videos](#videos)
-10. [Documents and repository layout](#documents-and-repository-layout)
-11. [References](#references)
-12. [Related work](#related-work)
-13. [AI use](#ai-use)
-14. [How to cite](#how-to-cite)
-15. [Licence](#licence)
+10. [Gallery](#gallery)
+11. [Documents and repository layout](#documents-and-repository-layout)
+12. [References](#references)
+13. [Related work](#related-work)
+14. [AI use](#ai-use)
+15. [How to cite](#how-to-cite)
+16. [Licence](#licence)
 
 **Full report (English): [REPORT.md](REPORT.md)** — methods, all results, negative findings, limitations. The lab-notebook reports (`docs/tr/REPORT_FINAL*.md`, `docs/tr/REPORT_SENSORY_*.md`) and the pre-registration documents (`docs/tr/SPEC_*.md`) are a lab notebook, in Turkish. Every number in the tables below and in REPORT.md is checked against the HDF5 run files by `scripts/verify_report_final.py`.
 
@@ -253,6 +258,29 @@ In every video the hand-made route takes the fly to the food; the brain decides 
 
 The n1 / n2 / comparison videos have English on-screen text (`run_videos_vis.sh`; brain panel: one soft dot of equal size per neuron, fixed display gain per class, REPORT.md §3.6; title card "Synaptera", labels BRAIN / HAND-MADE / REFLEX / FLYVIS as above, end card with the NeuroFly credit and references). Earlier renders with the previous brain panel (`*_en.mp4`, `run_videos_en.sh`) and with Turkish on-screen text (same names without `_en`, `run_videos_natural.sh`) are kept and described in REPORT_FINAL_V2.md §6.6. In every video a persistent label states what is hand-made and what is brain; the FlyVis layer is labelled "display only, not driven". Older videos under `simulations/` (`flight_40s*`, `flight_biological_40s`, `flight_v01`–`v05`, `test_*`) are trials from before the closed loop; they are not results.
 
+## Gallery
+Previews and stills are cut from the existing videos; nothing was re-simulated or re-rendered for them. Cut times, speeds and licence: [media/README.md](media/README.md). Source labels as in Figure 1.
+
+| | |
+|---|---|
+| ![n2 hits the first tower](media/preview_n2.gif) | ![n1 and n2 side by side](media/preview_compare.gif) |
+| **n2, brain only (playback ×0.25).** There is no hand-made navigation and no altitude target in this arm; the fly reaches the first tower and stays there. Source: BRAIN (feeding readout only), HAND-MADE (flight programme), FLYVIS (visual input). | **n1 and n2 side by side (playback ×0.25).** n1 follows the hand-made route past the towers; n2 stays at the first tower. Source: HAND-MADE (n1 route), BRAIN (feeding decision), FLYVIS (visual input). |
+
+Stills (1280 px; run times in [media/README.md](media/README.md)):
+
+| | | |
+|---|---|---|
+| ![take-off](media/stills/takeoff.png) | ![cruise between the towers](media/stills/cruise_between_towers.png) | ![touchdown](media/stills/touchdown.png) |
+| Take-off, n1, t = 0.17 s. HAND-MADE phase machine; FLYVIS input. | Cruise between the towers, n1, t = 1.19 s. HAND-MADE route. | Touchdown, n1, t = 3.02 s. HAND-MADE landing; the MN9 readout is just above 10 Hz (BRAIN). |
+| ![feeding with the MN9 circuit](media/stills/feeding_mn9_circuit.png) | ![brain panels at feeding](media/stills/brain_panel_feeding.png) | ![n2 at the first tower contact](media/stills/n2_first_tower_contact.png) |
+| Feeding, n1, t = 3.14 s: sugar GRN → SEZ → MN9. BRAIN decision; the leg-contact trigger is HAND-MADE. | Brain panels at feeding, same frame (crop). BRAIN (simulated spikes); dot position, colour and glow are display settings. | n2 at the first tower contact, t = 0.92 s. BRAIN-only arm; HAND-MADE flight programme. |
+
+![Figure 8: brain activity snapshots](figures/fig8_brain_snapshots.png)
+
+**Figure 8.** Brain activity snapshots, n1 seed 3: the neurons that fired in one 25 ms step at perch, cruise, touchdown and feeding, with the MN9 readout at the same four moments. Source: BRAIN (spikes of the model). Dot position (arbor centroid), colours and the background cloud are display settings, not measurements. The visual input comes from FlyVis, the route is hand-made, and the one behaviour the brain controls is the feeding decision.
+
+**Full videos: links to be added (YouTube, Zenodo).**
+
 ## Documents and repository layout
 - `docs/tr/SPEC_FLIGHT.md`, `docs/tr/SPEC_BRAIN_CONTROL.md`, `docs/tr/SPEC_SENSORY_INPUTS.md`: design, user decisions and **pre-registrations** (each criterion was committed before the runs). In Turkish.
 - `REPORT.md`: the English consolidated report (summary, methods, results, negative findings, limitations, reproducibility).
@@ -291,6 +319,7 @@ Cite this work through [CITATION.cff](CITATION.cff) (author: omeruk, version 1.0
 - **Code written in this work: MIT** ([LICENSE](LICENSE), Copyright (c) 2026 omeruk).
 - **MIT does not cover third-party components:** the Shiu et al. brain-model code (its own MIT licence and copyright line, reproduced in [NOTICE.md](NOTICE.md)), FlyGym / NeuroMechFly (Apache-2.0), FlyVis and the other dependencies keep their own licences; FlyWire data are CC BY-NC 4.0 and are not distributed in this repository.
 - **Results derived from FlyWire** (`figures/data/*.csv`, the result JSON files under `docs/`) and the separate data bundle are **CC BY-NC 4.0**; this work is non-commercial.
+- **Pictures** (`media/`, `figures/`): CC BY-NC 4.0; they contain results derived from FlyWire and renderings of the FlyGym body model (attributions: [media/README.md](media/README.md), [NOTICE.md](NOTICE.md)).
 - **NeuroFly (upstream):** ideas of a few flight functions were adapted from NeuroFly and are credited ([docs/ADAPTED_CODE.md](docs/ADAPTED_CODE.md)). The upstream repository has no licence file; the licence question was sent to its author and has not been answered up to 2026-10-07. The affected code was re-implemented from a written specification (not a clean-room process: the same AI-assisted process had read the upstream code earlier). If the upstream author asks, the affected parts will be removed. Upstream files are not included in this copy.
 - **Data:** third-party data keep their own licences (FlyWire, FlyWire Codex, Shiu et al., DoOR.data; [THIRD_PARTY.md](THIRD_PARTY.md) §2); see *Data and licences* below.
 

@@ -1244,7 +1244,7 @@ None of the following has been done in this work.
 
 ## Figures
 
-Seven figures (`figures/figN_*.png` at 300 dpi and `.pdf`, drawn by `scripts/figures/make_figures.py`; the plotted data are in `figures/data/figN_*.csv`). They are drawn from the stored run files and the existing report scripts, with no new simulation. Colour and marker of the source labels are the same in all figures (BRAIN circle, HAND-MADE square, REFLEX triangle, FLYVIS diamond, TRAINED cross). Rate axes start at zero, single seeds are shown as points, summary lines are means, bands are min–max, and nothing is smoothed. `scripts/verify_report_final.py` checks the summary numbers of every figure against the report scripts.
+Eight figures (`figures/figN_*.png` at 300 dpi and `.pdf`, drawn by `scripts/figures/make_figures.py`; the plotted data are in `figures/data/figN_*.csv`). They are drawn from the stored run files and the existing report scripts, with no new simulation. Colour and marker of the source labels are the same in all figures (BRAIN circle, HAND-MADE square, REFLEX triangle, FLYVIS diamond, TRAINED cross). Rate axes start at zero, single seeds are shown as points, summary lines are means, bands are min–max, and nothing is smoothed. `scripts/verify_report_final.py` checks the summary numbers of every figure against the report scripts.
 
 ![Figure 1](figures/fig1_system_labels.png)
 
@@ -1273,6 +1273,10 @@ Seven figures (`figures/figN_*.png` at 300 dpi and `.pdf`, drawn by `scripts/fig
 ![Figure 7](figures/fig7_what_the_brain_controls.png)
 
 **Figure 7. What the brain controls in this model.** Visual form of the table of §1.1 (`scripts/diag/summary_report.py`): one row per function, colour and marker = source label, symbol = shown / not shown / not completed. Only the feeding decision is a brain readout that was shown, and it depends on the hand-made trigger; every other row is hand-made, not shown or not completed. Key numbers are recomputed from the run files.
+
+![Figure 8](figures/fig8_brain_snapshots.png)
+
+**Figure 8. Brain activity snapshots (n1, seed 3).** Frontal view of the whole brain at four moments of one run (perch: step −9, the last perch step before the input cut; cruise between the towers: first cruise step past x = 240 mm; touchdown; feeding: first step with MN9 above 50 Hz). Only the neurons that fired in that 25 ms step are coloured (by class); each panel gives their number and the network mean rate; panel e gives the MN9 readout at the same four moments (the perch value is the recorded perch mean). The visual input comes from FlyVis, the route is hand-made, and the only behaviour the brain controls is the feeding decision (MN9 above 10 Hz). Display settings, not measurements: dot position (arbor centroid of each neuron), class colour, dot size and the dim background cloud. Counts and rates are recomputed from the run record by `scripts/verify_report_final.py`.
 
 ## References
 - Dorkenwald, S. et al. (2024). Neuronal wiring diagram of an adult brain. *Nature* 634, 124–138.

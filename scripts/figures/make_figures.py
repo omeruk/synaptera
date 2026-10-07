@@ -1,7 +1,7 @@
-"""Publication figures 1-7, drawn from the stored run files and the existing report scripts (no simulation, no render).
+"""Publication figures 1-8, drawn from the stored run files and the existing report scripts (no simulation, no render).
 
     env -u PYTHONPATH python scripts/figures/make_figures.py              # all figures
-    env -u PYTHONPATH python scripts/figures/make_figures.py --only fig3  # one figure (fig1 ... fig7)
+    env -u PYTHONPATH python scripts/figures/make_figures.py --only fig3  # one figure (fig1 ... fig8)
 
 Output: figures/figN_<name>.png (300 dpi) and .pdf (vector); the plotted data as figures/data/figN_<name>.csv and the
 summary numbers that `scripts/verify_report_final.py` re-checks against the report scripts as figures/data/figN_<name>_summary.csv.
@@ -783,7 +783,141 @@ def fig7():
     write_summary("fig7_what_the_brain_controls_summary.csv", {"n_rows": n, **{f"row{i + 1}": f"{r[0]}|{r[1]}|{r[3]}" for i, r in enumerate(R)}})
 
 
-FIGS = {"fig1": fig1, "fig2": fig2, "fig3": fig3, "fig4": fig4, "fig5": fig5, "fig6": fig6, "fig7": fig7}
+# ── Fig 8: brain activity snapshots ──────────────────────────────────────────────────────────────────────────────────
+# class colours of the brain panels = those of the videos (render_flight_video_v2.CLASS_RGB); a display setting
+CLASS_RGB8 = {"other": (255, 205, 140), "visual": (70, 150, 255), "olfactory": (0, 225, 175), "taste": (255, 105, 200),
+              "DN": (255, 50, 30), "motor": (255, 150, 0)}
+FIG8_PERCH_STEP = -9      # last perch step with the sensory drive on (steps -8..-1 are the input cut; step 0 = take-off)
+
+
+def fig8_moments(h5path):
+    """The four moments (run step, label, phase) from the run record: perch, cruise between the towers, touchdown, feeding."""
+    with h5py.File(h5path, "r") as f:
+        b = f["behavior"]
+        phase, x, mn9, feed = b["phase"][:], b["pos"][:], b["mn9_rate"][:], b["is_feeding"][:]
+        codes = json.loads(b["phase"].attrs["codes"])      # name -> code
+    k_cr = int(np.flatnonzero((phase == codes["cruise"]) & (x[:, 0] >= 240))[0])          # first cruise step past x = 240 mm (towers: 160-200, 280-320)
+    k_td = int(np.flatnonzero(phase == codes["touchdown"])[0])
+    k_fd = int(np.flatnonzero((mn9 > 50) & (feed > 0))[0])                                 # first step with MN9 > 50 Hz
+    return [("perch", FIG8_PERCH_STEP), ("cruise", k_cr), ("touchdown", k_td), ("feeding", k_fd)]
+
+
+def fig8_data(h5path=None):
+    """Per moment: firing neuron indices (count > 0 in that 25 ms step), their class, network mean rate, MN9 readout."""
+    path = h5path or h5_run("n1", 3)
+    mom = fig8_moments(path)
+    out = []
+    with h5py.File(path, "r") as f:
+        si, ni, cn = f["spikes/step_idx"][:], f["spikes/neuron_idx"][:], f["spikes/count"][:]
+        b = f["behavior"]
+        n = int(f["meta"].attrs["n_neurons"])
+        dt = float(f["meta"].attrs["decision_interval"])
+        mn9, t = b["mn9_rate"][:], b["t"][:]
+        perch_mn9 = float(np.mean(json.loads(f["meta"].attrs["readout_perch_hz"])[2]))     # recorded perch readout (no per-step record before step 0)
+        for name, k in mom:
+            m = si == k
+            idx = ni[m]
+            out.append(dict(moment=name, step=k, t_s=float(t[k]) if k >= 0 else float("nan"), idx=idx, n_fire=int(len(idx)),
+                            n_spikes=int(cn[m].sum()), rate_hz=float(cn[m].sum()) / n / dt, mn9_hz=perch_mn9 if k < 0 else float(mn9[k])))
+    return out, n
+
+
+def fig8():
+    path = h5_run("n1", 3)
+    mom, n = fig8_data(path)
+    cen = np.load(ROOT / "data" / "neuron_arbor_centroids.npz")
+    cls = np.load(ROOT / "data" / "neuron_class.npz")
+    xyz = cen["xyz"].astype(np.float64) / 1e3                                  # um
+    labels = [str(s) for s in cls["labels"]]
+    c = cls["cls"]
+    lo, hi = xyz.min(0), xyz.max(0)
+    u, v = (hi[0] - xyz[:, 0]), (xyz[:, 1] - lo[1])                            # frontal view; the fly's left on the right of the panel (as in the videos)
+    asp = (hi[1] - lo[1]) / (hi[0] - lo[0])
+    pw = 58.0
+    ph = pw * asp
+    fw, fh = 183.0, 130.0
+    fig = plt.figure(figsize=(W2, fh * MM))
+    rgb = {k: np.array(val) / 255 for k, val in CLASS_RGB8.items()}
+    cloud = np.array((120, 150, 200)) / 255
+    rows = []
+    class_rows = []
+    y1 = fh - 17 - ph
+    y2 = y1 - ph - 15                                                          # room under each panel for its information line
+    pos = [(8, y1), (70, y1), (8, y2), (70, y2)]                               # panel left/bottom in mm: 2 x 2
+    ZO = {"visual": 2, "other": 3, "olfactory": 4, "DN": 5, "motor": 6, "taste": 7}   # sparse classes drawn above the crowded visual one
+    ALPHA = {"visual": 0.13}                                                   # display setting; all other classes 0.85 (dot size equal for all classes)
+    DOT_S = 0.6
+    n_by = {m["moment"]: {lab: int(np.sum(c[m["idx"]] == ci)) for ci, lab in enumerate(labels)} for m in mom}
+    for (name, x0, y0), M, lt in zip([(m["moment"], *p) for m, p in zip(mom, pos)], mom, "abcd"):
+        ax = fig.add_axes([x0 / fw, y0 / fh, pw / fw, ph / fh])
+        ax.set_facecolor("black")
+        ax.grid(False)
+        for sp in ax.spines.values():
+            sp.set_visible(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.scatter(u, v, s=0.12, color=cloud, alpha=0.16, lw=0, rasterized=True)
+        fire = M["idx"]
+        for ci, lab in enumerate(labels):
+            sel = fire[c[fire] == ci]
+            if len(sel):
+                ax.scatter(u[sel], v[sel], s=DOT_S, color=rgb[lab], alpha=ALPHA.get(lab, 0.85), lw=0, zorder=ZO[lab], rasterized=True)
+            class_rows.append((name, lab, int(len(sel))))
+        ax.set_xlim(0, hi[0] - lo[0])
+        ax.set_ylim(hi[1] - lo[1], 0)
+        ax.set_aspect("equal")
+        when = f"step {M['step']}, t = {M['t_s']:.3f} s" if M["step"] >= 0 else f"step {M['step']}".replace("-", "\u2212")
+        ax.set_title({"perch": "Perch", "cruise": "Cruise, between towers", "touchdown": "Touchdown", "feeding": "Feeding"}[name] + f" ({when})",
+                     loc="left", fontsize=7, pad=2)
+        info_y = -0.035
+        if name in ("touchdown", "feeding"):                                   # feeding circuit: thin ring, leader line to a label under the panel (nothing over the image)
+            prev = mom[[m["moment"] for m in mom].index(name) - 1]["moment"]
+            tc = np.flatnonzero(c == labels.index("taste"))
+            cx, cy = float(np.median(u[tc])), float(np.median(v[tc]))
+            Wd, Hd = hi[0] - lo[0], hi[1] - lo[1]
+            ax.add_patch(matplotlib.patches.Ellipse((cx, cy), 0.20 * Wd, 0.26 * Hd, fc="none", ec="white", lw=0.6, zorder=9))
+            ax.annotate(f"taste GRNs and motor neurons fire after\ntouchdown ({prev} \u2192 {name}):\ntaste {n_by[prev]['taste']} \u2192 {n_by[name]['taste']}, motor {n_by[prev]['motor']} \u2192 {n_by[name]['motor']} neurons per step",
+                        xy=(cx, cy + 0.13 * Hd), xycoords="data", xytext=(0.0, -0.035), textcoords="axes fraction", fontsize=7, va="top", ha="left", linespacing=1.25,
+                        annotation_clip=False, arrowprops=dict(arrowstyle="-", color="white", lw=0.6, shrinkA=0, shrinkB=0, relpos=(min(max(cx / Wd, 0.05), 0.95) * 0.0 + 0.5, 1.0)))
+            info_y = -0.37
+        ax.text(0.0, info_y, f"{M['n_fire']:,} neurons fired in this 25 ms step\nnetwork mean {M['rate_hz']:.1f} Hz", transform=ax.transAxes,
+                fontsize=7, va="top", ha="left", linespacing=1.25)
+        letter(ax, lt, dx=-7)
+        rows.append((name, M["step"], "" if M["step"] < 0 else round(M["t_s"], 3), M["n_fire"], M["n_spikes"], round(M["rate_hz"], 4), round(M["mn9_hz"], 4)))
+    # MN9 panel
+    axm = fig.add_axes([145 / fw, y2 / fh, 33 / fw, (2 * ph + 15 - 12) / fh])
+    names = [m["moment"] for m in mom]
+    vals = [m["mn9_hz"] for m in mom]
+    axm.bar(range(4), vals, color=C["BRAIN"], width=0.6, zorder=3)
+    axm.axhline(10, color="black", ls=(0, (3, 2)), lw=0.8, zorder=4)
+    axm.text(-0.45, 11.5, "threshold 10 Hz", fontsize=7, ha="left", va="bottom")
+    for i, val in enumerate(vals):
+        axm.text(i, val + 1.5, f"{val:.0f}", ha="center", va="bottom", fontsize=7)
+    axm.set_xticks(range(4), names, rotation=35, ha="right")
+    axm.set_ylabel("MN9 readout (Hz)")
+    axm.set_ylim(0, max(vals) * 1.18)
+    axm.set_title("MN9 readout (BRAIN)\nat the same moments", loc="left", fontsize=7)
+    letter(axm, "e", dx=-30, dy=14)
+    # legend (display setting)
+    hs = [Line2D([], [], marker="o", ls="none", ms=3.2, mfc=rgb[k], mec="none", label=k) for k in labels]
+    hs.append(Line2D([], [], marker="o", ls="none", ms=2, mfc=cloud, mec="none", alpha=0.5, label="all other neurons (not firing)"))
+    fig.legend(handles=hs, loc="upper left", bbox_to_anchor=(8 / fw, 1 - 2.2 / fh), ncol=7, fontsize=7, handletextpad=0.1, columnspacing=1.0, frameon=False)
+    cap = ("Display settings, not measurements: dot position (arbor centroid of each neuron, frontal view; the fly's left is on the right), class colour, dot size (equal for all classes), dot opacity (visual 13 %, other classes 85 %), drawing order and the dim background cloud. "
+           "Measured in the model: which neurons fired in the 25 ms step, their number, the network mean rate, the MN9 readout (perch: recorded perch mean; step \u22129 = last perch step "
+           "before the input cut). Run: n1, seed 3. Visual input comes from FlyVis (FLYVIS); the route is hand-made (HAND-MADE); the only behaviour the brain controls is the "
+           "feeding decision (BRAIN: MN9 > 10 Hz).")
+    cap = textwrap.fill(cap, 122)
+    fig.text(8 / fw, 1.5 / fh, cap, fontsize=7, va="bottom", ha="left", color=DGREY, linespacing=1.25)
+    save(fig, "fig8_brain_snapshots")
+    write_csv("fig8_brain_snapshots.csv", ["moment", "step", "t_s", "n_neurons_fired", "n_spikes", "network_rate_hz", "mn9_hz"], rows)
+    write_csv("fig8_brain_snapshots_by_class.csv", ["moment", "class", "n_neurons_fired"], class_rows)
+    summ = {"seed": 3, "n_neurons": n, "perch_step": FIG8_PERCH_STEP}
+    for r in rows:
+        summ.update({f"{r[0]}_step": r[1], f"{r[0]}_n_fired": r[3], f"{r[0]}_rate_hz": r[5], f"{r[0]}_mn9_hz": r[6]})
+    write_summary("fig8_brain_snapshots_summary.csv", summ)
+
+
+FIGS = {"fig1": fig1, "fig2": fig2, "fig3": fig3, "fig4": fig4, "fig5": fig5, "fig6": fig6, "fig7": fig7, "fig8": fig8}
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)

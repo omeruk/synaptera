@@ -9,6 +9,7 @@ logs/
 *.h5
 *.mp4
 *.gif
+!media/*.gif
 # Python
 __pycache__/
 *.py[cod]
