@@ -1,0 +1,11 @@
+key,value
+n1_n_seeds,6
+n2_n_seeds,6
+n1_max_diff_mm,0.0
+n2_max_diff_mm,0.0
+n1_touchdown,6
+n2_touchdown,0
+n1_tower_contact_steps,0
+n2_first_tower_contact_step,36
+start_runs_touchdown,8
+start_runs_n,8

@@ -1,0 +1,17 @@
+key,value
+n_rates,8
+n_seeds,5
+published_seeds_passing_total,0
+published_rates_passing_5of5,0
+published_mean_al_after_cut_hz,119.5040222772277
+published_n_runs,40
+N1_seeds_passing_total,0
+N1_rates_passing_5of5,0
+N1_mean_al_after_cut_hz,102.52753712871285
+N1_n_runs,40
+N2_seeds_passing_total,0
+N2_rates_passing_5of5,0
+N2_mean_al_after_cut_hz,86.21008663366335
+N2_n_runs,40
+nf_seeds_pass,0
+nf_n,5

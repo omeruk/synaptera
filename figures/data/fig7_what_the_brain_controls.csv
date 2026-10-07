@@ -1,0 +1,15 @@
+function,source,status,key_number
+Feeding decision after touchdown (MN9 above 10 Hz),BRAIN,shown (given the hand-made trigger),"MN9 > 10 Hz at touchdown: 6/6 seeds, 5/8 starts"
+Trigger of the feeding decision (leg contact drives labellar sugar GRNs),HAND-MADE,shown (hand-made shortcut),contact → 36 labellar GRNs (not leg GRNs)
+Leg GRN → MN9 path (the natural trigger),BRAIN,not shown,MN9 0.0 Hz in 3/3 seeds (notebook)
+Route to the target,HAND-MADE,shown (hand-made; no brain contribution),"n1 S1∧S2 6/6 seeds, 8/8 starts; no brain share"
+"Landing sequence (phase machine: take-off, cruise, approach, descend, touchdown)",HAND-MADE,shown (hand-made),touchdown 6/6 n1 seeds
+Attitude stabilisation (haltere PD) and head reflex,REFLEX,shown (hand-set),hand-set gains; neck not connected to the brain
+Brain-only flight (hand-made flight programme only),BRAIN,not shown,"n2 S1∧S2 0/6, touchdown 0/6"
+"Steering from brain DNs (DNp15, closed loop)",BRAIN,not shown,"validation: optomotor sign 12/12, b1 6/6, b2 3/6, b3 3/6"
+Altitude and thrust from DNg02,BRAIN,not shown,DNg02 spikes in 7 runs: 0
+Olfaction (brain's olfactory circuit),BRAIN,not shown,0 of 8 rates return to rest (O1); N1/N2 and upstream-style drive: none
+Vision → descending neurons (open loop),BRAIN,not shown,1/21 a-priori tests passed (DNp15)
+Loom tracking by DNs (open loop),BRAIN,not shown,0/20 a-priori tests passed
+Trained readout of the DNs for the route commands (T1),TRAINED,not completed,S1 0/4 in all three arms; trials 2–4 not run
+Visual input to the brain,FLYVIS,shown (input only),"32 boundary-layer types, 34,121 neurons"

@@ -1,0 +1,365 @@
+{
+ "window": "steps 28-59",
+ "seeds": [
+  501,
+  502,
+  503
+ ],
+ "apriori": {
+  "DNg02|D": {
+   "hypothesis": "H1",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNa04|D": {
+   "hypothesis": "H2",
+   "discovery_values": [
+    -0.9615384615384616,
+    -1.6985645933014353,
+    -1.191553544494721
+   ],
+   "discovery_mean": -1.2838855331115393,
+   "direction": -1,
+   "silent": false
+  },
+  "DNa05|D": {
+   "hypothesis": "H2",
+   "discovery_values": [
+    0.0,
+    -0.5555555555555556,
+    0.0
+   ],
+   "discovery_mean": -0.1851851851851852,
+   "direction": -1,
+   "silent": true
+  },
+  "DNp15|D": {
+   "hypothesis": "H2",
+   "discovery_values": [
+    -1.863469333636398,
+    -1.9667287179032593,
+    -1.9667287179032593
+   ],
+   "discovery_mean": -1.932308923147639,
+   "direction": -1,
+   "silent": false
+  },
+  "DNb01|D": {
+   "hypothesis": "H2",
+   "discovery_values": [
+    0.5555555555555556,
+    -0.5208333333333334,
+    -0.23391812865497075
+   ],
+   "discovery_mean": -0.06639863547758285,
+   "direction": -1,
+   "silent": false
+  },
+  "DNp03|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp03|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp01|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    -2.5,
+    -4.375,
+    -2.8125
+   ],
+   "discovery_mean": -3.2291666666666665,
+   "direction": -1,
+   "silent": false
+  },
+  "DNp01|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": false
+  },
+  "DNp02|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp02|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp04|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": false
+  },
+  "DNp04|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": false
+  },
+  "DNp06|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    -0.3125,
+    0.0
+   ],
+   "discovery_mean": -0.10416666666666667,
+   "direction": -1,
+   "silent": true
+  },
+  "DNp06|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp11|R": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp11|S": {
+   "hypothesis": "H3",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp07|Dfront": {
+   "hypothesis": "H4",
+   "discovery_values": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": false
+  },
+  "DNp07|Dflow": {
+   "hypothesis": "H4",
+   "discovery_values": [
+    9.375,
+    7.5,
+    8.125
+   ],
+   "discovery_mean": 8.333333333333334,
+   "direction": 1,
+   "silent": false
+  },
+  "DNp10|Dfront": {
+   "hypothesis": "H4",
+   "discovery_values": [
+    -0.625,
+    0.0,
+    0.625
+   ],
+   "discovery_mean": 0.0,
+   "direction": 0,
+   "silent": true
+  },
+  "DNp10|Dflow": {
+   "hypothesis": "H4",
+   "discovery_values": [
+    -0.625,
+    0.0,
+    0.0
+   ],
+   "discovery_mean": -0.20833333333333334,
+   "direction": -1,
+   "silent": true
+  }
+ },
+ "exploratory": {
+  "DNg100|Dfront": {
+   "type": "DNg100",
+   "measure": "Dfront",
+   "score": 75.83333333333333,
+   "discovery_values": [
+    -76.875,
+    -75.625,
+    -75.0
+   ],
+   "discovery_mean": -75.83333333333333,
+   "direction": -1
+  },
+  "DNp70|Dfront": {
+   "type": "DNp70",
+   "measure": "Dfront",
+   "score": 54.583333333333336,
+   "discovery_values": [
+    -57.5,
+    -57.5,
+    -48.75
+   ],
+   "discovery_mean": -54.583333333333336,
+   "direction": -1
+  },
+  "DNp01|Dfront": {
+   "type": "DNp01",
+   "measure": "Dfront",
+   "score": 54.375,
+   "discovery_values": [
+    -58.125,
+    -58.125,
+    -46.875
+   ],
+   "discovery_mean": -54.375,
+   "direction": -1
+  },
+  "DNp22|Dfront": {
+   "type": "DNp22",
+   "measure": "Dfront",
+   "score": 40.833333333333336,
+   "discovery_values": [
+    -40.625,
+    -40.625,
+    -41.25
+   ],
+   "discovery_mean": -40.833333333333336,
+   "direction": -1
+  },
+  "DNg46|Dfront": {
+   "type": "DNg46",
+   "measure": "Dfront",
+   "score": 38.541666666666664,
+   "discovery_values": [
+    -41.25,
+    -38.125,
+    -36.25
+   ],
+   "discovery_mean": -38.541666666666664,
+   "direction": -1
+  },
+  "DNp12|Dfront": {
+   "type": "DNp12",
+   "measure": "Dfront",
+   "score": 34.583333333333336,
+   "discovery_values": [
+    -34.375,
+    -33.75,
+    -35.625
+   ],
+   "discovery_mean": -34.583333333333336,
+   "direction": -1
+  },
+  "DNg52|Dfront": {
+   "type": "DNg52",
+   "measure": "Dfront",
+   "score": 32.8125,
+   "discovery_values": [
+    -32.1875,
+    -33.125,
+    -33.125
+   ],
+   "discovery_mean": -32.8125,
+   "direction": -1
+  },
+  "DNbe001|Dflow": {
+   "type": "DNbe001",
+   "measure": "Dflow",
+   "score": 31.041666666666668,
+   "discovery_values": [
+    31.25,
+    30.0,
+    31.875
+   ],
+   "discovery_mean": 31.041666666666668,
+   "direction": 1
+  },
+  "DNge043|Dfront": {
+   "type": "DNge043",
+   "measure": "Dfront",
+   "score": 24.583333333333332,
+   "discovery_values": [
+    -25.0,
+    -25.625,
+    -23.125
+   ],
+   "discovery_mean": -24.583333333333332,
+   "direction": -1
+  },
+  "DNpe042|Dfront": {
+   "type": "DNpe042",
+   "measure": "Dfront",
+   "score": 22.916666666666668,
+   "discovery_values": [
+    -25.625,
+    -23.125,
+    -20.0
+   ],
+   "discovery_mean": -22.916666666666668,
+   "direction": -1
+  }
+ },
+ "screened": 575,
+ "n_types_nonsilent": 118
+}

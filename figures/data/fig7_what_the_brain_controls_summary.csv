@@ -1,0 +1,16 @@
+key,value
+n_rows,14
+row1,Feeding decision after touchdown (MN9 above 10 Hz)|BRAIN|shown (given the hand-made trigger)
+row2,Trigger of the feeding decision (leg contact drives labellar sugar GRNs)|HAND-MADE|shown (hand-made shortcut)
+row3,Leg GRN → MN9 path (the natural trigger)|BRAIN|not shown
+row4,Route to the target|HAND-MADE|shown (hand-made; no brain contribution)
+row5,"Landing sequence (phase machine: take-off, cruise, approach, descend, touchdown)|HAND-MADE|shown (hand-made)"
+row6,Attitude stabilisation (haltere PD) and head reflex|REFLEX|shown (hand-set)
+row7,Brain-only flight (hand-made flight programme only)|BRAIN|not shown
+row8,"Steering from brain DNs (DNp15, closed loop)|BRAIN|not shown"
+row9,Altitude and thrust from DNg02|BRAIN|not shown
+row10,Olfaction (brain's olfactory circuit)|BRAIN|not shown
+row11,Vision → descending neurons (open loop)|BRAIN|not shown
+row12,Loom tracking by DNs (open loop)|BRAIN|not shown
+row13,Trained readout of the DNs for the route commands (T1)|TRAINED|not completed
+row14,Visual input to the brain|FLYVIS|shown (input only)

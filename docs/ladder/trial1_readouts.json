@@ -1,0 +1,334 @@
+{
+ "trial": 1,
+ "train_ids": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "lambdas": [
+  0.1,
+  1.0,
+  10.0,
+  100.0,
+  1000.0
+ ],
+ "filter_tau_s": 0.1,
+ "commands": [
+  "turn_hand",
+  "thrust_hand",
+  "pitch_hand",
+  "roll_hand"
+ ],
+ "seeds": {
+  "shuffle": 901,
+  "bypass": 902
+ },
+ "arms": {
+  "real": {
+   "file": "logs/ladder/readouts/trial1_real.npz",
+   "sha256": "7d896a7911e55df9307ded151fbb31309c6a00fcf66f9f4aeac387f1951f610b",
+   "lam": {
+    "turn_hand": 1000.0,
+    "thrust_hand": 1000.0,
+    "pitch_hand": 1000.0,
+    "roll_hand": 1000.0
+   },
+   "cv_r2": {
+    "turn_hand": -1.4925,
+    "thrust_hand": 0.4792,
+    "pitch_hand": 0.5622,
+    "roll_hand": -0.1615
+   },
+   "heldout_sse": {
+    "0.1": [
+     4175.670058158928,
+     70.94638258986072,
+     368.1839417628902,
+     1.0300688356797127
+    ],
+    "1.0": [
+     4128.473831412015,
+     37.85624424402318,
+     99.4455056977608,
+     0.724356663805911
+    ],
+    "10.0": [
+     2138.636557505008,
+     29.908028679619605,
+     30.632261772829008,
+     0.5049315398949462
+    ],
+    "100.0": [
+     695.9873655788158,
+     20.320471188044635,
+     12.254125520999716,
+     0.29704994748774005
+    ],
+    "1000.0": [
+     294.92483111672027,
+     12.294617889116747,
+     5.80912223477752,
+     0.22256202042545684
+    ]
+   },
+   "sst": [
+    118.32485196732979,
+    23.605085337566447,
+    13.267422657594482,
+    0.19161729490300605
+   ],
+   "data": {
+    "n_flights": 12,
+    "n_samples": 1412,
+    "samples_per_flight": [
+     116,
+     120,
+     117,
+     115,
+     116,
+     112,
+     121,
+     124,
+     119,
+     115,
+     122,
+     115
+    ],
+    "label_mean": [
+     0.020340853707328396,
+     0.03818551548941982,
+     0.10250209894246776,
+     0.0010308303297757759
+    ],
+    "label_std": [
+     0.2894813814942508,
+     0.12929610409322967,
+     0.09693395526774291,
+     0.011649304679094724
+    ],
+    "n_const_features": 986,
+    "record_files": [
+     "flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_readout.h5",
+     "flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_readout.h5",
+     "flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_readout.h5",
+     "flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_readout.h5",
+     "flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_readout.h5",
+     "flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_readout.h5",
+     "flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_readout.h5",
+     "flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_readout.h5",
+     "flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_readout.h5",
+     "flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_readout.h5",
+     "flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_readout.h5",
+     "flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_readout.h5"
+    ]
+   }
+  },
+  "shuffled": {
+   "file": "logs/ladder/readouts/trial1_shuffled.npz",
+   "sha256": "b5392607296a9e2d8c14335a5475795ac73d74dae2cf02617a6e801db1cd98a9",
+   "lam": {
+    "turn_hand": 1000.0,
+    "thrust_hand": 1000.0,
+    "pitch_hand": 1000.0,
+    "roll_hand": 1000.0
+   },
+   "cv_r2": {
+    "turn_hand": -10.091,
+    "thrust_hand": 0.5062,
+    "pitch_hand": 0.4704,
+    "roll_hand": -0.2501
+   },
+   "heldout_sse": {
+    "0.1": [
+     3791.318463181305,
+     158.99670769084204,
+     137.02777417322199,
+     1.6049431441584823
+    ],
+    "1.0": [
+     3764.077860155159,
+     141.90402422573143,
+     122.22167176544468,
+     1.4985839829836531
+    ],
+    "10.0": [
+     3642.5468338044843,
+     71.9275081286561,
+     58.09163215129982,
+     1.048289355653611
+    ],
+    "100.0": [
+     3099.947587730573,
+     20.16454353467833,
+     12.817719806340012,
+     0.4855911643138596
+    ],
+    "1000.0": [
+     1312.3414772584808,
+     11.656886992408037,
+     7.026229781724721,
+     0.2395312335848835
+    ]
+   },
+   "sst": [
+    118.32485196732979,
+    23.605085337566447,
+    13.267422657594482,
+    0.19161729490300605
+   ],
+   "data": {
+    "n_flights": 12,
+    "n_samples": 1412,
+    "samples_per_flight": [
+     116,
+     120,
+     117,
+     115,
+     116,
+     112,
+     121,
+     124,
+     119,
+     115,
+     122,
+     115
+    ],
+    "label_mean": [
+     0.020340853707328396,
+     0.03818551548941982,
+     0.10250209894246776,
+     0.0010308303297757759
+    ],
+    "label_std": [
+     0.2894813814942508,
+     0.12929610409322967,
+     0.09693395526774291,
+     0.011649304679094724
+    ],
+    "n_const_features": 505,
+    "record_files": [
+     "flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_readout.h5",
+     "flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_readout.h5",
+     "flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_readout.h5",
+     "flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_readout.h5",
+     "flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_readout.h5",
+     "flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_readout.h5",
+     "flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_readout.h5",
+     "flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_readout.h5",
+     "flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_readout.h5",
+     "flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_readout.h5",
+     "flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_readout.h5",
+     "flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_readout.h5"
+    ]
+   }
+  },
+  "bypass": {
+   "file": "logs/ladder/readouts/trial1_bypass.npz",
+   "sha256": "d75df57183b29cee37778b66e0f6206d940163e4b9a36305233103240535590b",
+   "lam": {
+    "turn_hand": 1000.0,
+    "thrust_hand": 1000.0,
+    "pitch_hand": 1000.0,
+    "roll_hand": 1000.0
+   },
+   "cv_r2": {
+    "turn_hand": -0.0002,
+    "thrust_hand": 0.7663,
+    "pitch_hand": 0.9259,
+    "roll_hand": -0.1933
+   },
+   "heldout_sse": {
+    "0.1": [
+     323.6606188332793,
+     126.73149758576855,
+     8.468263774473076,
+     2.610479611332722
+    ],
+    "1.0": [
+     265.134847520012,
+     50.81823025866268,
+     4.761383800398737,
+     1.3907806097552937
+    ],
+    "10.0": [
+     220.12142982869085,
+     17.198184653331804,
+     1.907248959694701,
+     0.5578323074558048
+    ],
+    "100.0": [
+     165.0602357430916,
+     7.252111443540006,
+     1.1427173426097228,
+     0.28454702273513865
+    ],
+    "1000.0": [
+     118.35370221129246,
+     5.516107282409299,
+     0.9835604126750531,
+     0.22865077061485395
+    ]
+   },
+   "sst": [
+    118.32485196732979,
+    23.605085337566447,
+    13.267422657594482,
+    0.19161729490300605
+   ],
+   "data": {
+    "n_flights": 12,
+    "n_samples": 1412,
+    "samples_per_flight": [
+     116,
+     120,
+     117,
+     115,
+     116,
+     112,
+     121,
+     124,
+     119,
+     115,
+     122,
+     115
+    ],
+    "label_mean": [
+     0.020340853707328396,
+     0.03818551548941982,
+     0.10250209894246776,
+     0.0010308303297757759
+    ],
+    "label_std": [
+     0.2894813814942508,
+     0.12929610409322967,
+     0.09693395526774291,
+     0.011649304679094724
+    ],
+    "n_const_features": 0,
+    "record_files": [
+     "flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_readout.h5",
+     "flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_readout.h5",
+     "flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_readout.h5",
+     "flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_readout.h5",
+     "flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_readout.h5",
+     "flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_readout.h5",
+     "flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_readout.h5",
+     "flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_readout.h5",
+     "flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_readout.h5",
+     "flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_readout.h5",
+     "flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_readout.h5",
+     "flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_readout.h5"
+    ]
+   }
+  }
+ }
+}

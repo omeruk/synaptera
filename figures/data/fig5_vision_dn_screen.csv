@@ -1,0 +1,191 @@
+panel,item,condition_or_group,value
+a_input_A_in_T4aT5a,yaw-CW,,-0.23866553604602814
+a_input_A_in_T4aT5a,yaw-CCW,,0.24359005689620972
+a_input_A_in_T4aT5a,static,,-0.03323496878147125
+a_input_A_in_T4aT5a,loom-L,,0.33933180570602417
+a_input_A_in_T4aT5a,loom-R,,-0.341831237077713
+a_input_A_in_T4aT5a,loom-front,,-0.00380994426086545
+a_input_A_in_T4aT5a,recede-L,,0.33418846130371094
+a_input_A_in_T4aT5a,recede-R,,-0.3320740759372711
+a_input_A_in_T4aT5a,exp. flow,,0.009183593094348907
+a_input_A_in_T4aT5a,grey,,-0.0003289115848019719
+heatmap,DNg02,yaw-CW,0.0
+heatmap,DNg02,yaw-CCW,0.0
+heatmap,DNg02,static,0.0
+heatmap,DNg02,loom-L,0.0
+heatmap,DNg02,loom-R,0.0
+heatmap,DNg02,loom-front,0.0
+heatmap,DNg02,recede-L,0.0
+heatmap,DNg02,recede-R,0.0
+heatmap,DNg02,exp. flow,0.0
+heatmap,DNg02,grey,0.0
+heatmap,DNa04,yaw-CW,2.375
+heatmap,DNa04,yaw-CCW,3.125
+heatmap,DNa04,static,0.125
+heatmap,DNa04,loom-L,0.0
+heatmap,DNa04,loom-R,0.0
+heatmap,DNa04,loom-front,1.75
+heatmap,DNa04,recede-L,0.0
+heatmap,DNa04,recede-R,0.0
+heatmap,DNa04,exp. flow,1.625
+heatmap,DNa04,grey,0.0
+heatmap,DNa05,yaw-CW,0.0
+heatmap,DNa05,yaw-CCW,0.0
+heatmap,DNa05,static,0.0
+heatmap,DNa05,loom-L,0.0
+heatmap,DNa05,loom-R,0.0
+heatmap,DNa05,loom-front,0.0
+heatmap,DNa05,recede-L,0.0
+heatmap,DNa05,recede-R,0.0
+heatmap,DNa05,exp. flow,0.0
+heatmap,DNa05,grey,0.0
+heatmap,DNp15,yaw-CW,48.25
+heatmap,DNp15,yaw-CCW,21.125
+heatmap,DNp15,static,27.5
+heatmap,DNp15,loom-L,0.5
+heatmap,DNp15,loom-R,3.0
+heatmap,DNp15,loom-front,7.875
+heatmap,DNp15,recede-L,0.0
+heatmap,DNp15,recede-R,3.625
+heatmap,DNp15,exp. flow,33.25
+heatmap,DNp15,grey,0.0
+heatmap,DNb01,yaw-CW,3.0
+heatmap,DNb01,yaw-CCW,1.625
+heatmap,DNb01,static,3.5
+heatmap,DNb01,loom-L,0.0
+heatmap,DNb01,loom-R,0.0
+heatmap,DNb01,loom-front,0.0
+heatmap,DNb01,recede-L,0.0
+heatmap,DNb01,recede-R,0.125
+heatmap,DNb01,exp. flow,3.625
+heatmap,DNb01,grey,0.0
+heatmap,DNp03,yaw-CW,0.0
+heatmap,DNp03,yaw-CCW,0.0
+heatmap,DNp03,static,0.0
+heatmap,DNp03,loom-L,0.0
+heatmap,DNp03,loom-R,0.0
+heatmap,DNp03,loom-front,0.0
+heatmap,DNp03,recede-L,0.0
+heatmap,DNp03,recede-R,0.0
+heatmap,DNp03,exp. flow,0.0
+heatmap,DNp03,grey,0.0
+heatmap,DNp01,yaw-CW,58.0
+heatmap,DNp01,yaw-CCW,58.0
+heatmap,DNp01,static,55.0
+heatmap,DNp01,loom-L,0.0
+heatmap,DNp01,loom-R,0.0
+heatmap,DNp01,loom-front,0.0
+heatmap,DNp01,recede-L,2.5
+heatmap,DNp01,recede-R,3.0
+heatmap,DNp01,exp. flow,56.625
+heatmap,DNp01,grey,0.0
+heatmap,DNp02,yaw-CW,0.125
+heatmap,DNp02,yaw-CCW,0.0
+heatmap,DNp02,static,0.0
+heatmap,DNp02,loom-L,0.0
+heatmap,DNp02,loom-R,0.0
+heatmap,DNp02,loom-front,0.25
+heatmap,DNp02,recede-L,0.0
+heatmap,DNp02,recede-R,0.0
+heatmap,DNp02,exp. flow,0.0
+heatmap,DNp02,grey,0.0
+heatmap,DNp04,yaw-CW,1.125
+heatmap,DNp04,yaw-CCW,0.375
+heatmap,DNp04,static,0.625
+heatmap,DNp04,loom-L,0.0
+heatmap,DNp04,loom-R,0.0
+heatmap,DNp04,loom-front,6.125
+heatmap,DNp04,recede-L,0.0
+heatmap,DNp04,recede-R,0.0
+heatmap,DNp04,exp. flow,0.0
+heatmap,DNp04,grey,0.0
+heatmap,DNp06,yaw-CW,0.0
+heatmap,DNp06,yaw-CCW,0.0
+heatmap,DNp06,static,0.0
+heatmap,DNp06,loom-L,0.0
+heatmap,DNp06,loom-R,0.0
+heatmap,DNp06,loom-front,0.0
+heatmap,DNp06,recede-L,0.125
+heatmap,DNp06,recede-R,0.0
+heatmap,DNp06,exp. flow,0.0
+heatmap,DNp06,grey,0.0
+heatmap,DNp11,yaw-CW,0.0
+heatmap,DNp11,yaw-CCW,0.0
+heatmap,DNp11,static,0.0
+heatmap,DNp11,loom-L,0.0
+heatmap,DNp11,loom-R,0.0
+heatmap,DNp11,loom-front,0.0
+heatmap,DNp11,recede-L,0.0
+heatmap,DNp11,recede-R,0.0
+heatmap,DNp11,exp. flow,0.0
+heatmap,DNp11,grey,0.0
+heatmap,DNp07,yaw-CW,16.875
+heatmap,DNp07,yaw-CCW,9.0
+heatmap,DNp07,static,0.0
+heatmap,DNp07,loom-L,0.0
+heatmap,DNp07,loom-R,0.0
+heatmap,DNp07,loom-front,0.0
+heatmap,DNp07,recede-L,0.0
+heatmap,DNp07,recede-R,0.0
+heatmap,DNp07,exp. flow,9.625
+heatmap,DNp07,grey,0.0
+heatmap,DNp10,yaw-CW,0.25
+heatmap,DNp10,yaw-CCW,0.5
+heatmap,DNp10,static,0.0
+heatmap,DNp10,loom-L,0.0
+heatmap,DNp10,loom-R,0.0
+heatmap,DNp10,loom-front,0.625
+heatmap,DNp10,recede-L,0.0
+heatmap,DNp10,recede-R,0.0
+heatmap,DNp10,exp. flow,0.0
+heatmap,DNp10,grey,0.0
+c_DNp15_left,yaw-CW,601,0.0
+c_DNp15_left,yaw-CW,602,0.0
+c_DNp15_left,yaw-CW,603,0.0
+c_DNp15_left,yaw-CW,604,0.0
+c_DNp15_left,yaw-CW,605,0.0
+c_DNp15_right,yaw-CW,601,96.25
+c_DNp15_right,yaw-CW,602,98.75
+c_DNp15_right,yaw-CW,603,93.75
+c_DNp15_right,yaw-CW,604,98.75
+c_DNp15_right,yaw-CW,605,95.0
+c_DNp15_left,yaw-CCW,601,42.5
+c_DNp15_left,yaw-CCW,602,41.25
+c_DNp15_left,yaw-CCW,603,41.25
+c_DNp15_left,yaw-CCW,604,43.75
+c_DNp15_left,yaw-CCW,605,42.5
+c_DNp15_right,yaw-CCW,601,0.0
+c_DNp15_right,yaw-CCW,602,0.0
+c_DNp15_right,yaw-CCW,603,0.0
+c_DNp15_right,yaw-CCW,604,0.0
+c_DNp15_right,yaw-CCW,605,0.0
+c_DNp15_left,static,601,0.0
+c_DNp15_left,static,602,1.25
+c_DNp15_left,static,603,1.25
+c_DNp15_left,static,604,1.25
+c_DNp15_left,static,605,0.0
+c_DNp15_right,static,601,56.25
+c_DNp15_right,static,602,50.0
+c_DNp15_right,static,603,55.0
+c_DNp15_right,static,604,56.25
+c_DNp15_right,static,605,53.75
+d_loom_posthoc_DNp04,appearing frontal disc (0–200 ms),611,25.0
+d_loom_posthoc_DNp04,appearing frontal disc (0–200 ms),612,30.0
+d_loom_posthoc_DNp04,appearing frontal disc (0–200 ms),613,27.5
+d_loom_posthoc_DNp04,appearing frontal disc (0–200 ms),614,30.0
+d_loom_posthoc_DNp04,appearing frontal disc (0–200 ms),615,30.0
+d_loom_posthoc_DNp01,appearing frontal disc (0–200 ms),611,7.5
+d_loom_posthoc_DNp01,appearing frontal disc (0–200 ms),612,7.5
+d_loom_posthoc_DNp01,appearing frontal disc (0–200 ms),613,12.5
+d_loom_posthoc_DNp01,appearing frontal disc (0–200 ms),614,7.5
+d_loom_posthoc_DNp01,appearing frontal disc (0–200 ms),615,7.5
+d_loom_posthoc_DNp04,growing frontal disc (700–900 ms),611,2.5
+d_loom_posthoc_DNp04,growing frontal disc (700–900 ms),612,5.0
+d_loom_posthoc_DNp04,growing frontal disc (700–900 ms),613,5.0
+d_loom_posthoc_DNp04,growing frontal disc (700–900 ms),614,2.5
+d_loom_posthoc_DNp04,growing frontal disc (700–900 ms),615,2.5
+d_loom_posthoc_DNp01,growing frontal disc (700–900 ms),611,0.0
+d_loom_posthoc_DNp01,growing frontal disc (700–900 ms),612,0.0
+d_loom_posthoc_DNp01,growing frontal disc (700–900 ms),613,0.0
+d_loom_posthoc_DNp01,growing frontal disc (700–900 ms),614,0.0
+d_loom_posthoc_DNp01,growing frontal disc (700–900 ms),615,0.0

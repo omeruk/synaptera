@@ -1,0 +1,30 @@
+# Synaptera flight code: third-party packages imported directly by fly_flight_brain_body_simulation.py,
+# flight/, brain_model/model.py (imported by flight/brain.py), scripts/, tests/flight/, render_flight_*.py and
+# generate_flight_plots.py. Versions = the tested environment (Linux aarch64, Python 3.10).
+# Install: pip install -r requirements-flight.txt
+# Not listed because nothing imports them, but needed at run time:
+#   - FlyVis pretrained weights: `flyvis download-pretrained` (licence: THIRD_PARTY.md §1)
+#   - an ffmpeg back-end for imageio when rendering videos (tested: imageio-ffmpeg 0.6.0)
+# Walking-only packages (flybody, python-dotenv, Cython, pillow) are in requirements.txt.
+
+# brain
+Brian2==2.9.0
+joblib==1.5.3
+# body and vision
+mujoco==3.2.7
+flygym==1.2.1
+flyvis==1.2.0
+torch==2.14.0
+# scientific stack and data
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.15.3
+pyarrow==23.0.1
+h5py==3.14.0
+psutil==7.2.2
+# plots and video
+matplotlib==3.10.8
+imageio==2.37.3
+opencv-python==4.14.0.94
+# tests
+pytest==9.1.1

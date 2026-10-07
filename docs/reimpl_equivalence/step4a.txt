@@ -1,0 +1,408 @@
+82 run records with the current layout
+
+file                                                                                                | check | n | max|new-old| | max|new-recorded| | note
+-                                                                                                   | build_groups: all groups, new vs old | 22 | 0 | nan | 22 groups
+-                                                                                                   | neuron_positions: x, z, idx, new vs old | 138617 | 0 | nan | bit-equal incl. dtype
+flight_v10_ablOdor_noOlf_brainonly160_data.h5                                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v10_ablOdor_noOlf_brainonly160_data.h5                                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v11_hybrid_noOlf_final_a_data.h5                                                             | groups: new vs recorded | 16 | nan | 0 | 
+flight_v11_hybrid_noOlf_final_a_data.h5                                                             | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v12_hybrid_ablDN-DNp15_noOlf_final_b_data.h5                                                 | groups: new vs recorded | 16 | nan | 0 | 
+flight_v12_hybrid_ablDN-DNp15_noOlf_final_b_data.h5                                                 | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v13_ablOdor_noOlf_final_c_data.h5                                                            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v13_ablOdor_noOlf_final_c_data.h5                                                            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v14_hybrid_noOlf_smoke_legramp_data.h5                                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v14_hybrid_noOlf_smoke_legramp_data.h5                                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v15_hybrid_sB_ablDN-DNp15_noOlf_smoke_sB_data.h5                                             | groups: new vs recorded | 16 | nan | 0 | 
+flight_v15_hybrid_sB_ablDN-DNp15_noOlf_smoke_sB_data.h5                                             | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v16_hybrid_sB_ablDN-DNp15_noOlf_final_sB_data.h5                                             | groups: new vs recorded | 16 | nan | 0 | 
+flight_v16_hybrid_sB_ablDN-DNp15_noOlf_final_sB_data.h5                                             | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v17_hybrid_sA_sB_ablDN-DNp15_smoke_sA_data.h5                                                | groups: new vs recorded | 16 | nan | 0 | 
+flight_v17_hybrid_sA_sB_ablDN-DNp15_smoke_sA_data.h5                                                | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v18_hybrid_sA_sB_ablDN-DNp15_aplG_smoke_sA_data.h5                                           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v18_hybrid_sA_sB_ablDN-DNp15_aplG_smoke_sA_data.h5                                           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v19_hybrid_sB_ablDN-DNp15_final_sA_data.h5                                                   | groups: new vs recorded | 16 | nan | 0 | 
+flight_v19_hybrid_sB_ablDN-DNp15_final_sA_data.h5                                                   | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v20_hybrid_sA_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                         | groups: new vs recorded | 16 | nan | 0 | 
+flight_v20_hybrid_sA_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                         | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v21_hybrid_sA_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                    | groups: new vs recorded | 16 | nan | 0 | 
+flight_v21_hybrid_sA_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                    | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v22_hybrid_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v22_hybrid_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v23_hybrid_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v23_hybrid_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v30_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v30_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v31_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v31_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v32_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v32_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v33_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v33_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v34_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v34_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v35_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v35_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v36_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v36_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v37_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v37_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v38_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v38_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v39_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v39_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v40_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v40_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v41_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v41_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v42_hybrid_sB_ablDN-DNp15_noOlf_final_v2a_data.h5                                            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v42_hybrid_sB_ablDN-DNp15_noOlf_final_v2a_data.h5                                            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v43_sB_ablDN-DNp15_ablOdor_noOlf_final_v2c_data.h5                                           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v43_sB_ablDN-DNp15_ablOdor_noOlf_final_v2c_data.h5                                           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5                                           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5                                           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_data.h5                                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_data.h5                                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v46_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s10_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v46_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s10_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v47_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s10_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v47_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s10_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v48_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s11_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v48_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s11_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v49_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s11_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v49_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s11_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v50_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s12_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v50_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s12_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v51_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s12_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v51_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s12_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v52_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s13_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v52_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s13_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v53_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s13_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v53_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s13_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v54_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s14_data.h5                                       | groups: new vs recorded | 16 | nan | 0 | 
+flight_v54_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s14_data.h5                                       | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v55_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s14_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v55_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s14_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v56_hybrid_sB_noBrSteer_head_pose_noOlf_start+40_+0_st_xp40_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v56_hybrid_sB_noBrSteer_head_pose_noOlf_start+40_+0_st_xp40_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v57_hybrid_sB_noBrSteer_head_pose_noOlf_start-40_+0_st_xm40_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v57_hybrid_sB_noBrSteer_head_pose_noOlf_start-40_+0_st_xm40_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v58_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_+40_st_yp40_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v58_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_+40_st_yp40_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v59_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_-40_st_ym40_data.h5                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v59_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_-40_st_ym40_data.h5                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v60_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+30_st_yawp30_data.h5                        | groups: new vs recorded | 16 | nan | 0 | 
+flight_v60_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+30_st_yawp30_data.h5                        | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v61_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-30_st_yawm30_data.h5                        | groups: new vs recorded | 16 | nan | 0 | 
+flight_v61_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-30_st_yawm30_data.h5                        | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v62_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+60_st_yawp60_data.h5                        | groups: new vs recorded | 16 | nan | 0 | 
+flight_v62_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+60_st_yawp60_data.h5                        | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v63_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-60_st_yawm60_data.h5                        | groups: new vs recorded | 16 | nan | 0 | 
+flight_v63_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-60_st_yawm60_data.h5                        | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v6_smoke_data.h5                                                                             | groups: new vs recorded | 16 | nan | 0 | 
+flight_v6_smoke_data.h5                                                                             | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v7_data.h5                                                                                   | groups: new vs recorded | 16 | nan | 0 | 
+flight_v7_data.h5                                                                                   | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v8_DEV_diag_data.h5                                                                          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v8_DEV_diag_data.h5                                                                          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v9_smoke_data.h5                                                                             | groups: new vs recorded | 16 | nan | 0 | 
+flight_v9_smoke_data.h5                                                                             | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_off_data.h5                                     | groups: new vs recorded | 16 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_off_data.h5                                     | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_on_data.h5                                      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_on_data.h5                                      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_data.h5          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_data.h5          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v13_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_lt13_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v13_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_lt13_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v14_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_lt14_data.h5          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v14_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_lt14_data.h5          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v15_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_lt15_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v15_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_lt15_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v16_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_lt16_data.h5          | groups: new vs recorded | 16 | nan | 0 | 
+flight_v16_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_lt16_data.h5          | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_data.h5            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_data.h5            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_data.h5            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_data.h5            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_data.h5            | groups: new vs recorded | 16 | nan | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_data.h5            | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_data.h5               | groups: new vs recorded | 16 | nan | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_data.h5               | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_data.h5           | groups: new vs recorded | 16 | nan | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_data.h5           | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_data.h5              | groups: new vs recorded | 16 | nan | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_data.h5              | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1bypass_v14_data.h5  | groups: new vs recorded | 16 | nan | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1bypass_v14_data.h5  | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1bypass_v15_data.h5   | groups: new vs recorded | 16 | nan | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1bypass_v15_data.h5   | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1bypass_v16_data.h5  | groups: new vs recorded | 16 | nan | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1bypass_v16_data.h5  | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1real_v13_data.h5      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1real_v13_data.h5      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1real_v14_data.h5     | groups: new vs recorded | 16 | nan | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1real_v14_data.h5     | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1real_v15_data.h5      | groups: new vs recorded | 16 | nan | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1real_v15_data.h5      | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1real_v16_data.h5     | groups: new vs recorded | 16 | nan | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1real_v16_data.h5     | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1shuffled_v13_data.h5  | groups: new vs recorded | 16 | nan | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1shuffled_v13_data.h5  | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1shuffled_v14_data.h5 | groups: new vs recorded | 16 | nan | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1shuffled_v14_data.h5 | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1shuffled_v15_data.h5  | groups: new vs recorded | 16 | nan | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1shuffled_v15_data.h5  | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1shuffled_v16_data.h5 | groups: new vs recorded | 16 | nan | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1shuffled_v16_data.h5 | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1bypass_v13_data.h5    | groups: new vs recorded | 16 | nan | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1bypass_v13_data.h5    | positions: new vs recorded | 138617 | nan | 0 | 
+flight_v10_ablOdor_noOlf_brainonly160_data.h5                                                       | run record | 0 | nan | nan | older record format: no turn-term decomposition, skipped
+flight_v11_hybrid_noOlf_final_a_data.h5                                                             | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v11_hybrid_noOlf_final_a_data.h5                                                             | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v11_hybrid_noOlf_final_a_data.h5                                                             | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v12_hybrid_ablDN-DNp15_noOlf_final_b_data.h5                                                 | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v12_hybrid_ablDN-DNp15_noOlf_final_b_data.h5                                                 | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v12_hybrid_ablDN-DNp15_noOlf_final_b_data.h5                                                 | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v13_ablOdor_noOlf_final_c_data.h5                                                            | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v13_ablOdor_noOlf_final_c_data.h5                                                            | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v13_ablOdor_noOlf_final_c_data.h5                                                            | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v14_hybrid_noOlf_smoke_legramp_data.h5                                                       | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v14_hybrid_noOlf_smoke_legramp_data.h5                                                       | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v14_hybrid_noOlf_smoke_legramp_data.h5                                                       | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v15_hybrid_sB_ablDN-DNp15_noOlf_smoke_sB_data.h5                                             | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v15_hybrid_sB_ablDN-DNp15_noOlf_smoke_sB_data.h5                                             | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v15_hybrid_sB_ablDN-DNp15_noOlf_smoke_sB_data.h5                                             | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v16_hybrid_sB_ablDN-DNp15_noOlf_final_sB_data.h5                                             | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v16_hybrid_sB_ablDN-DNp15_noOlf_final_sB_data.h5                                             | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v16_hybrid_sB_ablDN-DNp15_noOlf_final_sB_data.h5                                             | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v17_hybrid_sA_sB_ablDN-DNp15_smoke_sA_data.h5                                                | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v17_hybrid_sA_sB_ablDN-DNp15_smoke_sA_data.h5                                                | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v17_hybrid_sA_sB_ablDN-DNp15_smoke_sA_data.h5                                                | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v18_hybrid_sA_sB_ablDN-DNp15_aplG_smoke_sA_data.h5                                           | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v18_hybrid_sA_sB_ablDN-DNp15_aplG_smoke_sA_data.h5                                           | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v18_hybrid_sA_sB_ablDN-DNp15_aplG_smoke_sA_data.h5                                           | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v19_hybrid_sB_ablDN-DNp15_final_sA_data.h5                                                   | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v19_hybrid_sB_ablDN-DNp15_final_sA_data.h5                                                   | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v19_hybrid_sB_ablDN-DNp15_final_sA_data.h5                                                   | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v20_hybrid_sA_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                         | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v20_hybrid_sA_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                         | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v20_hybrid_sA_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                         | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v21_hybrid_sA_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                    | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v21_hybrid_sA_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                    | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v21_hybrid_sA_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                    | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v22_hybrid_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                            | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v22_hybrid_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                            | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v22_hybrid_sB_ablDN-DNp15_ntLit_smoke_sA2_data.h5                                            | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v23_hybrid_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                       | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v23_hybrid_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                       | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v23_hybrid_sB_ablDN-DNp15_aplG_ntLit_smoke_sA2_data.h5                                       | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v30_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v30_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v30_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v31_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v31_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v31_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v32_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v32_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v32_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v33_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v33_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v33_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v34_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v34_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v34_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v35_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v35_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v35_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v36_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v36_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v36_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v37_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v37_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v37_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v38_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v38_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v38_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v39_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v39_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v39_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP+30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v40_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v40_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v40_sB_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5                          | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v41_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v41_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | brain-only turn_hand, turn_flyvis recorded 0 | 60 | nan | 0 | 
+flight_v41_sB_ablDN-steer_ablOdor_noOlf_air440_-170_160_90_hover_yawP-30_v2val_data.h5              | PhaseMachine new vs old (inputs from record) | 60 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v42_hybrid_sB_ablDN-DNp15_noOlf_final_v2a_data.h5                                            | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v42_hybrid_sB_ablDN-DNp15_noOlf_final_v2a_data.h5                                            | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v42_hybrid_sB_ablDN-DNp15_noOlf_final_v2a_data.h5                                            | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v43_sB_ablDN-DNp15_ablOdor_noOlf_final_v2c_data.h5                                           | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v43_sB_ablDN-DNp15_ablOdor_noOlf_final_v2c_data.h5                                           | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v43_sB_ablDN-DNp15_ablOdor_noOlf_final_v2c_data.h5                                           | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5                                           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5                                           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5                                           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_data.h5                                          | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_data.h5                                          | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v45_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_data.h5                                          | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v46_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s10_data.h5                                       | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v46_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s10_data.h5                                       | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v46_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s10_data.h5                                       | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v47_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s10_data.h5                                      | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v47_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s10_data.h5                                      | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v47_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s10_data.h5                                      | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v48_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s11_data.h5                                       | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v48_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s11_data.h5                                       | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v48_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s11_data.h5                                       | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v49_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s11_data.h5                                      | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v49_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s11_data.h5                                      | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v49_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s11_data.h5                                      | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v50_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s12_data.h5                                       | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v50_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s12_data.h5                                       | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v50_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s12_data.h5                                       | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v51_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s12_data.h5                                      | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v51_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s12_data.h5                                      | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v51_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s12_data.h5                                      | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v52_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s13_data.h5                                       | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v52_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s13_data.h5                                       | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v52_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s13_data.h5                                       | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v53_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s13_data.h5                                      | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v53_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s13_data.h5                                      | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v53_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s13_data.h5                                      | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v54_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s14_data.h5                                       | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v54_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s14_data.h5                                       | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v54_hybrid_sB_noBrSteer_head_pose_noOlf_n1_s14_data.h5                                       | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v55_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s14_data.h5                                      | turn_hand / LoomBias | 0 | nan | nan | not hybrid: terms are 0 on this path (recorded values checked)
+flight_v55_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s14_data.h5                                      | brain-only turn_hand, turn_flyvis recorded 0 | 300 | nan | 0 | 
+flight_v55_sB_noBrSteer_head_pose_ablOdor_noOlf_n2_s14_data.h5                                      | PhaseMachine new vs old (inputs from record) | 300 | 0 | 0 | mismatching steps (legs = previous platform_contact)
+flight_v56_hybrid_sB_noBrSteer_head_pose_noOlf_start+40_+0_st_xp40_data.h5                          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v56_hybrid_sB_noBrSteer_head_pose_noOlf_start+40_+0_st_xp40_data.h5                          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v56_hybrid_sB_noBrSteer_head_pose_noOlf_start+40_+0_st_xp40_data.h5                          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v57_hybrid_sB_noBrSteer_head_pose_noOlf_start-40_+0_st_xm40_data.h5                          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v57_hybrid_sB_noBrSteer_head_pose_noOlf_start-40_+0_st_xm40_data.h5                          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v57_hybrid_sB_noBrSteer_head_pose_noOlf_start-40_+0_st_xm40_data.h5                          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v58_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_+40_st_yp40_data.h5                          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v58_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_+40_st_yp40_data.h5                          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v58_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_+40_st_yp40_data.h5                          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v59_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_-40_st_ym40_data.h5                          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v59_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_-40_st_ym40_data.h5                          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v59_hybrid_sB_noBrSteer_head_pose_noOlf_start+0_-40_st_ym40_data.h5                          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v60_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+30_st_yawp30_data.h5                        | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v60_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+30_st_yawp30_data.h5                        | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v60_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+30_st_yawp30_data.h5                        | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v61_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-30_st_yawm30_data.h5                        | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v61_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-30_st_yawm30_data.h5                        | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v61_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-30_st_yawm30_data.h5                        | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v62_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+60_st_yawp60_data.h5                        | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v62_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+60_st_yawp60_data.h5                        | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v62_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw+60_st_yawp60_data.h5                        | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v63_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-60_st_yawm60_data.h5                        | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v63_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-60_st_yawm60_data.h5                        | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v63_hybrid_sB_noBrSteer_head_pose_noOlf_startYaw-60_st_yawm60_data.h5                        | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v6_smoke_data.h5                                                                             | run record | 0 | nan | nan | older record format: no turn-term decomposition, skipped
+flight_v7_data.h5                                                                                   | run record | 0 | nan | nan | older record format: no turn-term decomposition, skipped
+flight_v8_DEV_diag_data.h5                                                                          | run record | 0 | nan | nan | older record format: no turn-term decomposition, skipped
+flight_v9_smoke_data.h5                                                                             | run record | 0 | nan | nan | older record format: no turn-term decomposition, skipped
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_off_data.h5                                     | turn_hand vs recorded | 20 | 0 | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_off_data.h5                                     | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_off_data.h5                                     | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_on_data.h5                                      | turn_hand vs teacher label | 20 | 0 | 0 | readout mode: label
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_on_data.h5                                      | LoomBias steps 1.. (state from step 0) | 19 | 0 | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_smoke_on_data.h5                                      | LoomBias from state 0 (new vs old only) | 20 | 0 | nan | calibration history unknown
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_data.h5          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_data.h5          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start+28.9_+28.6_startYaw+42.8_lt10_data.h5          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start-17.6_-0.1_startYaw-11.6_lt11_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.2_-38.3_startYaw-56.4_lt12_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v13_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_lt13_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v13_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_lt13_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v13_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_lt13_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v14_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_lt14_data.h5          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v14_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_lt14_data.h5          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v14_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_lt14_data.h5          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v15_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_lt15_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v15_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_lt15_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v15_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_lt15_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v16_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_lt16_data.h5          | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v16_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_lt16_data.h5          | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v16_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_lt16_data.h5          | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start+24.9_-14.2_startYaw+59.3_lt01_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_data.h5            | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_data.h5            | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-22.1_+3.9_startYaw-34.7_lt02_data.h5            | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_data.h5            | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_data.h5            | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.2_-18.3_startYaw+46.6_lt03_data.h5            | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start+32.8_-26.8_startYaw-23.4_lt04_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_data.h5            | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_data.h5            | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start+31.7_+25.7_startYaw+7.8_lt05_data.h5            | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.6_-37.8_startYaw+47.6_lt06_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_data.h5               | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_data.h5               | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+7.7_-14_startYaw+5.8_lt07_data.h5               | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_data.h5           | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_data.h5           | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-15.5_-21.5_startYaw+12.3_lt08_data.h5           | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_data.h5              | turn_hand vs recorded | 300 | 0 | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_data.h5              | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start+9.7_+22.9_startYaw+40_lt09_data.h5              | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1bypass_v14_data.h5  | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1bypass_v14_data.h5  | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v10_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1bypass_v14_data.h5  | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1bypass_v15_data.h5   | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1bypass_v15_data.h5   | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v11_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1bypass_v15_data.h5   | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1bypass_v16_data.h5  | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1bypass_v16_data.h5  | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v12_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1bypass_v16_data.h5  | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1real_v13_data.h5      | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1real_v13_data.h5      | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1real_v13_data.h5      | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1real_v14_data.h5     | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1real_v14_data.h5     | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v2_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1real_v14_data.h5     | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1real_v15_data.h5      | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1real_v15_data.h5      | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v3_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1real_v15_data.h5      | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1real_v16_data.h5     | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1real_v16_data.h5     | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v4_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1real_v16_data.h5     | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1shuffled_v13_data.h5  | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1shuffled_v13_data.h5  | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v5_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1shuffled_v13_data.h5  | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1shuffled_v14_data.h5 | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1shuffled_v14_data.h5 | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v6_hybrid_sB_noBrSteer_head_pose_noOlf_start-29.7_-35.9_startYaw+10.7_t1shuffled_v14_data.h5 | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1shuffled_v15_data.h5  | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1shuffled_v15_data.h5  | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v7_hybrid_sB_noBrSteer_head_pose_noOlf_start+39.9_-4.7_startYaw-58.2_t1shuffled_v15_data.h5  | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1shuffled_v16_data.h5 | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1shuffled_v16_data.h5 | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v8_hybrid_sB_noBrSteer_head_pose_noOlf_start-35.9_+28.2_startYaw+46.2_t1shuffled_v16_data.h5 | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1bypass_v13_data.h5    | turn_hand vs teacher label | 300 | 0 | 0 | readout mode: label
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1bypass_v13_data.h5    | LoomBias steps 1.. (state from step 0) | 299 | 0 | 0 | 
+flight_v9_hybrid_sB_noBrSteer_head_pose_noOlf_start-8.1_-23.1_startYaw+43.1_t1bypass_v13_data.h5    | LoomBias from state 0 (new vs old only) | 300 | 0 | nan | calibration history unknown
+
+largest difference over all checks (new vs old, new vs recorded): 0
+largest new-vs-old: 0; largest new-vs-recorded: 0

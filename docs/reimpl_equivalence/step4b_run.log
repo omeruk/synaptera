@@ -1,0 +1,75 @@
+NeuroFly flight -> flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5
+odor field (3D Dijkstra) ...
+brain ...
+  groups: {'ascending': 1736, 'olfactory': 2279, 'sez': 408, 'dn': 1299, 'la_me': 8025, 'dng02': 25, 'steer': 4, 'dnp01': 2, 'brain_mn': 105, 'orn_food': 298, 'sugar': 36, 't45': 11822}
+WARNING:root:epe not in $HOME/miniforge3/envs/neurofly/lib/python3.10/site-packages/flyvis/data/results/flow/0000/000/validation, but 'loss' is. Falling back to 'loss'. You can rerun the ensemble validation to make appropriate recordings of the losses.
+  138,639 neurons, 15,091,983 synapses, RSS 2.40 GB
+body (FlyGym, vision on) ...
+FlyVis -> FlyWire boundary layer ...
+  FlyVis -> FlyWire boundary layer: 32 types, L 17185, R 16936 neurons; outside FlyVis extent: L 1369, R 1455; display layer 34 FlyVis types, 23916 nodes/eye; unresponsive (0 Hz): ('Tm4',)
+setup 92.9 s, RSS 3.21 GB
+persistence: perch 7.842 Hz -> inputs cut: 0.833 0.001 0.000 0.000 0.000 0.000 0.000 0.000 Hz (per 25 ms); DN 0 spikes/s in the last step
+calibration: all_dn L/R 40.2/49.8; dng02 0.00/0.00; steer 1.80/0.60
+  step 000 t=0.025s [takeoff] pos=(-0.2,0.1,22.4) v=130 d_food=471.1 | T4/T5 L9.0/R9.9Hz net 5.22Hz | turn=-0.459 (odor -0.438 dn +0.000 loom -0.021) pitch=+0.497 | DN L15/R15 g02 0/0 | MN9 0.0Hz s^ +0.23 | 0.60s RSS 3.28GB
+  LEG TUCK (tarsal contact loss) t=0.025s
+  step 001 t=0.050s [takeoff] pos=(-0.1,0.8,25.9) v=160 d_food=469.9 | T4/T5 L9.0/R9.8Hz net 6.14Hz | turn=-0.445 (odor -0.423 dn +0.000 loom -0.021) pitch=+0.225 | DN L25/R46 g02 0/0 | MN9 0.0Hz s^ -0.21 | 0.52s RSS 3.29GB
+  step 002 t=0.075s [takeoff] pos=(-0.1,1.8,30.3) v=196 d_food=468.3 | T4/T5 L9.7/R9.7Hz net 6.29Hz | turn=-0.419 (odor -0.397 dn +0.000 loom -0.022) pitch=+0.275 | DN L42/R50 g02 0/0 | MN9 0.0Hz s^ -0.11 | 0.52s RSS 3.29GB
+  step 003 t=0.100s [takeoff] pos=(-0.2,3.3,35.6) v=246 d_food=466.6 | T4/T5 L12.1/R13.1Hz net 6.70Hz | turn=-0.390 (odor -0.370 dn +0.000 loom -0.020) pitch=+0.374 | DN L34/R48 g02 0/0 | MN9 0.0Hz s^ -0.42 | 0.73s RSS 3.29GB
+  step 004 t=0.125s [takeoff] pos=(-0.3,5.1,42.1) v=286 d_food=464.6 | T4/T5 L14.3/R17.0Hz net 7.17Hz | turn=-0.361 (odor -0.343 dn +0.000 loom -0.018) pitch=+0.371 | DN L27/R41 g02 0/0 | MN9 0.0Hz s^ -0.98 | 0.76s RSS 3.29GB
+  step 010 t=0.275s [cruise] pos=(0.1,15.1,85.9) v=277 d_food=452.6 | T4/T5 L12.4/R10.5Hz net 6.70Hz | turn=-0.030 (odor -0.016 dn +0.000 loom -0.014) pitch=+0.124 | DN L30/R52 g02 0/0 | MN9 0.0Hz s^ -0.65 | 0.75s RSS 3.29GB
+  step 020 t=0.525s [cruise] pos=(49.3,35.8,139.3) v=343 d_food=394.4 | T4/T5 L9.3/R8.6Hz net 6.12Hz | turn=+0.004 (odor +0.010 dn +0.000 loom -0.006) pitch=+0.144 | DN L41/R57 g02 0/0 | MN9 0.0Hz s^ -0.48 | 0.74s RSS 3.30GB
+  step 030 t=0.775s [cruise] pos=(121.7,59.8,189.6) v=385 d_food=319.6 | T4/T5 L8.5/R7.5Hz net 6.15Hz | turn=-0.001 (odor +0.009 dn +0.000 loom -0.010) pitch=+0.183 | DN L37/R46 g02 0/0 | MN9 0.0Hz s^ -0.16 | 0.85s RSS 3.30GB
+  step 040 t=1.025s [cruise] pos=(195.6,81.1,213.1) v=301 d_food=248.2 | T4/T5 L10.5/R11.5Hz net 8.09Hz | turn=+0.482 (odor +0.477 dn +0.000 loom +0.005) pitch=-0.066 | DN L40/R45 g02 0/0 | MN9 0.0Hz s^ -0.81 | 1.07s RSS 3.32GB
+  step 050 t=1.275s [cruise] pos=(269.8,80.4,205.2) v=300 d_food=173.9 | T4/T5 L10.2/R9.1Hz net 6.99Hz | turn=-0.050 (odor -0.036 dn +0.000 loom -0.015) pitch=+0.005 | DN L43/R49 g02 0/0 | MN9 0.0Hz s^ -0.03 | 1.08s RSS 3.32GB
+  step 060 t=1.525s [cruise] pos=(343.8,80.2,194.7) v=323 d_food=99.3 | T4/T5 L9.5/R19.1Hz net 8.31Hz | turn=+0.052 (odor +0.025 dn +0.000 loom +0.028) pitch=-0.133 | DN L40/R54 g02 0/0 | MN9 0.0Hz s^ -0.33 | 1.06s RSS 3.33GB
+  step 070 t=1.775s [approach] pos=(397.7,80.2,187.0) v=139 d_food=45.6 | T4/T5 L9.2/R9.1Hz net 7.77Hz | turn=-0.014 (odor +0.000 dn +0.000 loom -0.014) pitch=-0.008 | DN L51/R46 g02 0/0 | MN9 0.0Hz s^ -0.79 | 0.52s RSS 3.33GB
+  step 080 t=2.025s [approach] pos=(421.4,80.2,183.8) v=62 d_food=23.2 | T4/T5 L9.1/R9.2Hz net 7.86Hz | turn=-0.006 (odor +0.000 dn +0.000 loom -0.006) pitch=-0.006 | DN L38/R65 g02 0/0 | MN9 0.0Hz s^ -0.49 | 0.53s RSS 3.33GB
+  step 090 t=2.275s [approach] pos=(431.8,80.1,181.6) v=28 d_food=14.2 | T4/T5 L9.6/R9.1Hz net 8.39Hz | turn=-0.008 (odor +0.000 dn +0.000 loom -0.008) pitch=-0.004 | DN L44/R69 g02 0/0 | MN9 0.0Hz s^ -0.76 | 0.53s RSS 3.37GB
+  step 100 t=2.525s [descend] pos=(436.4,80.1,180.1) v=22 d_food=10.7 | T4/T5 L8.4/R8.0Hz net 7.95Hz | turn=-0.008 (odor +0.000 dn +0.000 loom -0.008) pitch=-0.063 | DN L33/R49 g02 0/0 | MN9 0.0Hz s^ -0.44 | 0.53s RSS 3.37GB
+  step 110 t=2.775s [descend] pos=(438.4,80.1,174.3) v=24 d_food=4.6 | T4/T5 L10.4/R10.4Hz net 8.43Hz | turn=-0.009 (odor +0.000 dn +0.000 loom -0.009) pitch=-0.016 | DN L39/R64 g02 0/0 | MN9 0.0Hz s^ -0.03 | 0.53s RSS 3.37GB
+  TOUCHDOWN t=3.450s speed=1.5 mm/s
+  step 120 t=3.025s [touchdown] pos=(439.4,80.1,170.5) v=6 d_food=0.8 | T4/T5 L13.0/R12.1Hz net 8.12Hz | turn=-0.009 (odor +0.000 dn +0.000 loom -0.009) pitch=-0.057 | DN L65/R67 g02 0/0 | MN9 15.7Hz s^ -0.45 EXT | 0.68s RSS 3.38GB
+  step 130 t=3.275s [landed] pos=(439.7,80.2,170.5) v=0 d_food=0.6 | T4/T5 L11.9/R12.1Hz net 7.83Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.036 | DN L29/R50 g02 0/0 | MN9 60.4Hz s^ +0.01 EXT | 0.71s RSS 3.38GB
+  step 140 t=3.525s [landed] pos=(439.7,80.2,170.5) v=0 d_food=0.6 | T4/T5 L10.1/R10.3Hz net 7.49Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.023 | DN L46/R49 g02 0/0 | MN9 70.7Hz s^ -0.28 EXT | 0.83s RSS 3.38GB
+  step 150 t=3.775s [landed] pos=(439.7,80.2,170.4) v=0 d_food=0.6 | T4/T5 L9.8/R10.0Hz net 7.32Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.022 | DN L32/R31 g02 0/0 | MN9 57.6Hz s^ -0.57 EXT | 0.87s RSS 3.38GB
+  step 160 t=4.025s [landed] pos=(439.7,80.2,170.4) v=0 d_food=0.6 | T4/T5 L9.8/R10.0Hz net 7.28Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.021 | DN L40/R37 g02 0/0 | MN9 53.6Hz s^ -0.13 EXT | 0.91s RSS 3.39GB
+  step 170 t=4.275s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.6 | T4/T5 L9.8/R10.0Hz net 7.44Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.021 | DN L55/R49 g02 0/0 | MN9 80.5Hz s^ -0.23 EXT | 0.95s RSS 3.39GB
+  step 180 t=4.525s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.33Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.020 | DN L49/R52 g02 0/0 | MN9 84.5Hz s^ -0.05 EXT | 0.94s RSS 3.41GB
+  step 190 t=4.775s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.42Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.019 | DN L48/R45 g02 0/0 | MN9 51.8Hz s^ -0.06 EXT | 0.95s RSS 3.42GB
+  step 200 t=5.025s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.21Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.019 | DN L44/R44 g02 0/0 | MN9 68.5Hz s^ -0.38 EXT | 0.99s RSS 3.42GB
+  step 210 t=5.275s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.36Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.018 | DN L53/R57 g02 0/0 | MN9 74.5Hz s^ -0.01 EXT | 1.05s RSS 3.42GB
+  step 220 t=5.525s [landed] pos=(439.7,80.1,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.20Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.018 | DN L39/R36 g02 0/0 | MN9 29.0Hz s^ -0.00 EXT | 1.10s RSS 3.42GB
+  step 230 t=5.775s [landed] pos=(439.7,80.2,170.4) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.27Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.017 | DN L53/R66 g02 0/0 | MN9 69.6Hz s^ -0.28 EXT | 1.08s RSS 3.43GB
+  step 240 t=6.025s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.36Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.017 | DN L47/R43 g02 0/0 | MN9 51.3Hz s^ +0.06 EXT | 1.07s RSS 3.44GB
+  step 250 t=6.275s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.17Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.016 | DN L26/R46 g02 0/0 | MN9 50.1Hz s^ -0.24 EXT | 1.06s RSS 3.44GB
+  step 260 t=6.525s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.29Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.016 | DN L29/R38 g02 0/0 | MN9 45.4Hz s^ -0.06 EXT | 1.09s RSS 3.44GB
+  step 270 t=6.775s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.32Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.015 | DN L30/R36 g02 0/0 | MN9 57.3Hz s^ -0.07 EXT | 1.13s RSS 3.45GB
+  step 280 t=7.025s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.30Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.015 | DN L46/R44 g02 0/0 | MN9 46.1Hz s^ +0.09 EXT | 1.08s RSS 3.45GB
+  step 290 t=7.275s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.41Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.014 | DN L45/R43 g02 0/0 | MN9 51.2Hz s^ -0.11 EXT | 1.13s RSS 3.46GB
+  step 299 t=7.500s [landed] pos=(439.7,80.1,170.3) v=0 d_food=0.5 | T4/T5 L9.8/R10.0Hz net 7.29Hz | turn=-0.002 (odor +0.000 dn +0.000 loom -0.002) pitch=-0.014 | DN L35/R35 g02 0/0 | MN9 55.0Hz s^ +0.01 EXT | 1.11s RSS 3.47GB
+HDF5 written: logs/reimpl/sim/flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5 (59.0 MB), 7,990,147 spikes, peak RSS 3.51 GB, loop 266.3 s
+turn terms (wings on, 120 steps): sum|brain|/sum|total| = 0.000; shares brain 0.000 hand 0.537 flyvis 0.108 reflex 0.354
+touchdown step 120, feeding steps 180 (first 120), tower-contact steps 0, max tower penetration 0.0000 mm
+	Command being timed: "$HOME/miniforge3/envs/neurofly/bin/python fly_flight_brain_body_simulation.py --seed 3 --n-steps 300 --vision-boundary --no-olfaction --dn-reference data/dn_lr_reference_sB.json --no-brain-steer --head-reflex --postures --no-video --tag n1 --hybrid --sim-dir logs/reimpl/sim --version 1"
+	User time (seconds): 394.54
+	System time (seconds): 2.90
+	Percent of CPU this job got: 105%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:17.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3613104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 553
+	Minor (reclaiming a frame) page faults: 734024
+	Voluntary context switches: 85153
+	Involuntary context switches: 32013
+	Swaps: 0
+	File system inputs: 280424
+	File system outputs: 117824
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

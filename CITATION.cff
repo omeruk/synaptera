@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the FlyWire, Shiu et al., NeuroMechFly/FlyGym and FlyVis papers listed in NOTICE.md."
+title: "Synaptera"
+abstract: "From synapse to wing: a pre-registered test of what a whole-brain connectome model controls in closed-loop Drosophila flight. A FlyWire v783 whole-brain LIF model (Brian2) coupled to the NeuroMechFly/FlyGym MuJoCo body; built on NeuroFly (https://github.com/seven-monarchs/NeuroFly)."
+type: software
+license: MIT
+version: 1.0.0
+date-released: "2026-10-07"
+# repository-code: to be added
+# doi: to be added
+authors:
+  - name: "omeruk"
+keywords:
+  - Drosophila
+  - connectome
+  - FlyWire
+  - leaky integrate-and-fire
+  - NeuroMechFly
+  - flight
+  - pre-registration
+references:
+  - type: software
+    title: "NeuroFly"
+    url: "https://github.com/seven-monarchs/NeuroFly"
+    authors:
+      - name: "Monarch"
+  - type: article
+    title: "Neuronal wiring diagram of an adult brain"
+    authors:
+      - family-names: Dorkenwald
+        given-names: Sven
+    journal: Nature
+    volume: 634
+    year: 2024
+    doi: 10.1038/s41586-024-07558-y
+  - type: article
+    title: "A Drosophila computational brain model reveals sensorimotor processing"
+    authors:
+      - family-names: Shiu
+        given-names: Philip K.
+    journal: Nature
+    volume: 634
+    year: 2024
+    doi: 10.1038/s41586-024-07763-9
+  - type: article
+    title: "Whole-brain annotation and multi-connectome cell typing of Drosophila"
+    authors:
+      - family-names: Schlegel
+        given-names: Philipp
+    journal: Nature
+    volume: 634
+    year: 2024
+    doi: 10.1038/s41586-024-07686-5
+  - type: article
+    title: "NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila"
+    authors:
+      - family-names: Wang-Chen
+        given-names: Sibo
+    journal: Nature Methods
+    volume: 21
+    year: 2024
+    doi: 10.1038/s41592-024-02497-y
+  - type: article
+    title: "Connectome-constrained networks predict neural activity across the fly visual system"
+    authors:
+      - family-names: Lappalainen
+        given-names: Janne K.
+    journal: Nature
+    volume: 634
+    year: 2024
+    doi: 10.1038/s41586-024-07939-3

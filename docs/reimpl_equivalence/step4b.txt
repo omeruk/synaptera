@@ -1,0 +1,13 @@
+recorded: simulations/flight_v44_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5 
+new:      logs/reimpl/sim/flight_v1_hybrid_sB_noBrSteer_head_pose_noOlf_n1_data.h5
+pos          bit-identical: True
+turn_total   bit-identical: True
+turn_hand    bit-identical: True
+turn_flyvis  bit-identical: True
+phase        bit-identical: True
+mn9_rate     bit-identical: True
+heading      bit-identical: True
+touchdown step recorded/new: 120 120
+spikes identical (t,i): True
+behavior fields compared: 92  not identical: 0
+largest abs difference: 0.0

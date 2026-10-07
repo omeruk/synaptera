@@ -1,0 +1,15 @@
+# data fetched or rebuilt by scripts/fetch_data.py (not distributed)
+brain_model/
+data/*
+!data/README.md
+# run outputs and media
+simulations/
+plots/
+logs/
+*.h5
+*.mp4
+*.gif
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
