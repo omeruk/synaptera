@@ -12,6 +12,7 @@ Bu dosyalar anlık görüntüden **sonra** eklendi; `docs/SNAPSHOT_MANIFEST.md` 
 | [03_BANC_OLANAKLARI.md](03_BANC_OLANAKLARI.md) | BANC beyni + sinir kordonu ile yapılabilecekler ve olası sonuçlar |
 | [04_ARASTIRMA_NOTLARI.md](04_ARASTIRMA_NOTLARI.md) | The Driving Fly (flyhard), fly-self-driving, flydrive, The Uploading Lab, Eon, Fly.exe, fly-cartpole… nasıl yapıldı |
 | [05_MIMARI_PLAN.md](05_MIMARI_PLAN.md) | Synaptera-2 için katmanlı mimari, fazlı yol haritası, risk kaydı |
+| [06_YENI_PROJE_KURULUMU.md](06_YENI_PROJE_KURULUMU.md) | Yeni projenin (`omeruk/synaptera-banc-brain`) kurulumu: `yeni_proje/kur.sh`, taşıma listesi, `CLAUDE.md`, terminalde ilk istek |
 | `veri/` | Bu analizin sayısal çıktıları (FlyWire v783'ten türetilmiş → CC BY-NC 4.0, repo politikası gibi) |
 
 Analiz betikleri: `synaptera-banc-brain/scripts/connectome_structure.py`, `synaptera-banc-brain/scripts/dn_lr_asymmetry.py`,
