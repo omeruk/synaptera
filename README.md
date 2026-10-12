@@ -287,6 +287,7 @@ Stills (1280 px; run times in [media/README.md](media/README.md)):
 - `docs/tr/REPORT_FINAL.md` (final-v1), `docs/tr/REPORT_FINAL_V2.md` (final-v2, additional control, multi-seed repeat, start test), `docs/tr/REPORT_SENSORY_A/A2/B.md` (sensory stages). In Turkish.
 - `fly_flight_brain_body_simulation.py` main loop; `flight/` modules (brain, body, bridge, hybrid controller, vision, olfaction, head reflex); `scripts/` data preparation and report scripts; `tests/flight` (pytest).
 - `docs/tr/`: lab notebook in Turkish (reports and pre-registrations); `docs/`: provenance, adapted code, pre-registration log, snapshot manifest.
+- `docs/tr/analiz/` (added after the snapshot, Turkish): independent code / model / physics review, connectome structure analysis (`scripts/analysis/`), BANC options, notes on related connectome–body projects and an architecture plan for the next study.
 
 ## References
 - Dorkenwald, S. et al. (2024). Neuronal wiring diagram of an adult brain. *Nature* 634, 124–138. doi:[10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
