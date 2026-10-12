@@ -1,0 +1,53 @@
+order	path	decision	target	note
+1	flight/groups.py	adapt	connectome/schema.py, connectome/homologs.py	id<->index eşlemesi ve partner_profiles/select_sugar_homologs alınır; NeuroFly'dan uyarlanan satırlar (38-39, 85-161, 334-366: eski grup kuralı, neuron_positions) ve eski gruplar alınmaz; BANC/FlyWire adaptörleri ortak şemadan
+2	scripts/make_descending_neurons.py	adapt	connectome/adapters/flywire783.py	DN listesi adaptörün parçası olur; BANC 888 için eşdeğeri yazılır
+3	scripts/make_sugar_grn.py	adapt	scripts/make_crosswalk.py	homolog seçimi crosswalk üretimine genelleşir (MN9/CB0701 adayı dahil)
+4	scripts/make_nt_silent.py	pattern	connectome/sign_rules.py	işaret varyantları tek bir kenar-tablosu dönüşümünde toplanır (silent/impute/literature)
+5	scripts/make_nt_impute.py	pattern	connectome/sign_rules.py	aynı
+6	scripts/make_nt_literature.py	pattern	connectome/sign_rules.py	aynı
+7	flight/brain.py	adapt	engine/lif_brian2.py, engine/protocol.py	NeuralEngine arayüzü (reset/set_inputs/advance/rates); Poisson girdisi gecikmesiz (O4); 25 ms sabit aralık kalkar, eşleme aralığı konfigürasyonla; shuffled kontrol aktivite-eşli (O3); dev+shuffle uyarısı (D6); eski bayraklar alınmaz
+8	flight/config.py	adapt	configs/arena_x20.yaml, body/arena.py	global değişkenler yerine dondurulmuş ArenaSpec; move_takeoff_pedestal -> with_start_offset; sabitler köken sınıfıyla configs/assumptions.json'a
+9	flight/quasi_steady.py	adapt	body/quasi_steady.py, motor/legacy_reflexes.py	PHI_MAX genlik sınırı + kırpma kaydı (Y5); strok düzlemi açısı ve anizotrop sönüm seçeneği (O9); haltere PD REFLEX koluna taşınır
+10	flight/body.py	adapt	body/flygym_body.py, body/arena.py	step(cmd, dt) süre alır; FlyGym özel API'si tek adaptörde (O6); InnerLoop arayüzü; fiziksel gürültü body/noise.py (O5)
+11	flight/head_reflex.py	adapt	motor/legacy_reflexes.py	REFLEX etiketli kontrol kolu; sabitler configs/reflex.yaml (köken sınıfıyla)
+12	flight/visual_input.py	adapt	sense/vision_flyvis.py	FlyVis hizalama + transdüksiyon alınır; loom terimi alt-kare ortalaması (D1); boş kare koruması; alt kare sayısı konfigürasyonla (Y4); sütun kaynağı veri setinden (BANC için ayrı)
+13	flight/vision_boundary.py	adapt	sense/vision_boundary.py	sınır katmanı kuralı alınır; ~/Downloads sabit yolu kalkar (D4); BANC'te sütun ataması yeniden üretilmeli (risk)
+14	scripts/make_t45_transduction.py	adapt	scripts/make_transduction.py	tek betikte birleşir; sonuç sayısal toleransla karşılaştırılır (O7)
+15	scripts/make_visual_transduction.py	adapt	scripts/make_transduction.py	aynı
+16	scripts/make_vision_boundary.py	adapt	scripts/make_vision_boundary.py	veri setine göre (FlyWire/BANC) parametrik
+17	scripts/prepare_neuron_geometry.py	pattern	connectome/geometry.py	soma/arbor merkezleri ortak şemadan
+18	flight/vis_stim.py	take	tasks/t0_stimuli.py	açık döngü uyaranları (yaw, loom, akış) genel; değişmeden
+19	flight/sensors.py	adapt	sense/ (gaze, odor örnekleme, yüzey, genişleme)	LoomBias alınmaz (NeuroFly uyarlaması); l_eff=10 mm ve antenna_real bayrağı alınmaz
+20	simulation_data/odor_field_3d.py	adapt	sense/odor_field.py	ertelendi (koku alt planı); ArenaSpec'ten engeller
+21	flight/olfaction_full.py	adapt	sense/olfaction.py	ertelendi; varsayılan kapalı (plan §6)
+22	scripts/make_orn_spontaneous.py	adapt	scripts/make_orn_spontaneous.py	ertelendi, koku alt planıyla
+23	flight/readouts.py	adapt	motor/readouts.py	okuma tipleri ön-kayıtlı konfigürasyondan ve crosswalk adlarıyla; simetri kapısından geçmeyen okuma reddedilir (Y2); DNp15 post-hoc seçimi devralınmaz
+24	flight/vnc_bridge.py	adapt	motor/legacy_bridge.py	el yapımı köprü KONTROL KOLU olarak; ablasyonda baseline yoksa açık hata (D2); çıktılar komut kuyruğuna
+25	fly_flight_brain_body_simulation.py	pattern	coupling/scheduler.py, run.py	ana döngü yeniden yazılır: nedensel komut kuyruğu (Y1), eşleme aralığı 5 ms, sonuç dosyası koruması (O1), meta kaydı; Codex bağımlılığı yalnız görme açıkken (O2)
+26	flight/recorder.py	adapt	coupling/recorder.py	HDF5 şeması + etiket/köken alanları; üzerine yazma koruması (O1); akışlı spike kaydı (D9)
+27	scripts/ladder_replay.py	pattern	coupling/replay.py	bit-bit tekrar oynatma denetimi
+28	flight/readout_model.py	adapt	train/readout_ridge.py	λ ızgarası genişler (O10); filtre ve bypass kolu korunur; DAgger train/dagger.py'de
+29	scripts/ladder_fit.py	pattern	train/	eğitim betiği deseni
+30	scripts/make_dn_reference.py	pattern	tasks/t0_openloop.py	referans uyaran protokolü deseni
+31	scripts/fetch_data.py	adapt	scripts/fetch_data.py	BANC 888 Dataverse dosyaları eklenir; hash karşılaştırmasına sayısal tolerans (O7); brain_model/model.py third_party/ altına hash ile
+32	scripts/verify_report_final.py	pattern	scripts/verify_report.py	rapor sayılarını kayıtlardan yeniden hesaplama deseni
+33	render_flight_video_v2.py	pattern	scripts/render_video.py	kayıttan video (beyin paneli, etiket şeridi); sonra
+34	requirements-flight.txt	adapt	requirements.txt	aynı sürümler + banc istemcisi
+35	tests/conftest.py	adapt	tests/conftest.py	eksik veri -> skip mantığı; yürüme betikleri listesi alınmaz (D5)
+36	tests/flight/test_body.py	adapt	tests/test_body.py	yeni body API'sine
+37	tests/flight/test_start_pose.py	adapt	tests/test_body_pose.py	aynı
+38	tests/flight/test_hybrid.py	adapt	tests/test_hand_scaffold.py	turn_hand testleri çıkarılır
+39	tests/flight/test_brain.py	adapt	tests/test_engine_lif.py	NeuralEngine arayüzüne
+40	tests/flight/test_readouts.py	adapt	tests/test_readouts.py	crosswalk adları
+41	tests/flight/test_vnc_bridge.py	adapt	tests/test_legacy_bridge.py	D2 testi eklenir
+42	tests/flight/test_visual_input.py	adapt	tests/test_vision_flyvis.py	D1 testi eklenir
+43	tests/flight/test_vision_boundary.py	adapt	tests/test_vision_boundary.py	veri setine göre
+44	tests/flight/test_vis_stim.py	take	tests/test_t0_stimuli.py	değişmeden (import yolu hariç)
+45	tests/flight/test_vis_stim_followup.py	take	tests/test_t0_stimuli_followup.py	aynı
+46	tests/flight/test_readout_model.py	adapt	tests/test_readout_ridge.py	λ ızgarası
+47	tests/flight/test_readout_record.py	pattern	tests/test_recorder.py	kayıt testi deseni
+48	tests/flight/test_smoke_hdf5.py	pattern	tests/test_smoke_run.py	duman koşusu deseni
+49	tests/flight/test_odor_field_3d.py	adapt	tests/test_odor_field.py	ertelendi
+50	tests/flight/test_olfaction_full.py	adapt	tests/test_olfaction.py	ertelendi
+51	THIRD_PARTY.md	pattern	THIRD_PARTY.md	lisans denetimi deseni; BANC CC BY 4.0 eklenir
+52	NOTICE.md	pattern	NOTICE.md	atıflar (Shiu, FlyGym, FlyVis, BANC)

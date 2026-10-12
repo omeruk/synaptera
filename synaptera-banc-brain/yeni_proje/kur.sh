@@ -22,6 +22,8 @@ HERE="$SYNAPTERA/synaptera-banc-brain"
 TSV="$HERE/yeni_proje/tasinacaklar.tsv"
 
 die() { echo "HATA: $*" >&2; exit 1; }
+# cp -n: var olan dosyanın üzerine yazmaz (GNU cp 9.x'in "-n non-portable" uyarısı süzülür)
+cpn() { cp -n "$@" 2> >(grep -v "behavior of -n is non-portable" >&2); }
 [ -f "$TSV" ] || die "$TSV yok; SYNAPTERA doğru mu ve main güncel mi (git pull)?"
 [ -d "$SYNAPTERA/.git" ] || die "$SYNAPTERA bir git deposu değil"
 if [ -e "$NEW" ] && [ -n "$(ls -A "$NEW" 2>/dev/null)" ]; then
@@ -39,12 +41,12 @@ for d in connectome engine sense motor body coupling tasks train prereg scripts/
 done
 
 echo "[2/5] plan, analizler, CLAUDE.md"
-cp -n "$HERE"/0*.md "$NEW/docs/"
-cp -n "$HERE/README.md" "$NEW/docs/00_SYNAPTERA_ANALIZ_OZETI.md"
-cp -n "$HERE"/veri/* "$NEW/docs/veri/"
-cp -n "$HERE"/scripts/*.py "$NEW/scripts/analysis/"
-cp -n "$HERE/yeni_proje/CLAUDE.md" "$NEW/CLAUDE.md"
-cp -n "$SYNAPTERA/LICENSE" "$NEW/LICENSE"
+cpn "$HERE"/0*.md "$NEW/docs/"
+cpn "$HERE/README.md" "$NEW/docs/00_SYNAPTERA_ANALIZ_OZETI.md"
+cpn "$HERE"/veri/* "$NEW/docs/veri/"
+cpn "$HERE"/scripts/*.py "$NEW/scripts/analysis/"
+cpn "$HERE/yeni_proje/CLAUDE.md" "$NEW/CLAUDE.md"
+cpn "$SYNAPTERA/LICENSE" "$NEW/LICENSE"
 
 echo "[3/5] Synaptera dosyaları -> vendor/synaptera_v1 (değiştirilmeden)"
 MAN="$NEW/vendor/synaptera_v1/MANIFEST.md"
@@ -74,7 +76,7 @@ while IFS=$'\t' read -r order path decision target note; do
             src="$SYNAPTERA/$path"
             [ -f "$src" ] || die "TSV'deki dosya bulunamadı: $path"
             mkdir -p "$NEW/vendor/synaptera_v1/$(dirname "$path")"
-            cp -n "$src" "$NEW/vendor/synaptera_v1/$path"
+            cpn "$src" "$NEW/vendor/synaptera_v1/$path"
             sha=$(sha256sum "$src" | cut -d' ' -f1)
             echo "| \`$path\` | $decision | \`$target\` | \`${sha:0:16}…\` |" >> "$MAN"
             echo "- [ ] **$order.** \`$path\` → \`$target\` ($decision): $note" >> "$LIST"
@@ -90,8 +92,8 @@ echo "[4/5] veri"
 if [ -n "$DEV_REPO" ]; then
     [ -d "$DEV_REPO/brain_model" ] || die "$DEV_REPO/brain_model yok"
     mkdir -p "$NEW/brain_model" "$NEW/data"
-    cp -rn "$DEV_REPO/brain_model/." "$NEW/brain_model/"
-    find "$DEV_REPO/data" -maxdepth 1 -type f -exec cp -n {} "$NEW/data/" \;
+    cpn -r "$DEV_REPO/brain_model/." "$NEW/brain_model/"
+    find "$DEV_REPO/data" -maxdepth 1 -type f -exec cp -n {} "$NEW/data/" \; 2> >(grep -v "behavior of -n is non-portable" >&2)
     echo "    brain_model/ ve data/ kopyalandı ($DEV_REPO); Codex indirmeleri yerinde kalır (--codex-dir)"
 else
     echo "    DEV_REPO verilmedi: veri adımı atlandı (sonra: DEV_REPO=... ile tekrar değil, elle cp -n)"
