@@ -17,6 +17,17 @@ Bu dosyalar anlık görüntüden **sonra** eklendi; `docs/SNAPSHOT_MANIFEST.md` 
 Analiz betikleri: `synaptera-banc-brain/scripts/connectome_structure.py`, `synaptera-banc-brain/scripts/dn_lr_asymmetry.py`,
 `synaptera-banc-brain/scripts/grn_mn9_check.py` (veri: `scripts/fetch_data.py` ile indirilir).
 
+## Repo düzeni (işlerin karışmaması için)
+
+| ne | nerede | not |
+|---|---|---|
+| Yayımlanmış Synaptera v1.0.0 (kod, raporlar, şekiller) | bu repo, kök dizin | **Değiştirilmez.** `docs/SNAPSHOT_MANIFEST.md` dosya listesi ve SHA-256'ları geçerli kalır |
+| Bu analiz ("Synaptera: BANC Brain") | bu repo, `synaptera-banc-brain/` | Yalnız bu klasöre yazılır; kök dosyalara dokunulmaz |
+| Mevcut koddaki hata düzeltmeleri (plan F0: komut kuyruğu, simetri kapısı, üzerine yazma koruması, Φ kırpma…) | bu repo, ayrı dal → PR | Birleşince **v1.1** olarak etiketlenir; v1.0.0 sonuçları yeniden üretilip karşılaştırılır |
+| Asıl BANC çalışması (plan F1–F6: veri hattı, VNC, refleks, eğitim) | **yeni repo** (öneri: `omeruk/synaptera-banc-brain`) | Farklı mimari ve veri lisansı (BANC CC BY 4.0 / FlyWire CC BY-NC); bu klasördeki plana bağlantı verir |
+
+Dal adları: `omeruk/<konu>` (ör. `omeruk/v1.1-duzeltmeler`). `main`'e yalnız PR ile girilir.
+
 ## Yönetici özeti
 
 **Kod:** Raporlanan sonuçları geçersiz kılan bir kod hatası bulunmadı. Test paketi: **123 geçti, 51 atlandı, 0 başarısız**
@@ -31,7 +42,7 @@ aynı. Yüksek önemli bulgular:
 
 **Bağlantı yapısı (yeni bulgular):**
 - Bacak şeker GRN'lerinden MN9'a işaretli doğrusal etki **negatif**, labellar GRN'lerden **pozitif** → bacak GRN → MN9 başarısızlığı yapısal;
-  bu oturumda değiştirilmemiş Shiu modeliyle bağımsız olarak da doğrulandı (12 bacak GRN @100 Hz → MN9 0/0 Hz; labellar 36 GRN → 54/48 Hz).
+  bu oturumda değiştirilmemiş Shiu modeliyle bağımsız olarak da doğrulandı (12 bacak GRN @100 Hz → MN9 0/0 Hz; labellar 36 GRN → 54–55 / 48 Hz; iki tohum).
 - DNg02 girdisinin %54'ü inhibitör ve bir kısmı hiç sürülmeyen yükselen nöronlardan → sessizlik erişilebilirlikten değil, net inhibisyon + tonik sürüş yokluğundan.
 - Antenal lobta LN+PN iç sinapslarının %77'si uyarıcı (Shiu işaret kuralı aminleri uyarıcı sayıyor); baskın özdeğer ~2.184 sinaps → kendini sürdüren kilitlenme yapısal olarak beklenir.
 - Modelde kanat/haltere/bacak motor nöronu yok; 1.736 yükselen nöron hiç sürülmüyor.

@@ -1,0 +1,170 @@
+[
+ {
+  "seed": 0,
+  "cond": "shiu_left_20@100Hz",
+  "n_driven": 20,
+  "rate_in": 100,
+  "mn9_hz": [
+   68.0,
+   50.0
+  ],
+  "driven_mean_hz": 99.95,
+  "n_active": 351,
+  "total_spikes": 9231,
+  "wall_s": 152.6
+ },
+ {
+  "seed": 0,
+  "cond": "labellar_36@100Hz",
+  "n_driven": 36,
+  "rate_in": 100,
+  "mn9_hz": [
+   54.0,
+   48.0
+  ],
+  "driven_mean_hz": 99.63888888888889,
+  "n_active": 393,
+  "total_spikes": 13041,
+  "wall_s": 152.9
+ },
+ {
+  "seed": 0,
+  "cond": "leg_SA_VTV_2_12@100Hz",
+  "n_driven": 12,
+  "rate_in": 100,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 99.25,
+  "n_active": 75,
+  "total_spikes": 2459,
+  "wall_s": 60.7
+ },
+ {
+  "seed": 0,
+  "cond": "leg_SA_VTV_2_12@200Hz",
+  "n_driven": 12,
+  "rate_in": 200,
+  "mn9_hz": [
+   1.0,
+   0.0
+  ],
+  "driven_mean_hz": 196.5,
+  "n_active": 154,
+  "total_spikes": 5418,
+  "wall_s": 69.5
+ },
+ {
+  "seed": 0,
+  "cond": "leg_all_74@100Hz",
+  "n_driven": 74,
+  "rate_in": 100,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 100.71621621621621,
+  "n_active": 896,
+  "total_spikes": 22915,
+  "wall_s": 310.6
+ },
+ {
+  "seed": 0,
+  "cond": "none",
+  "n_driven": 0,
+  "rate_in": 0,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 0.0,
+  "n_active": 0,
+  "total_spikes": 0,
+  "wall_s": 20.6
+ },
+ {
+  "seed": 1,
+  "cond": "shiu_left_20@100Hz",
+  "n_driven": 20,
+  "rate_in": 100,
+  "mn9_hz": [
+   63.0,
+   49.0
+  ],
+  "driven_mean_hz": 94.95,
+  "n_active": 354,
+  "total_spikes": 8978,
+  "wall_s": 98.3
+ },
+ {
+  "seed": 1,
+  "cond": "labellar_36@100Hz",
+  "n_driven": 36,
+  "rate_in": 100,
+  "mn9_hz": [
+   55.0,
+   48.0
+  ],
+  "driven_mean_hz": 97.55555555555556,
+  "n_active": 397,
+  "total_spikes": 12259,
+  "wall_s": 159.0
+ },
+ {
+  "seed": 1,
+  "cond": "leg_SA_VTV_2_12@100Hz",
+  "n_driven": 12,
+  "rate_in": 100,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 95.33333333333333,
+  "n_active": 76,
+  "total_spikes": 2365,
+  "wall_s": 65.9
+ },
+ {
+  "seed": 1,
+  "cond": "leg_SA_VTV_2_12@200Hz",
+  "n_driven": 12,
+  "rate_in": 200,
+  "mn9_hz": [
+   2.0,
+   0.0
+  ],
+  "driven_mean_hz": 197.91666666666666,
+  "n_active": 173,
+  "total_spikes": 5571,
+  "wall_s": 67.3
+ },
+ {
+  "seed": 1,
+  "cond": "leg_all_74@100Hz",
+  "n_driven": 74,
+  "rate_in": 100,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 99.13513513513513,
+  "n_active": 967,
+  "total_spikes": 23939,
+  "wall_s": 304.7
+ },
+ {
+  "seed": 1,
+  "cond": "none",
+  "n_driven": 0,
+  "rate_in": 0,
+  "mn9_hz": [
+   0.0,
+   0.0
+  ],
+  "driven_mean_hz": 0.0,
+  "n_active": 0,
+  "total_spikes": 0,
+  "wall_s": 27.0
+ }
+]

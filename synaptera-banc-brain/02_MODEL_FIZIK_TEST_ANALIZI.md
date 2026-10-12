@@ -190,14 +190,18 @@ Not: ilk denemede `libEGL`/`libOSMesa` olmadığı için MuJoCo render testleri 
 
 ### 5.3 Bağımsız açık döngü simülasyonu (değiştirilmemiş Shiu modeli, Brian2, 1 s, Shiu `PoissonInput` protokolü)
 
-Sonuçlar `veri/grn_mn9.json` (koşu bitince doldurulur; aşağıdaki tablo tohum 0):
+Sonuçlar `veri/grn_mn9.json` (iki Brian2 tohumu: 0 ve 1; her koşul ayrı, taze bir ağ):
 
-| sürülen nöronlar | girdi | MN9 sol / sağ (Hz) |
-|---|---|---|
-| Shiu'nun 20 sol şeker GRN'i | 100 Hz | 68 / 50 |
-| 36 labellar şeker GRN (raporlanan koşulardaki set) | 100 Hz | 54 / 48 |
-| 12 bacak şeker GRN'i (SA_VTV_2) | 100 Hz | **0 / 0** |
-| 12 bacak şeker GRN'i (SA_VTV_2) | 200 Hz | 1 / 0 |
+| sürülen nöronlar | girdi | MN9 sol / sağ (Hz), tohum 0 | tohum 1 | aktif nöron (0 / 1) |
+|---|---|---|---|---|
+| Shiu'nun 20 sol şeker GRN'i | 100 Hz | 68 / 50 | 63 / 49 | 351 / 354 |
+| 36 labellar şeker GRN (raporlanan koşulardaki set) | 100 Hz | 54 / 48 | 55 / 48 | 393 / 397 |
+| 12 bacak şeker GRN'i (SA_VTV_2) | 100 Hz | **0 / 0** | **0 / 0** | 75 / 76 |
+| 12 bacak şeker GRN'i (SA_VTV_2) | 200 Hz | 1 / 0 | 2 / 0 | 154 / 173 |
+| 74 bacak tat nöronunun hepsi | 100 Hz | 0 / 0 | 0 / 0 | 896 / 967 |
+| girdi yok | — | 0 / 0 | 0 / 0 | 0 / 0 |
 
-Bu, raporun "kayıtlı koşusu olmayan" bacak GRN bulgusunu bağımsız olarak doğruluyor ve labellar yolun Shiu'nun R0
-eğrisiyle (100 Hz → 59,6 / 46,8 Hz) uyumlu olduğunu gösteriyor.
+Bu, raporun "kayıtlı koşusu olmayan" bacak GRN bulgusunu (MN9 0,0 Hz, 3/3 tohum) iki tohumda bağımsız olarak
+doğruluyor; 74 bacak tat nöronunun hepsi birlikte sürülse bile MN9 sessiz kalıyor. Labellar yol, repodaki R0 eğrisiyle
+(v783, Shiu protokolü, 100 Hz → 59,6 / 46,8 Hz; `flight/vnc_bridge.py`) uyumlu. Girdisiz ağ tamamen sessiz
+(0 aktif nöron) — dinlenme aktivitesi olmadığının doğrudan gösterimi (§1.2).
