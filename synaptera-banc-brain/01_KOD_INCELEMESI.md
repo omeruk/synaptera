@@ -31,7 +31,7 @@ akausal; gerçek sinekte görsel-motor gecikme onlarca milisaniye mertebesindedi
   olarak kaydedilmeli.
 
 ### Y2 — Okuma seçiminde sol/sağ yeniden yapılandırma asimetrisi kontrol edilmiyor
-Bu oturumdaki bağımsız analiz (`scripts/analysis/dn_lr_asymmetry.py`): FlyWire v783'te tek-nöron-çifti olan 383 DN
+Bu oturumdaki bağımsız analiz (`synaptera-banc-brain/scripts/dn_lr_asymmetry.py`): FlyWire v783'te tek-nöron-çifti olan 383 DN
 tipinin girdi sinapslarında medyan sağ/sol oranı 1,17×; %24,8'inde fark >1,41×, %11,5'inde >2×. **DNp15 sağ/sol =
 1,66× (383 içinde en asimetrik 65.)**, uyarıcı girdi 1.126 / 636 (1,77×). **DNp10 = 0,24× (8. en asimetrik).**
 Bu, raporlanan iki negatif bulguyu (DNp15'in "sağ-baskın taban hızı", perch L 0 / R 52 Hz; DNp10'un "tek taraflı"
@@ -131,7 +131,7 @@ Ommatidyum açıklığı ~5° olduğundan engel yakınında T4/T5 hareket sinyal
 ## F. Öncelikli düzeltme listesi (mevcut repo için)
 
 1. (Y1) Komut kuyruğu ile nedensel eşleme + gecikme parametresi.
-2. (Y2) L/R simetri raporu ve okuma kapısı (`scripts/analysis/dn_lr_asymmetry.py` temel alınabilir).
+2. (Y2) L/R simetri raporu ve okuma kapısı (`synaptera-banc-brain/scripts/dn_lr_asymmetry.py` temel alınabilir).
 3. (O1) Sonuç dosyasının üzerine yazmayı engelle.
 4. (O2) T4/T5 sütun dosyasını yalnız görme açıkken iste.
 5. (Y5) Strok genliği kırpma + kayıt.

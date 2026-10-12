@@ -1,6 +1,6 @@
-# Synaptera — bağımsız analiz ve sonraki çalışma planı (2026-10-12)
+# Synaptera: BANC Brain — bağımsız analiz ve sonraki çalışma planı (2026-10-12)
 
-Bu klasör, Synaptera v1.0.0 anlık görüntüsünün kod, model, fizik ve test incelemesini; bağlantı yapısı (connectome)
+Bu klasör ("Synaptera: BANC Brain"), Synaptera v1.0.0 anlık görüntüsünün kod, model, fizik ve test incelemesini; bağlantı yapısı (connectome)
 üzerindeki yeni analizleri; BANC olanaklarını; benzer çalışmalara ("The Driving Fly", The Uploading Lab vb.) dair
 araştırma notlarını ve bir sonraki çalışma için mimari planı içerir. Dil: Türkçe (lab defteri `docs/tr/` ile tutarlı).
 Bu dosyalar anlık görüntüden **sonra** eklendi; `docs/SNAPSHOT_MANIFEST.md` listesinde yoktur.
@@ -14,8 +14,8 @@ Bu dosyalar anlık görüntüden **sonra** eklendi; `docs/SNAPSHOT_MANIFEST.md` 
 | [05_MIMARI_PLAN.md](05_MIMARI_PLAN.md) | Synaptera-2 için katmanlı mimari, fazlı yol haritası, risk kaydı |
 | `veri/` | Bu analizin sayısal çıktıları (FlyWire v783'ten türetilmiş → CC BY-NC 4.0, repo politikası gibi) |
 
-Analiz betikleri: `scripts/analysis/connectome_structure.py`, `scripts/analysis/dn_lr_asymmetry.py`,
-`scripts/analysis/grn_mn9_check.py` (veri: `scripts/fetch_data.py` ile indirilir).
+Analiz betikleri: `synaptera-banc-brain/scripts/connectome_structure.py`, `synaptera-banc-brain/scripts/dn_lr_asymmetry.py`,
+`synaptera-banc-brain/scripts/grn_mn9_check.py` (veri: `scripts/fetch_data.py` ile indirilir).
 
 ## Yönetici özeti
 

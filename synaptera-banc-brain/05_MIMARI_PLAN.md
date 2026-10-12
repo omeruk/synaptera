@@ -215,7 +215,7 @@ sonra < 0,1 Hz).
 
 1. F0: `fly_flight_brain_body_simulation.py`'ye komut kuyruğu (`--motor-latency-steps 1`, varsayılan eski davranış
    kayıtlı), üzerine yazma koruması, T4/T5 sütun dosyasının koşullu yüklenmesi, Φ kırpma; testler.
-2. F0: `scripts/analysis/dn_lr_asymmetry.py`'yi okuma kapısı aracına çevir; DNa02/DNp15 için raporu yayınla.
+2. F0: `synaptera-banc-brain/scripts/dn_lr_asymmetry.py`'yi okuma kapısı aracına çevir; DNa02/DNp15 için raporu yayınla.
 3. F1: BANC 888 indir (Dataverse erişimi gerekir), hash'le; ortak şema adaptörü; QA raporu.
 4. F1: crosswalk ilk sürümü: DNp01, DNg02 (a–h), DNa01/02, DNp15, DNp07/10, MN9 adayı, LB3, haltere afferentleri, kanat MN'leri.
 5. F2 ön-kaydı: 5 açık döngü testinin kriterleri (OSF + repo).

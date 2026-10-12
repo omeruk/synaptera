@@ -2,9 +2,9 @@
 
 Tarih: 2026-10-12. Bu belgedeki **yeni** sayılar bu oturumda FlyWire v783 verisi (Shiu ve ark. model dosyaları + FlyWire
 ek açıklamaları, SHA-256 doğrulandı) üzerinde koşturulan betiklerden gelir:
-`scripts/analysis/connectome_structure.py` → `veri/connectome_stats.json`,
-`scripts/analysis/dn_lr_asymmetry.py` → `veri/dn_lr_asymmetry.txt`,
-`scripts/analysis/grn_mn9_check.py` → `veri/grn_mn9.json`.
+`synaptera-banc-brain/scripts/connectome_structure.py` → `veri/connectome_stats.json`,
+`synaptera-banc-brain/scripts/dn_lr_asymmetry.py` → `veri/dn_lr_asymmetry.txt`,
+`synaptera-banc-brain/scripts/grn_mn9_check.py` → `veri/grn_mn9.json`.
 Repo raporlarından alınan sayılar kaynağıyla (REPORT.md §…) belirtilmiştir.
 
 ---

@@ -117,7 +117,7 @@ yayınlanabilir bir "BANC'te neyin çalışmadığı ve neden" haritası verir.
 ## 5. Önerilen ilk adımlar (somut)
 
 1. Dataverse 7WTH1N'den `banc_888_edgelist_simple_v3.feather` + `banc_888_meta.feather` + NT tahminleri; SHA-256 sabitle.
-2. `scripts/analysis/connectome_structure.py`'yi (bu analizde yazıldı) BANC şemasına uyarlayıp aynı tabloları üret:
+2. `synaptera-banc-brain/scripts/connectome_structure.py`'yi (bu analizde yazıldı) BANC şemasına uyarlayıp aynı tabloları üret:
    L/R simetri, DNg02/DNp15/MN9-eşdeğeri girdileri, AL özdeğeri, sensör→MN hop mesafeleri.
 3. B1-1 ve B1-3'ü Shiu-LIF ile koş (CPU, Brian2; BANC ~188k nöron → 1 s için tahminen ~20–40 s duvar süresi).
 4. Kapı: B1-1 geçmezse BANC'te MN9 eşlemesini/NT işaretlerini incele, uçuşa geçme.
