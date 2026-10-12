@@ -1,0 +1,187 @@
+NEURONS (158262, 21)
+['Root ID', 'Top in/out region', 'Community labels', 'Predicted NT type', 'Predicted NT confidence', 'Verified NT type', 'Verified Neuropeptide', 'Body Part', 'Function', 'Flow', 'Super Class', 'Class', 'Sub Class', 'Hemilineage', 'Nerve', 'Soma side', 'Primary Cell Type', 'Alternative Cell Type(s)', 'Cable length (nm)', 'Surface area (nm^2)', 'Volume (nm^3)']
+-- Flow
+Flow
+intrinsic    128776
+afferent      17082
+NaN           11371
+efferent       1033
+-- Super Class
+Super Class
+optic_lobe_intrinsic            72582
+central_brain_intrinsic         31782
+sensory                         16557
+ventral_nerve_cord_intrinsic    12851
+NaN                             11499
+visual_projection                7321
+ascending                        1849
+descending                       1316
+motor                             805
+sensory_ascending                 516
+visual_centrifugal                472
+glia                              458
+visceral_circulatory              221
+sensory_descending                 13
+trachea                             8
+-- Body Part
+Body Part
+NaN                138616
+antenna              4241
+hind_leg             2026
+lamina               1973
+retina               1840
+front_leg            1831
+middle_leg           1739
+abdomen              1261
+interommatidial      1205
+wing_margin           594
+labellum              527
+haltere               466
+thorax                332
+wing                  228
+maxillary_palp        226
+-- Soma side
+Soma side
+right    82502
+left     75760
+-- Predicted NT type
+Predicted NT type
+ACH     85006
+GLUT    24382
+GABA    20604
+NaN      8780
+DA       8072
+HIST     7694
+OCT      1903
+SER      1612
+TYR       209
+-- Function
+Function
+NaN                                          134160
+tactile                                        6662
+visual_achromatic                              5709
+visual_chromatic                               1839
+proprioception                                 1063
+olfactory,pheromone_volatile                    689
+auditory,position                               608
+mechanical_strain,proprioception                587
+olfactory,yeasty_volatile                       562
+proprioception,vibro_tactile                    493
+alcoholic_fermentation_volatile,olfactory       455
+decaying_fruit_volatile,olfactory               433
+auditory,auditory_high_frequency                418
+joint_angle,proprioception                      344
+gustatory,ppk23,ppk25                           273
+typed (Primary Cell Type notna): 0.7491627807054125
+CONN (3990039, 5) syn total 23556214 min syn 1 median 4.0
+nt_type nt_type
+NaN    3990039
+unique pairs 3037361 syn 23556214
+conn ids not in neurons: pre 0.0 post 0.0
+top neuropils neuropil
+ME_R               2471832
+ME_L               1672003
+GNG                1265336
+VNC_T2_MesoNm_R    1023332
+VNC_T1_ProNm_L      976400
+VNC_T2_MesoNm_L     899076
+LO_R                775098
+VNC_T3_MetaNm_L     772721
+VNC_T1_ProNm_R      746221
+AVLP_R              714901
+VNC_T3_MetaNm_R     692323
+LO_L                615263
+LOP_R               591363
+AL_L                570370
+AVLP_L              553944
+AL_R                552369
+IntTct              501532
+LOP_L               454193
+ABDNM_R             365925
+ABDNM_L             344618
+IPS_R               287628
+FB                  278926
+SPS_R               251070
+SPS_L               248968
+PLP_R               246496
+mean in-syn/neuron 148.8431461753295 mean in-edges 25.21160480721841
+optic_lobe_intrinsic: n L/R 31592/40990  in-syn R/L 1.558
+central_brain_intrinsic: n L/R 15709/16073  in-syn R/L 1.115
+visual_projection: n L/R 3521/3800  in-syn R/L 1.290
+descending: n L/R 651/665  in-syn R/L 1.159
+ascending: n L/R 899/950  in-syn R/L 0.995
+motor: n L/R 392/413  in-syn R/L 1.079
+ventral_nerve_cord_intrinsic: n L/R 6382/6469  in-syn R/L 0.946
+^DNg02 38 DNg02_d/r:14 DNg92/r:86 DNg02/r:6 DNg02/r:85 DNg03/r:55 DNg02/l:373 DNg02/r:168 DNg02/l:658 DNg02/r:178 DNg02/l:26 DNg02_h/r:30 DNg02/l:134 DNg02/r:574 DNg02_h/r:18
+^DNp15$ 2 DNp15/r:2000 DNp15/l:1705
+^DNa02$ 2 DNa02/r:7099 DNa02/l:6437
+^DNa01$ 2 DNa01/r:6094 DNa01/l:3936
+^DNp01$ 2 DNp01/r:2792 DNp01/l:3037
+^DNp07$ 2 DNp07/l:1769 DNp07/r:1853
+^DNp10$ 3 DNp10/l:2606 DNp10/l:3433 DNp10/r:4134
+^DNp03$ 2 DNp03/l:2020 DNp03/r:2846
+MN9 2 MN9/l:1913 MN9/r:2437
+CB0701 0 
+^LB3 134 LB3c/l:47 LB3c/r:85 LB3a/r:19 LB3b/r:144 LB3a/r:63 LB3a/r:20 LB3a/r:9 LB3b/l:19 LB3b/l:0 LB3b/r:97 LB3d/l:3 LB3d/l:6 LB3b/l:5 LB3b/r:3
+^TTMn|TTM 2 TTMn/l:915 TTMn/r:1428
+^HS[NES]?$|^HS 6 HSS/l:4060 HSN/r:10852 HSE/r:9030 HSE/l:5106 HSN/l:7721 HSS/r:6126
+^H2$ 2 H2/l:12589 H2/r:13212
+^LPLC2$ 181 LPLC2/l:348 LPLC2/l:165 LPLC2/r:3 LPLC2/r:178 LPLC2/r:116 LPLC2/l:85 LPLC2/r:392 LPLC2/l:181 LPLC2/l:198 LPLC2/r:210 LPLC2/r:163 LPLC2/l:151 LPLC2/r:294 LPLC2/r:194
+^LC4$ 114 LC4/l:332 LC4/r:718 LC4/r:903 LC4/r:421 LC4/r:414 LC4/r:94 LC4/l:390 LC4/l:991 LC4/r:694 LC4/r:417 LC4/r:537 LC4/r:603 LC4/r:583 LC4/r:628
+motor by Body Part: Body Part
+abdomen               168
+front_leg             139
+middle_leg            126
+hind_leg              126
+wing                   64
+neck                   49
+proboscis              35
+haltere                27
+pharynx                22
+thoracic_abdominal     18
+antenna,scape           8
+crop                    7
+uterus                  6
+eye                     4
+salivary_gland          2
+NaN                     2
+antenna                 2
+motor by Class: Class
+leg_motor_neuron                             391
+abdomen_motor_neuron                         172
+wing_motor_neuron                             62
+neck_motor_neuron                             49
+proboscis_motor_neuron                        35
+haltere_motor_neuron                          25
+pharynx_motor_neuron                          22
+thoracic_abdominal_segmental_motor_neuron     15
+antenna_motor_neuron                          10
+crop_motor_neuron                              7
+eye_motor_neuron                               4
+unknown_thoracic_abdominal_motor_neuron        3
+salivary_motor_neuron                          2
+unknown_motor_neuron                           2
+hind_leg_motor_neuron                          2
+motor Sub Class: Sub Class
+NaN                                 292
+front_leg_motor_neuron              139
+hind_leg_motor_neuron               128
+middle_leg_motor_neuron             126
+wing_power_motor_neuron              24
+wing_steering_motor_neuron           24
+haltere_steering_neuron              15
+neck_yaw_motor_neuron                14
+neck_roll_motor_neuron               12
+wing_tension_motor_neuron            12
+neck_pitch_motor_neuron               8
+haltere_power_neuron                  6
+neck_roll_pitch_motor_neuron          2
+wing_peripheral_intrinsic_neuron      2
+abdomen_neurosecretory_cell           1
+wing/haltere/thorax MN types: {'DLM1-4': 8, 'DVM1a-c': 6, 'DVM2a-b': 4, 'hi1': 4, 'DVM3a-b': 4, 'hi2': 3, 'hg1': 2, 'hiii2': 2, 'MNxm03': 2, 'iii3': 2, 'i1': 2, 'b3': 2, 'hg3': 2, 'tpn': 2, 'i2': 2, 'hg2': 2, 'tp2': 2, 'MNhm03': 2, 'iii1': 2, 'MNhl88': 2, 'iii4': 2, 'MNhm43': 2, 'ps2': 2, 'hg4': 2, 'b1': 2, 'MNhm42': 2, 'MNxm01': 2, 'ps1': 2, 'hDVM': 2, 'PSI': 2, 'MNad29': 2, 'MNhl59': 2, 'PSn_u': 2, 'MNhl87': 2, 'tp1': 2, 'DLM5': 2, 'b2': 2}
+paired DN types 262 median|log2| 0.354 frac>0.5 0.366 frac>1 0.107 median signed 0.215
+  DNp15 1705 2000 1.17
+  DNa02 6437 7099 1.1
+  DNa01 3936 6094 1.55
+  DNp01 3037 2792 0.92
+  DNp07 1769 1853 1.05
