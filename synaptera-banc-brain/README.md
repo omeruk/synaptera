@@ -50,7 +50,7 @@ aynı. Yüksek önemli bulgular:
 
 **BANC:** VNC'yi ve gerçek kanat/haltere/bacak motor nöronlarını getiriyor, CC BY 4.0. En değerli olası kazanımlar: DN → kanat
 köprüsünün connectome'a devri, haltere refleksinin connectome'dan gelmesi, bacak tat → MN9 doğal tetiği, GF ile kalkış.
-Riskler: MN9 adının BANC'te olmaması, proofreading kaynaklı L/R asimetrisi, dinlenme aktivitesi yokluğu. Materialization **888** kullanılmalı.
+Riskler: proofreading kaynaklı L/R asimetrisi (güncel Codex dışa aktarımında optik lob sağ/sol 1,56×), seyreklik (FlyWire'dan ~2,6× az sinaps/nöron), dinlenme aktivitesi yokluğu. Güncel Codex BANC dışa aktarımında MN9, 62 kanat MN'si, 25 haltere MN'si ve TTMn mevcut (`03_BANC_OLANAKLARI.md` ek A).
 
 **Benzer çalışmalar:** "Sürüş" projelerinin hepsi topolojiyi sabit tutup **dinamik parametreleri veya okuma katmanını eğitiyor**
 (rate modeli + girdi normalizasyonu + durumun taşınması + taklit + DAgger); hiçbirinde uçuş tamamen nöral değil.

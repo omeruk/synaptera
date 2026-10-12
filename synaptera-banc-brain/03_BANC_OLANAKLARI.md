@@ -36,7 +36,7 @@ neden zorlandığını da açıklar: uçuş stabilizasyonunun büyük kısmı VN
 - **Materialization 888** (Dataverse doi:10.7910/DVN/7WTH1N, makale sürümü v3.0): `banc_888_edgelist_simple_v3.feather`,
   `banc_888_meta.feather`, NT tahminleri, influence parquet'leri, NBLAST çapraz-veri eşleşmeleri, mesh/SWC.
   **Kullanılması gereken sürüm budur.** Uploading Lab da 888 kullanıyor.
-- **MN9 adı BANC'de yok** (BioReservoir'ın 626 snapshot taraması: "MN9 0"). Synaptera'nın tek BRAIN kararı MN9'a
+- ~~**MN9 adı BANC'de yok**~~ (BioReservoir'ın 626 snapshot taraması: "MN9 0"). **Düzeltme (ek A):** güncel Codex BANC dışa aktarımında `MN9` adıyla 2 nöron (sol + sağ) var; eşleşme yine bağlantı profiliyle doğrulanmalı. Synaptera'nın tek BRAIN kararı MN9'a
   dayanıyor → BANC'e geçişte ilk iş, FlyWire CB0701 (MN9) karşılığını **çapraz-veri eşleşmesiyle** (NBLAST /
   `cell_type` eşlemeleri / bağlantı profili) bulmak.
 - **L/R asimetrisi**: FlyWire'da bile (bkz. analiz §1.4) DN çiftlerinin %25'inde giriş sinapsı farkı >1,41×. BANC'de
@@ -131,3 +131,44 @@ yayınlanabilir bir "BANC'te neyin çalışmadığı ve neden" haritası verir.
 - [Pugliese ve ark. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC13142387/) (VNC CPG)
 - [Cheong ve ark., eLife 96084](https://elifesciences.org/reviewed-preprints/96084) (MANC premotor devreleri); Namiki ve ark. (DNg02, uçuş motoru)
 - [banc (PyPI)](https://pypi.org/project/banc/)
+
+---
+
+## Ek A — Codex BANC dışa aktarımına ilk bakış (2026-10-12)
+
+Kullanıcının elindeki iki dosya bu ortamda incelendi: `neurons-banc.csv.gz` (SHA-256 `40a22015…`) ve
+`connections_princeton-banc.csv.gz` (`8772298e…`). Betik: `scripts/banc_first_look.py`; tam çıktı: `veri/banc_first_look.txt`.
+Hangi materialization olduğu dosyada yazmıyor (Codex "en güncel" BANC sürümü); sayılar 626 snapshot'ından büyük.
+
+**Kapsam**
+- 158.262 nöron (sol 75.760 / sağ 82.502); %74,9'u tipli. Süper sınıflar: optik 72.582, merkezi beyin 31.782, duyusal
+  16.557, **VNC iç nöronu 12.851**, VPN 7.321, **AN 1.849, DN 1.316, motor 805**, belirsiz (NaN) 11.499.
+- Bağlantı: 3.990.039 satır (nöropil başına) → 3.037.361 benzersiz nöron çifti, **23.556.214 sinaps** (çift başına
+  medyan 4). Ortalama giriş: 25 kenar / 149 sinaps (FlyWire v783 modelinde 109 / 393) → FlyWire'dan **~2,6× seyrek**.
+  Uploading Lab'ın 888 kenar listesi 42,3 M sinaps bildiriyordu; bu "princeton" tablosu daha seyrek bir dışa aktarım.
+- Bağlantı tablosunda `nt_type` boş; işaret nöron düzeyindeki `Predicted NT type`'tan (ACh 85.006, Glu 24.382, GABA 20.604,
+  DA 8.072, **HIST 7.694**, OCT 1.903, SER 1.612, TYR 209, boş 8.780) alınmalı. HIST ve boş NT için işaret kuralı kararı gerekiyor.
+
+**Uçuş ve beslenme için kritik tipler — hepsi mevcut**
+- **MN9: 2 nöron** (L 1.913 / R 2.437 giriş sinapsı) → Synaptera'nın beslenme kararı BANC'te test edilebilir.
+- **Kanat motor nöronları 62:** güç (DLM1–5, DVM1–3; 24), direksiyon (b1, b2, b3, i1, i2, iii1, iii3, iii4, hg1–4, tp1, tp2,
+  tpn, ps1, ps2; 24), gerilim (12). **Haltere MN 25** (hi1, hi2, hiii2, hDVM…), **boyun MN 49** (yaw/roll/pitch), **TTMn 2**
+  (sıçrama/kalkış), bacak MN 391, hortum MN 35.
+- DNg02 ailesi 38 nöron; DNp15, DNa01, DNa02, DNp01, DNp07, DNp03, DNp10 (3), H2, HSN/HSE/HSS, LC4 (114), LPLC2 (181),
+  LB3 (134) mevcut.
+- Duyusal: haltere 466, kanat 228 + kanat kenarı 594, bacak 5.596 (ön/orta/arka), labellum 527 nöron (`Body Part`).
+
+**Sol/sağ denge — dikkat**
+- Optik lob iç nöronları sağda belirgin fazla: 40.990 / 31.592 nöron, giriş sinapsı sağ/sol **1,56×**; VPN 1,29×,
+  merkezi beyin 1,12×, DN 1,16×; VNC iç nöronları 0,95×, AN 1,00× (VNC dengeli).
+- Tek-çift DN tiplerinde (262 tip) |log2(sağ/sol)| medyanı 0,35; %36,6'sı > 1,41×, %10,7'si > 2× (FlyWire'da %24,8 / %11,5).
+- **DNp15 burada 1,17×** (FlyWire'da 1,66×) → FlyWire'daki DNp15 asimetrisinin önemli kısmı yeniden yapılandırma
+  kaynaklı olabilir. **DNa01 1,55×**, DNa02 1,10×, DNp01 0,92×, DNp07 1,05×.
+- Sonuç: görme kaynaklı lateral karşılaştırmalar (optik lob dengesizliği) ve DNa01 en riskli; simetri kapısı BANC'te şart.
+
+**Plana etkisi**
+1. F1 için veri elde: bu iki dosya `~/synaptera-banc-brain/banc/` altına konur (git'e girmez), SHA-256 kaydedilir.
+2. B1-1 (labellar şeker → MN9) ve B1-3 (LC4/LPLC2 → DNp01 → TTMn) doğrudan koşulabilir; kanat/haltere MN listesiyle
+   B2/B3 yapısal analizi başlayabilir.
+3. Seyreklik (~2,6×) Shiu ağırlığıyla (w_syn) sessiz yollar üretebilir; bu bir **model varyantı** kararıdır (ör. girdi
+   normalizasyonu ya da w_syn ölçekleme), ön-kayıtla verilmeli.
