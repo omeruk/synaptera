@@ -2,14 +2,14 @@
 
 Reads brain_model/Completeness_783.csv, Connectivity_783.parquet, flywire_annotations.tsv and the derived
 data/sugar_grn_783.csv, data/leg_sugar_grn_783.csv, brain_model/descending_neurons.csv (scripts/fetch_data.py).
-Writes every number to a JSON file (synaptera-banc-brain/veri/connectome_stats.json); the reading is in
-synaptera-banc-brain/02_MODEL_FIZIK_TEST_ANALIZI.md section 1.
+Writes every number to a JSON file (synaptera-banc-brain/results/connectome_stats.json); the reading is in
+synaptera-banc-brain/02_CONNECTOME_MODEL_PHYSICS_TESTS.md section 1.
 
 Contents: global graph statistics; LIF arithmetic of the Shiu parameters; sugar / leg GRN -> MN9 hop distance and signed
 linear influence; inputs of MN9, DNg02, DNp15, DNa02, DNa01, DNp01, DNp07, DNp10 by side; hop distance from T4/T5 and
 VPNs to the DNs; antennal-lobe LN/PN excitation and leading eigenvalue; motor neurons in the model; left/right totals.
 
-    env -u PYTHONPATH python synaptera-banc-brain/scripts/connectome_structure.py [--root .] [--out synaptera-banc-brain/veri/connectome_stats.json]
+    env -u PYTHONPATH python synaptera-banc-brain/scripts/connectome_structure.py [--root .] [--out synaptera-banc-brain/results/connectome_stats.json]
 """
 import json
 from pathlib import Path
@@ -25,7 +25,7 @@ _ap.add_argument("--root", default=str(Path(__file__).resolve().parents[2]))
 _ap.add_argument("--out", default=None)
 _a = _ap.parse_args()
 ROOT = Path(_a.root)
-OUT = Path(_a.out) if _a.out else ROOT / "synaptera-banc-brain/veri/connectome_stats.json"
+OUT = Path(_a.out) if _a.out else ROOT / "synaptera-banc-brain/results/connectome_stats.json"
 R = {}
 
 comp = pd.read_csv(ROOT / "brain_model/Completeness_783.csv", index_col=0)

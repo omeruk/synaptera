@@ -1,9 +1,9 @@
 """Independent open-loop check with the unmodified Shiu et al. model (brain_model/model.py, Shiu PoissonInput protocol):
 MN9 (CB0701) rate when the labellar sugar GRNs (data/sugar_grn_783.csv) or the connectivity-selected leg GRNs
 (data/leg_sugar_grn_783.csv) are driven. Full brain, Brian2 (cython), one fresh network per condition and seed; ~1-3 min
-per 1 s condition on one CPU core. Reading: synaptera-banc-brain/02_MODEL_FIZIK_TEST_ANALIZI.md section 5.3.
+per 1 s condition on one CPU core. Reading: synaptera-banc-brain/02_CONNECTOME_MODEL_PHYSICS_TESTS.md section 5.3.
 
-    env -u PYTHONPATH python synaptera-banc-brain/scripts/grn_mn9_check.py <repo root> synaptera-banc-brain/veri/grn_mn9.json [t_run_s] [seeds ...]
+    env -u PYTHONPATH python synaptera-banc-brain/scripts/grn_mn9_check.py <repo root> synaptera-banc-brain/results/grn_mn9.json [t_run_s] [seeds ...]
 """
 import json
 import sys
