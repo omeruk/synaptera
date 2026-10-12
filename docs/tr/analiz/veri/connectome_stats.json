@@ -1,0 +1,648 @@
+{
+ "global": {
+  "neurons": 138639,
+  "edges": 15091983,
+  "synapses": 54492922,
+  "edges_exc": 9059302,
+  "edges_inh": 6032681,
+  "syn_exc": 32494717,
+  "syn_inh": 21998205,
+  "neurons_exc": 96672,
+  "neurons_inh": 41333,
+  "neurons_no_output": 634,
+  "neurons_no_input": 1549,
+  "self_loops": 0,
+  "min_edge_syn": 1,
+  "median_edge_syn": 2.0,
+  "max_edge_syn": 2405,
+  "in_edges_mean": 108.85813515677407,
+  "in_edges_median": 69.0,
+  "in_edges_max": 10356,
+  "in_syn_mean": 393.05622516030843,
+  "in_syn_median": 198.0,
+  "in_syn_p99": 3476.859999999986,
+  "out_syn_max": 99871,
+  "reciprocal_edge_fraction": 0.26600334760514904
+ },
+ "super_class_neurons": {
+  "optic": 77521,
+  "central": 32380,
+  "sensory": 16353,
+  "visual_projection": 8037,
+  "ascending": 1736,
+  "descending": 1299,
+  "sensory_ascending": 581,
+  "visual_centrifugal": 524,
+  "motor": 110,
+  "endocrine": 76,
+  "NA": 22
+ },
+ "side_neurons": {
+  "left": 69499,
+  "right": 68914,
+  "center": 174,
+  "na": 30,
+  "NA": 22
+ },
+ "syn_by_class_pair_top": {
+  "optic->optic": 20226161,
+  "central->central": 18427863,
+  "optic->visual_projection": 4308650,
+  "visual_projection->central": 2027716,
+  "central->descending": 1470010,
+  "visual_centrifugal->optic": 942048,
+  "ascending->central": 874254,
+  "visual_projection->optic": 836324,
+  "visual_projection->visual_projection": 795993,
+  "sensory->central": 671094,
+  "central->visual_projection": 413147,
+  "descending->central": 377865,
+  "visual_centrifugal->visual_projection": 304450,
+  "sensory->optic": 295580,
+  "central->visual_centrifugal": 284155
+ },
+ "lif": {
+  "psp_peak_mV": 0.04330978609013627,
+  "t_peak_ms": 9.241962407465937,
+  "synapses_coincident_to_threshold": 161.6262889276712,
+  "mean_depol_per_synHz_mV": 0.001375,
+  "synHz_for_threshold": 5090.909090909091,
+  "poisson_input_kick_mV": 68.75
+ },
+ "sugar_to_MN9": {
+  "labellar_sugar_36": {
+   "n": 36,
+   "direct_syn_to_MN9": [
+    0,
+    0
+   ],
+   "hops_exc_to_MN9": [
+    2,
+    2
+   ],
+   "hops_any_to_MN9": [
+    2,
+    2
+   ],
+   "out_syn_total": 9632,
+   "out_partners": 410,
+   "influence_MN9_steps": [
+    0.0,
+    2.1095348082972375e-05,
+    0.0008193273944115649,
+    0.0013770313102699602
+   ],
+   "neurons_above_MN9_influence": {
+    "1": 410,
+    "2": 5231,
+    "3": 899,
+    "4": 658
+   }
+  },
+  "leg_sugar_SA_VTV_2_12": {
+   "n": 12,
+   "direct_syn_to_MN9": [
+    0,
+    0
+   ],
+   "hops_exc_to_MN9": [
+    3,
+    3
+   ],
+   "hops_any_to_MN9": [
+    2,
+    3
+   ],
+   "out_syn_total": 3975,
+   "out_partners": 146,
+   "influence_MN9_steps": [
+    0.0,
+    -2.4515824719698324e-06,
+    -1.6346532702705517e-05,
+    -5.746073324309696e-06
+   ],
+   "neurons_above_MN9_influence": {
+    "1": 146,
+    "2": 136523,
+    "3": 132064,
+    "4": 125275
+   }
+  },
+  "leg_GRN_all_74": {
+   "n": 74,
+   "direct_syn_to_MN9": [
+    0,
+    0
+   ],
+   "hops_exc_to_MN9": [
+    2,
+    2
+   ],
+   "hops_any_to_MN9": [
+    2,
+    2
+   ],
+   "out_syn_total": 23438,
+   "out_partners": 531,
+   "influence_MN9_steps": [
+    0.0,
+    -1.2100787665960236e-05,
+    -0.0002033512456065323,
+    -0.00020110816870121416
+   ],
+   "neurons_above_MN9_influence": {
+    "1": 432,
+    "2": 134587,
+    "3": 135129,
+    "4": 134279
+   }
+  }
+ },
+ "MN9_inputs": {
+  "total_in_syn": 11465,
+  "exc": 5247,
+  "inh": 6218,
+  "by_super_class": {
+   "central": 7690,
+   "descending": 3194,
+   "sensory": 299,
+   "ascending": 263,
+   "motor": 19
+  },
+  "top_types": {
+   "DNge062": 1209,
+   "CB0553": 900,
+   "CB0806": 858,
+   "CB0465": 851,
+   "CB0862": 810,
+   "CB0493": 623,
+   "DNge051": 587,
+   "CB0216": 554,
+   "CB0903": 543,
+   "CB0893": 395,
+   "DNge080": 322,
+   "CB4211": 288
+  }
+ },
+ "DNg02": {
+  "n": 25,
+  "total_in_syn": 13329,
+  "exc": 6101,
+  "inh": 7228,
+  "by_super_class": {
+   "central": 11378,
+   "ascending": 1107,
+   "descending": 600,
+   "visual_projection": 196,
+   "visual_centrifugal": 45,
+   "optic": 2,
+   "sensory": 1
+  },
+  "top_types": {
+   "IB008": 859,
+   "AN_multi_28": 499,
+   "PS008": 492,
+   "IB010": 459,
+   "PS005": 453,
+   "AN_multi_6": 359,
+   "IB025": 355,
+   "PS181": 329,
+   "CL216": 299,
+   "PS109": 297,
+   "CL336": 274,
+   "LAL197": 242
+  }
+ },
+ "DNp15": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 1255,
+   "exc": 636,
+   "inh": 619,
+   "by_super_class": {
+    "central": 904,
+    "visual_projection": 191,
+    "ascending": 81,
+    "descending": 76,
+    "visual_centrifugal": 3
+   },
+   "top_types": {
+    "PS234": 137,
+    "PS055": 95,
+    "H2": 85,
+    "PS233": 79,
+    "AN_multi_6": 67,
+    "CB3740": 63,
+    "CB0268": 54,
+    "SAD005,SAD006": 53
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 2085,
+   "exc": 1126,
+   "inh": 959,
+   "by_super_class": {
+    "central": 1473,
+    "visual_projection": 297,
+    "descending": 181,
+    "ascending": 132,
+    "motor": 2
+   },
+   "top_types": {
+    "PS234": 228,
+    "PS233": 136,
+    "PS055": 119,
+    "SAD005,SAD006": 105,
+    "CB0268": 86,
+    "DNb03": 84,
+    "PS100": 77,
+    "SAD013": 76
+   }
+  }
+ },
+ "DNa02": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 12268,
+   "exc": 7881,
+   "inh": 4387,
+   "by_super_class": {
+    "central": 10296,
+    "descending": 1194,
+    "ascending": 383,
+    "visual_projection": 381,
+    "visual_centrifugal": 14
+   },
+   "top_types": {
+    "PS049": 353,
+    "VES051,VES052": 340,
+    "DNa03": 250,
+    "CB0757": 246,
+    "PFL3": 238,
+    "PS059": 220,
+    "AN_IPS_GNG_7": 217,
+    "PS230,PLP242": 209
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 13159,
+   "exc": 8365,
+   "inh": 4794,
+   "by_super_class": {
+    "central": 10926,
+    "descending": 1440,
+    "ascending": 416,
+    "visual_projection": 372,
+    "visual_centrifugal": 3,
+    "motor": 2
+   },
+   "top_types": {
+    "PS049": 378,
+    "VES051,VES052": 344,
+    "PS059": 290,
+    "DNa03": 264,
+    "PFL3": 258,
+    "DNae005": 240,
+    "CB0757": 228,
+    "LAL126": 224
+   }
+  }
+ },
+ "DNa01": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 5857,
+   "exc": 3076,
+   "inh": 2781,
+   "by_super_class": {
+    "central": 4236,
+    "descending": 918,
+    "ascending": 421,
+    "visual_projection": 275,
+    "visual_centrifugal": 6,
+    "sensory": 1
+   },
+   "top_types": {
+    "LT51": 247,
+    "DNge123": 203,
+    "VES051,VES052": 194,
+    "CB0283": 190,
+    "DNge046": 176,
+    "VES007": 163,
+    "LAL124": 157,
+    "AN_multi_100": 150
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 6638,
+   "exc": 3431,
+   "inh": 3207,
+   "by_super_class": {
+    "central": 4575,
+    "descending": 1097,
+    "ascending": 594,
+    "visual_projection": 370,
+    "visual_centrifugal": 2
+   },
+   "top_types": {
+    "LT51": 320,
+    "VES051,VES052": 258,
+    "AN_multi_100": 214,
+    "VES007": 208,
+    "DNge123": 198,
+    "CB0283": 174,
+    "DNge046": 174,
+    "LAL124": 156
+   }
+  }
+ },
+ "DNp01": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 4327,
+   "exc": 2100,
+   "inh": 2227,
+   "by_super_class": {
+    "central": 3022,
+    "visual_projection": 842,
+    "descending": 376,
+    "ascending": 40,
+    "sensory": 39,
+    "visual_centrifugal": 8
+   },
+   "top_types": {
+    "LPLC2": 458,
+    "LC4": 374,
+    "CB3707": 293,
+    "DNp70": 249,
+    "SAD014": 136,
+    "LHAD1g1": 130,
+    "PVLP010": 113,
+    "CB0010": 111
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 5147,
+   "exc": 2652,
+   "inh": 2495,
+   "by_super_class": {
+    "central": 3381,
+    "visual_projection": 1057,
+    "descending": 455,
+    "sensory": 148,
+    "ascending": 87,
+    "visual_centrifugal": 19
+   },
+   "top_types": {
+    "LPLC2": 622,
+    "LC4": 431,
+    "CB3707": 340,
+    "DNp70": 338,
+    "PVLP122b": 171,
+    "SAD014": 156,
+    "CL038": 143,
+    "PVLP010": 137
+   }
+  }
+ },
+ "DNp07": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 4656,
+   "exc": 2984,
+   "inh": 1672,
+   "by_super_class": {
+    "central": 2824,
+    "visual_projection": 1754,
+    "descending": 42,
+    "ascending": 22,
+    "visual_centrifugal": 14
+   },
+   "top_types": {
+    "LPLC4": 810,
+    "LTe64": 379,
+    "CB0442": 241,
+    "LLPC3": 228,
+    "PLP214": 227,
+    "PLP245": 122,
+    "PLP092": 119,
+    "CL128a": 95
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 4061,
+   "exc": 2566,
+   "inh": 1495,
+   "by_super_class": {
+    "central": 2606,
+    "visual_projection": 1353,
+    "descending": 48,
+    "visual_centrifugal": 29,
+    "ascending": 25
+   },
+   "top_types": {
+    "LPLC4": 638,
+    "LTe64": 348,
+    "PLP214": 201,
+    "PLP092": 169,
+    "CB0442": 160,
+    "PLP245": 114,
+    "SAD072": 99,
+    "LTe18": 93
+   }
+  }
+ },
+ "DNp10": {
+  "left": {
+   "n": 1,
+   "total_in_syn": 7655,
+   "exc": 4903,
+   "inh": 2752,
+   "by_super_class": {
+    "central": 6508,
+    "visual_projection": 524,
+    "ascending": 359,
+    "descending": 139,
+    "sensory": 84,
+    "visual_centrifugal": 37,
+    "sensory_ascending": 3,
+    "optic": 1
+   },
+   "top_types": {
+    "PS088": 414,
+    "PS058": 315,
+    "VES013": 191,
+    "CB2885": 190,
+    "CB3111": 187,
+    "CB0344": 185,
+    "AN_GNG_178": 146,
+    "SLP222": 137
+   }
+  },
+  "right": {
+   "n": 1,
+   "total_in_syn": 1849,
+   "exc": 958,
+   "inh": 891,
+   "by_super_class": {
+    "central": 1491,
+    "ascending": 152,
+    "visual_projection": 125,
+    "descending": 57,
+    "sensory": 19,
+    "visual_centrifugal": 5
+   },
+   "top_types": {
+    "PS088": 114,
+    "AN_GNG_178": 104,
+    "CB0344": 70,
+    "LC10d": 63,
+    "CB2885": 63,
+    "CB1350": 59,
+    "SAD044": 49,
+    "CB0073": 49
+   }
+  }
+ },
+ "visual_reach": {
+  "n_t45": 12246,
+  "n_vpn": 8037,
+  "n_dn": 1299,
+  "dn_hops_from_T45_exc": {
+   "-1": 2,
+   "1": 8,
+   "2": 571,
+   "3": 707,
+   "4": 10,
+   "5": 1
+  },
+  "dn_hops_from_VPN_exc": {
+   "-1": 2,
+   "1": 681,
+   "2": 607,
+   "3": 8,
+   "4": 1
+  },
+  "DNg02_hops_from_T45": [
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   3,
+   3,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   2,
+   3,
+   3,
+   2,
+   2
+  ],
+  "DNg02_hops_from_VPN": [
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  "DNp15_hops_from_T45": [
+   2,
+   2
+  ]
+ },
+ "AL": {
+  "n_ALLN": 429,
+  "n_ALPN": 685,
+  "n_ORN": 2275,
+  "ALLN_model_sign": {
+   "exc": 166,
+   "inh": 263,
+   "no_output": 0
+  },
+  "ALLN_top_nt": {
+   "glutamate": 148,
+   "gaba": 147,
+   "acetylcholine": 80,
+   "serotonin": 40,
+   "dopamine": 12,
+   "octopamine": 2
+  },
+  "ALPN_model_sign": {
+   "exc": 474,
+   "inh": 211
+  },
+  "LN_PN_internal_syn": {
+   "exc": 650947,
+   "inh": 192129
+  },
+  "recurrent": {
+   "neurons_with_exc_rec_syn_ge_thr_at_100Hz": 913,
+   "neurons_with_net_rec_syn_ge_thr_at_100Hz": 691,
+   "of": 1114,
+   "thr_synHz": 5090.909090909091
+  },
+  "leading_eig_exc_syn": 2408.428739307143,
+  "leading_eig_signed_syn": 2184.1231137465998
+ },
+ "motor_in_model": {
+  "n": 110,
+  "cell_class": {
+   "brain_motor_neuron": 105,
+   "NA": 4,
+   "neck_motor_neuron": 1
+  }
+ },
+ "ascending_in_model": 1736,
+ "sensory_ascending_in_model": 581,
+ "left_right": {
+  "left": {
+   "neurons": 69499,
+   "in_syn": 25770697,
+   "out_syn": 25977173,
+   "dn": 645
+  },
+  "right": {
+   "neurons": 68914,
+   "in_syn": 28558073,
+   "out_syn": 28351511,
+   "dn": 646
+  }
+ }
+}

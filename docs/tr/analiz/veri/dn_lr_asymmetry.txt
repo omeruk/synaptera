@@ -1,0 +1,24 @@
+paired single-neuron DN types: 383
+median |log2 R/L|: 0.221; fraction |log2| > 0.5 (1.41x): 0.248; > 1 (2x): 0.115; median signed log2 R/L: 0.101
+type  in_syn_L  in_syn_R  exc_L  exc_R  R/L  rank_of_|log2|
+DNp15  1255  2085  636  1126  1.66  65/383
+DNa02  12268  13159  7881  8365  1.07  300/383
+DNa01  5857  6638  3076  3431  1.13  222/383
+DNp10  7655  1849  4903  958  0.24  8/383
+DNp07  4656  4061  2984  2566  0.87  214/383
+DNp01  4327  5147  2100  2652  1.19  176/383
+DNp02  2841  2548  1646  1413  0.90  241/383
+DNp04  2944  2591  1991  1748  0.88  221/383
+DNp11  4581  3748  2862  2098  0.82  161/383
+DNp06  10488  11466  7336  7931  1.09  264/383
+DNa03  13744  12575  7747  6870  0.91  265/383
+DNb01  5441  6495  3549  4276  1.19  172/383
+DNb06  4991  4691  2770  2611  0.94  311/383
+DNp20  1115  1477  626  814  1.32  117/383
+most left-heavy: DNp03 0.07, DNge074 0.16, DNg49 0.20, DNp10 0.24, DNp27 0.25, DNpe034 0.25, DNpe053 0.25, DNp34 0.31
+most right-heavy: DNg58 3.38, DNge034 3.46, DNge117 3.70, DNpe046 4.12, DNge144 4.45, DNp40 7.43, DNge006 8.28, DNge014 77.62
+optic: input synapses R/L 1.157
+central: input synapses R/L 1.064
+visual_projection: input synapses R/L 1.133
+descending: input synapses R/L 1.065
+all: neurons L/R 69499/68914, input synapses R/L 1.108
