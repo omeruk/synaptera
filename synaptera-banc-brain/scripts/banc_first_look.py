@@ -3,7 +3,7 @@ cell types for flight and feeding, motor neurons and the left/right input balanc
 
     env -u PYTHONPATH python synaptera-banc-brain/scripts/banc_first_look.py <directory with the two .csv.gz files>
 
-Reading: synaptera-banc-brain/03_BANC_OLANAKLARI.md, appendix A.
+Reading: synaptera-banc-brain/03_BANC_OPPORTUNITIES.md, appendix A.
 """
 import glob
 import sys

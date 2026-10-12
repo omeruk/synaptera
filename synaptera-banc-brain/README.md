@@ -1,63 +1,66 @@
-# Synaptera: BANC Brain — bağımsız analiz ve sonraki çalışma planı (2026-10-12)
+# Synaptera: BANC Brain — independent review and plan for the next study (2026-10-12)
 
-Bu klasör ("Synaptera: BANC Brain"), Synaptera v1.0.0 anlık görüntüsünün kod, model, fizik ve test incelemesini; bağlantı yapısı (connectome)
-üzerindeki yeni analizleri; BANC olanaklarını; benzer çalışmalara ("The Driving Fly", The Uploading Lab vb.) dair
-araştırma notlarını ve bir sonraki çalışma için mimari planı içerir. Dil: Türkçe (lab defteri `docs/tr/` ile tutarlı).
-Bu dosyalar anlık görüntüden **sonra** eklendi; `docs/SNAPSHOT_MANIFEST.md` listesinde yoktur.
+This folder ("Synaptera: BANC Brain") holds the code, model, physics and test review of the Synaptera v1.0.0 snapshot; new
+analyses of the connectome; the options offered by BANC; research notes on similar work ("The Driving Fly", The Uploading
+Lab, etc.); the architecture plan for the next study and the setup package of the new project. Language: English.
+These files were added **after** the snapshot; they are not in `docs/SNAPSHOT_MANIFEST.md`.
 
-| belge | içerik |
+| document | content |
 |---|---|
-| [01_KOD_INCELEMESI.md](01_KOD_INCELEMESI.md) | Hatalar ve eksiklikler; yüksek/orta/düşük önem; öncelikli düzeltme listesi |
-| [02_MODEL_FIZIK_TEST_ANALIZI.md](02_MODEL_FIZIK_TEST_ANALIZI.md) | Bağlantı yapısı analizi, beyin modellemesi, fizik motoru, beyin testleri ve sonuçlarının değerlendirmesi; bu oturumdaki test/simülasyon sonuçları |
-| [03_BANC_OLANAKLARI.md](03_BANC_OLANAKLARI.md) | BANC beyni + sinir kordonu ile yapılabilecekler ve olası sonuçlar |
-| [04_ARASTIRMA_NOTLARI.md](04_ARASTIRMA_NOTLARI.md) | The Driving Fly (flyhard), fly-self-driving, flydrive, The Uploading Lab, Eon, Fly.exe, fly-cartpole… nasıl yapıldı |
-| [05_MIMARI_PLAN.md](05_MIMARI_PLAN.md) | Synaptera-2 için katmanlı mimari, fazlı yol haritası, risk kaydı |
-| [06_YENI_PROJE_KURULUMU.md](06_YENI_PROJE_KURULUMU.md) | Yeni projenin (`omeruk/synaptera-banc-brain`) kurulumu: `yeni_proje/kur.sh`, taşıma listesi, `CLAUDE.md`, terminalde ilk istek |
-| `veri/` | Bu analizin sayısal çıktıları (FlyWire v783'ten türetilmiş → CC BY-NC 4.0, repo politikası gibi) |
+| [01_CODE_REVIEW.md](01_CODE_REVIEW.md) | Bugs and gaps; high/medium/low severity; priority fix list |
+| [02_CONNECTOME_MODEL_PHYSICS_TESTS.md](02_CONNECTOME_MODEL_PHYSICS_TESTS.md) | Connectome structure analysis, brain model, physics engine, evaluation of the brain tests and results; test/simulation results of this session |
+| [03_BANC_OPPORTUNITIES.md](03_BANC_OPPORTUNITIES.md) | What can be done with the BANC brain + nerve cord and possible outcomes; appendix A: first look at the Codex BANC export |
+| [04_RESEARCH_NOTES.md](04_RESEARCH_NOTES.md) | How The Driving Fly (flyhard), fly-self-driving, flydrive, The Uploading Lab, Eon, Fly.exe, fly-cartpole, … were done |
+| [05_ARCHITECTURE_PLAN.md](05_ARCHITECTURE_PLAN.md) | Layered architecture, phased roadmap and risk register for Synaptera-2 |
+| [06_NEW_PROJECT_SETUP.md](06_NEW_PROJECT_SETUP.md) | Setup of the new project (`omeruk/synaptera-banc-brain`): `new_project/setup.sh`, migration list, `CLAUDE.md`, first prompts |
+| `results/` | Numerical outputs of this analysis (FlyWire-derived files → CC BY-NC 4.0, as the repository policy; BANC-derived → CC BY 4.0) |
 
-Analiz betikleri: `synaptera-banc-brain/scripts/connectome_structure.py`, `synaptera-banc-brain/scripts/dn_lr_asymmetry.py`,
-`synaptera-banc-brain/scripts/grn_mn9_check.py` (veri: `scripts/fetch_data.py` ile indirilir).
+Analysis scripts: `scripts/connectome_structure.py`, `scripts/dn_lr_asymmetry.py`, `scripts/grn_mn9_check.py`,
+`scripts/banc_first_look.py` (data: downloaded with the root `scripts/fetch_data.py`; BANC: Codex export).
 
-## Repo düzeni (işlerin karışmaması için)
+## Repository layout (to keep things separate)
 
-| ne | nerede | not |
+| what | where | note |
 |---|---|---|
-| Yayımlanmış Synaptera v1.0.0 (kod, raporlar, şekiller) | bu repo, kök dizin | **Değiştirilmez.** `docs/SNAPSHOT_MANIFEST.md` dosya listesi ve SHA-256'ları geçerli kalır |
-| Bu analiz ("Synaptera: BANC Brain") | bu repo, `synaptera-banc-brain/` | Yalnız bu klasöre yazılır; kök dosyalara dokunulmaz |
-| Mevcut koddaki hata düzeltmeleri (plan F0: komut kuyruğu, simetri kapısı, üzerine yazma koruması, Φ kırpma…) | bu repo, ayrı dal → PR | Birleşince **v1.1** olarak etiketlenir; v1.0.0 sonuçları yeniden üretilip karşılaştırılır |
-| Asıl BANC çalışması (plan F1–F6: veri hattı, VNC, refleks, eğitim) | **yeni repo** (öneri: `omeruk/synaptera-banc-brain`) | Farklı mimari ve veri lisansı (BANC CC BY 4.0 / FlyWire CC BY-NC); bu klasördeki plana bağlantı verir |
+| Published Synaptera v1.0.0 (code, reports, figures) | this repository, root | **Not changed.** The file list and SHA-256 of `docs/SNAPSHOT_MANIFEST.md` stay valid |
+| This analysis ("Synaptera: BANC Brain") | this repository, `synaptera-banc-brain/` | Only this folder is written; root files are not touched |
+| The BANC study (plan F0–F6: ported code with the v1 fixes built in, data pipeline, VNC, reflexes, training) | **new repository** `omeruk/synaptera-banc-brain` | Different architecture and data licence (BANC CC BY 4.0 / FlyWire CC BY-NC); set up with `06_NEW_PROJECT_SETUP.md` |
 
-Dal adları: `omeruk/<konu>` (ör. `omeruk/v1.1-duzeltmeler`). `main`'e yalnız PR ile girilir.
+Branch names: `omeruk/<topic>`. `main` only through a PR.
 
-## Yönetici özeti
+## Executive summary
 
-**Kod:** Raporlanan sonuçları geçersiz kılan bir kod hatası bulunmadı. Test paketi: **123 geçti, 51 atlandı, 0 başarısız**
-(atlamaların çoğu giriş gerektiren Codex verisi yüzünden). Türetilebilir 4 veri dosyası geliştirici kopyasıyla SHA-256 düzeyinde
-aynı. Yüksek önemli bulgular:
-1. **Beyin–beden adım içi akausalite:** beden, aynı 25 ms aralıkta "gelecekte" üretilen spike'larla sürülüyor (komut kuyruğu gerekli).
-2. **Sol/sağ asimetri kontrolü yok:** DNp15'in sağ girdisi solun 1,66 katı (383 DN içinde 65. en asimetrik), DNp10'unki 0,24 katı
-   (8.) → raporlanan iki lateral okuma başarısızlığı connectome'dan öngörülebilirdi.
-3. **Eğitim merdiveninde bilgi uyumsuzluğu:** öğretmenin dönüş komutu koku alanından, beyin yalnız görsel girdi alıyor; DAgger turları yapılmadan durduruldu.
-4. **Görsel örnekleme 80 Hz:** kuleye 4,4 mm'de ~49°/kare kayma → hareket algısı örtüşmeli.
-5. **Kanat strok genliği sınırsız:** ~206°'ye çıkabiliyor.
+**Code:** no code bug was found that invalidates the reported results. Test suite: **123 passed, 51 skipped, 0 failed**
+(most skips because of Codex data that need a sign-in). The 4 derivable data files are SHA-256 identical to the development
+copy. High-severity findings:
+1. **Within-step brain–body acausality:** the body is driven by spikes produced "in the future" within the same 25 ms interval (a command queue is needed).
+2. **No left/right asymmetry check:** DNp15's right input is 1.66× its left (65th most asymmetric of 383 DNs), DNp10's 0.24×
+   (8th) → both reported lateral-readout failures were predictable from the connectome.
+3. **Information mismatch in the training ladder:** the teacher's turn command comes from the odour field, the brain receives only vision; stopped before the DAgger rounds.
+4. **Visual sampling at 80 Hz:** ~49° shift per frame at 4.4 mm from a tower → aliased motion perception.
+5. **Unbounded wing stroke amplitude:** can reach ~206°.
 
-**Bağlantı yapısı (yeni bulgular):**
-- Bacak şeker GRN'lerinden MN9'a işaretli doğrusal etki **negatif**, labellar GRN'lerden **pozitif** → bacak GRN → MN9 başarısızlığı yapısal;
-  bu oturumda değiştirilmemiş Shiu modeliyle bağımsız olarak da doğrulandı (12 bacak GRN @100 Hz → MN9 0/0 Hz; labellar 36 GRN → 54–55 / 48 Hz; iki tohum).
-- DNg02 girdisinin %54'ü inhibitör ve bir kısmı hiç sürülmeyen yükselen nöronlardan → sessizlik erişilebilirlikten değil, net inhibisyon + tonik sürüş yokluğundan.
-- Antenal lobta LN+PN iç sinapslarının %77'si uyarıcı (Shiu işaret kuralı aminleri uyarıcı sayıyor); baskın özdeğer ~2.184 sinaps → kendini sürdüren kilitlenme yapısal olarak beklenir.
-- Modelde kanat/haltere/bacak motor nöronu yok; 1.736 yükselen nöron hiç sürülmüyor.
+**Connectome (new findings):**
+- The signed linear influence of the leg sugar GRNs on MN9 is **negative**, that of the labellar GRNs **positive** → the leg
+  GRN → MN9 failure is structural; also independently confirmed in this session with the unmodified Shiu model (12 leg GRNs
+  @100 Hz → MN9 0/0 Hz; 36 labellar GRNs → 54–55 / 48 Hz; two seeds).
+- 54 % of DNg02's input is inhibitory and part of it comes from ascending neurons that are never driven → the silence comes not from reachability but from net inhibition + no tonic drive.
+- 77 % of the internal LN+PN synapses of the antennal lobe are excitatory (the Shiu sign rule counts amines as excitatory); leading eigenvalue ~2,184 synapses → a self-sustaining lock-up is structurally expected.
+- The model has no wing/haltere/leg motor neurons; the 1,736 ascending neurons are never driven.
 
-**BANC:** VNC'yi ve gerçek kanat/haltere/bacak motor nöronlarını getiriyor, CC BY 4.0. En değerli olası kazanımlar: DN → kanat
-köprüsünün connectome'a devri, haltere refleksinin connectome'dan gelmesi, bacak tat → MN9 doğal tetiği, GF ile kalkış.
-Riskler: proofreading kaynaklı L/R asimetrisi (güncel Codex dışa aktarımında optik lob sağ/sol 1,56×), seyreklik (FlyWire'dan ~2,6× az sinaps/nöron), dinlenme aktivitesi yokluğu. Güncel Codex BANC dışa aktarımında MN9, 62 kanat MN'si, 25 haltere MN'si ve TTMn mevcut (`03_BANC_OLANAKLARI.md` ek A).
+**BANC:** brings the VNC and real wing/haltere/leg motor neurons; CC BY 4.0. Most valuable possible gains: handing the DN →
+wing bridge to the connectome, the haltere reflex from the connectome, the natural leg-taste → MN9 trigger, take-off by the
+GF. Risks: proofreading-related L/R asymmetry (optic lobe right/left 1.56× in the current Codex export), sparseness (~2.6×
+fewer synapses per neuron than FlyWire), no resting activity. The current Codex BANC export contains MN9, 62 wing MNs, 25
+haltere MNs and TTMn (`03_BANC_OPPORTUNITIES.md` appendix A).
 
-**Benzer çalışmalar:** "Sürüş" projelerinin hepsi topolojiyi sabit tutup **dinamik parametreleri veya okuma katmanını eğitiyor**
-(rate modeli + girdi normalizasyonu + durumun taşınması + taklit + DAgger); hiçbirinde uçuş tamamen nöral değil.
+**Similar work:** all "driving" projects keep the topology fixed and **train the dynamic parameters or the readout layer**
+(rate model + input normalisation + carried state + imitation + DAgger); in none of them is flight entirely neural.
 
-**Plan:** F0 mevcut repo düzeltmeleri → F1 BANC veri hattı + QA → F2 açık döngü yeniden üretimler → F3 VNC motor arayüzü ve
-haltere refleksi → F4 kalkış/iniş/beslenme tetiği → F5 eğitilebilir connectome kolu → F6 tam görev. Ayrıntı: `05_MIMARI_PLAN.md`.
+**Plan:** F0 port + v1 fixes → F1 BANC data pipeline + QA → F2 open-loop reproductions → F3 VNC motor interface and haltere
+reflex → F4 take-off/landing/feeding trigger → F5 trainable connectome arm → F6 full task. Details: `05_ARCHITECTURE_PLAN.md`.
 
-## Erişim notu
-`thedrivingfly.com` ve `theuploadinglab.ai` (ve Harvard Dataverse, arXiv, Nature) bu çalışma ortamının ağ politikasınca
-engelliydi; araştırma notları projelerin GitHub depolarındaki belgelere ve arama sonuçlarına dayanır (`04_ARASTIRMA_NOTLARI.md` §0).
+## Access note
+`thedrivingfly.com` and `theuploadinglab.ai` (and Harvard Dataverse, arXiv, Nature) were blocked by the network policy of
+this working environment; the research notes rely on documents in the projects' GitHub repositories and on search results
+(`04_RESEARCH_NOTES.md` §0).

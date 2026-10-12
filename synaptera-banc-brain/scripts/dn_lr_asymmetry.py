@@ -2,9 +2,9 @@
 
 For every DN cell type with exactly one left and one right neuron: total input synapses per side and the ratio R/L,
 the distribution of |log2(R/L)|, the rank of the readout types of flight/readouts.py, and the input-synapse ratio R/L of
-whole super classes. Reading: synaptera-banc-brain/02_MODEL_FIZIK_TEST_ANALIZI.md section 1.4.
+whole super classes. Reading: synaptera-banc-brain/02_CONNECTOME_MODEL_PHYSICS_TESTS.md section 1.4.
 
-    env -u PYTHONPATH python synaptera-banc-brain/scripts/dn_lr_asymmetry.py [--root .] > synaptera-banc-brain/veri/dn_lr_asymmetry.txt
+    env -u PYTHONPATH python synaptera-banc-brain/scripts/dn_lr_asymmetry.py [--root .] > synaptera-banc-brain/results/dn_lr_asymmetry.txt
 """
 import argparse
 from pathlib import Path
